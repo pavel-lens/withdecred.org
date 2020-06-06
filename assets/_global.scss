@@ -122,6 +122,10 @@ p {
   align-items: center;
   position: relative;
   // text-align: center;
+
+  &.is-row {
+    flex-direction: row;
+  }
 }
 
 /* flex */

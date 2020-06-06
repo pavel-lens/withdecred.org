@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <el-container class="container text--align-center">
+    <el-container class="container is-row text--align-center">
       <el-main>
         <el-row class="mb-6">
           <div>
