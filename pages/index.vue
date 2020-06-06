@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <el-container class="container">
+    <el-container class="container text--align-center">
       <el-main>
         <el-row class="mb-6">
           <div>
@@ -26,8 +26,7 @@
                   <i class="el-icon-check card--is-done" />
                 </div>
               </div>
-              Learn why Decred is desribed as community-directed, superior store
-              of value.
+              Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3">
                 <el-button type="primary">
                   Read more <i class="el-icon-right"></i>
@@ -44,8 +43,7 @@
                   How to stake
                 </h3>
               </div>
-              Learn why Decred is desribed as community-directed, superior store
-              of value.
+              Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3">
                 <el-button type="primary" plain>
                   How to stake <i class="el-icon-right"></i>
@@ -62,8 +60,7 @@
                   How to vote
                 </h3>
               </div>
-              Learn why Decred is desribed as community-directed, superior store
-              of value.
+              Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3">
                 <el-button type="primary" plain>
                   How to vote <i class="el-icon-right"></i>
@@ -80,8 +77,7 @@
                   What is Politeia
                 </h3>
               </div>
-              Learn why Decred is desribed as community-directed, superior store
-              of value.
+              Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3">
                 <el-button type="primary" plain>
                   How to vote <i class="el-icon-right"></i>
@@ -123,16 +119,6 @@ export default Vue.extend({
   background-position-y: -70px;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1120px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .nav-logo {
   height: 50px;
 }
@@ -151,17 +137,17 @@ export default Vue.extend({
 
 .title {
   display: block;
+  color: $font-color-light;
   font-weight: 400;
   font-size: 52px;
-  /* color: #35495e; */
   letter-spacing: 0.025em;
   margin-bottom: 32px;
 }
 
 .subtitle {
-  font-family: 'Source Sans Pro';
   font-weight: 300;
   font-size: 28px;
+  color: $font-color-light;
 }
 
 .dot {
