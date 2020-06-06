@@ -4,7 +4,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'A Decred community',
+    title: 'Decred Community Portal - withDecred.org',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,6 +27,7 @@ module.exports = {
     '@/assets/_reset.scss',
     'element-ui/lib/theme-chalk/index.css',
     '@/assets/_global.scss',
+    '@/assets/_fonts.scss',
   ],
   /*
    ** Plugins to load before mounting the App
