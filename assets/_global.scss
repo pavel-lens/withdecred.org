@@ -1,0 +1,97 @@
+@import './_fonts';
+
+$color-primary-blue: #2970ff;
+$color-primary-white: #f9fbfc;
+$color-primary-turquiose: #2ed6a1;
+$color-primary-darkblue: #091440;
+$color-secondary-lightblue: #70cbff;
+$color-secondary-green: #41bf53;
+$color-secondary-orange: #ed6d47;
+
+$font-primary-color: $color-primary-white;
+
+/* Generate Spacing Classes */
+$spacing-sides: (
+  top: t,
+  bottom: b,
+  left: l,
+  right: r,
+);
+$spacing-sizes: (
+  0: '2px',
+  1: '4px',
+  2: '8px',
+  3: '16px',
+  4: '24px',
+  5: '32px',
+  6: '64px',
+);
+
+/* Margin: generate my-[0,6] */
+@each $szlabel, $szval in $spacing-sizes {
+  .my-#{$szlabel} {
+    margin-top: #{$szval} !important;
+    margin-bottom: #{$szval} !important;
+  }
+
+  .mx-#{$szlabel} {
+    margin-left: #{$szval} !important;
+    margin-right: #{$szval} !important;
+  }
+}
+/* Margin: generate m[l,r,t,b]-[0,6] */
+@each $side, $sidelabel in $spacing-sides {
+  @each $szlabel, $szval in $spacing-sizes {
+    .m#{$sidelabel}-#{$szlabel} {
+      margin-#{$side}: #{$szval} !important;
+    }
+  }
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+
+/* Padding: generate py-[0,6] */
+@each $szlabel, $szval in $spacing-sizes {
+  .py-#{$szlabel} {
+    padding-top: #{$szval} !important;
+    padding-bottom: #{$szval} !important;
+  }
+
+  .px-#{$szlabel} {
+    padding-left: #{$szval} !important;
+    padding-right: #{$szval} !important;
+  }
+}
+/* Padding: generate p[l,r,t,b]-[0,6] */
+@each $side, $sidelabel in $spacing-sides {
+  @each $szlabel, $szval in $spacing-sizes {
+    .p#{$sidelabel}-#{$szlabel} {
+      padding-#{$side}: #{$szval} !important;
+    }
+  }
+}
+
+body {
+  background-color: $color-primary-darkblue;
+  color: $font-primary-color;
+  font-family: 'Source Sans Pro';
+}
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro';
+  //, verdana, sans-serif !important;
+  // color: $font-primary-color;
+}
+
+h1 {
+  margin: 4px 0 16px;
+}

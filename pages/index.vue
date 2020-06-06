@@ -1,30 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <div @click="increment()">
-        <logo />
-      </div>
-      <h1 class="title" @click="increment()">
-        nuxt-typescript
-      </h1>
-      <h2 class="subtitle" @click="decrement()">
-        My awesome Nuxt.js project.
-      </h2>
-      <h3>Counter: {{ this.count }}</h3>
-      <User :payload="user" />
-      <User2 :payload="user" />
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <h1 class="title">withDecred<span class="dot">.</span>org</h1>
+      <h2 class="subtitle">A community portal</h2>
     </div>
   </div>
 </template>
@@ -79,7 +57,10 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="scss" scoped>
+// Don't comment out, some el-upload styles are used
+@import '@/assets/_global';
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -90,21 +71,24 @@ export default Vue.extend({
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 52px;
+  /* color: #35495e; */
+  letter-spacing: 0.025em;
+  margin-bottom: 32px;
 }
 
 .subtitle {
+  font-family: 'Source Sans Pro';
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  font-size: 28px;
+}
+
+.dot {
+  // color: $color-primary-blue;
+  // color: $color-secondary-lightblue;
+  color: $color-secondary-green;
 }
 
 .links {
