@@ -28,9 +28,11 @@
               </div>
               Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3">
-                <el-button type="primary">
-                  Read more <i class="el-icon-right"></i>
-                </el-button>
+                <nuxt-link to="/basics">
+                  <el-button type="primary">
+                    Read more <i class="el-icon-right"></i>
+                  </el-button>
+                </nuxt-link>
               </div>
             </el-card>
           </el-col>
