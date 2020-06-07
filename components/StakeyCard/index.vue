@@ -13,9 +13,18 @@
       > -->
       <!-- <span> -->
       <img
+        v-if="type === 'default'"
         slot="reference"
         @click="isVisible = !isVisible"
         src="./stakey-thumbsup.png"
+        width="auto"
+        height="150"
+      />
+      <img
+        v-if="type === 'explorer'"
+        slot="reference"
+        @click="isVisible = !isVisible"
+        src="./stakey-explorer.png"
         width="auto"
         height="150"
       />
@@ -33,6 +42,14 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  props: {
+    type: {
+      type: String,
+      required: false,
+      default: 'default',
+    },
+  },
+
   data() {
     return {
       isVisible: false,
@@ -40,9 +57,9 @@ export default Vue.extend({
   },
 
   mounted() {
-    setTimeout(() => {
-      this.isVisible = true
-    }, 500)
+    // setTimeout(() => {
+    //   this.isVisible = true
+    // }, 500)
   },
 })
 </script>

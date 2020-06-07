@@ -4,8 +4,8 @@
 
     <div class="background--alt">
       <div class="container">
-        <el-card class="subpage-card-header">
-          <h1>Learn most important basics about Decred</h1>
+        <el-card class="subpage-card">
+          <h1 class="mb-2">Learn most important basics about Decred</h1>
           <p>
             In this page, you will learn why Decred is secure, adaptable and
             sustainable.
@@ -15,8 +15,11 @@
             <li>Adaptable</li>
             <li>Sustainable</li>
           </ul> -->
+          <div class="subpage-card__footer mt-2">
+            <i class="el-icon-timer mr-1" /> 3 minutes
+          </div>
         </el-card>
-        <el-main class="" style="margin-top: 100px;">
+        <el-main class="mb-6" style="margin-top: 100px;">
           <el-row :gutter="24">
             <el-col :lg="16">
               <h2>Decred is Sound Money</h2>
@@ -55,9 +58,22 @@
                 much harder would your life be, if you can't get loan for car,
                 business or place to live in.
               </p>
+              <el-alert type="warning" :closable="false" class="mt-3">
+                <div slot="title" class="flex">
+                  <i class="el-alert__icon el-icon-warning mr-2"></i>
+                  Money on your bank account lose value
+                </div>
+                <div>
+                  It's only inevitable, that all this money printing, simply
+                  more dollars (or euros) devalue your savings.
+                  <div class="mt-2"><strong>Think back</strong></div>
+                  How much would you be able to purchase for $100 USD now and
+                  say, 15 years ago?
+                </div>
+              </el-alert>
             </el-col>
             <el-col :lg="6">
-              <StakeyCard />
+              <StakeyCard type="explorer" />
             </el-col>
           </el-row>
 
@@ -113,34 +129,47 @@
                 again, thanks to Decred unique governance mechanism Politeia,
                 which is used by both parts of the community - miners and people
                 who own Decred.
+
+                <el-alert type="success" :closable="false" class="mt-3">
+                  <div slot="title" class="flex">
+                    <i class="el-icon-success mr-2" /> Decred cannot fork
+                  </div>
+                  <div>
+                    Decred already implemented several network improvements and
+                    all miners upgraded without forking.
+                  </div>
+                </el-alert>
               </p>
+            </el-col>
+
+            <el-col :lg="6" class="flex">
+              <StakeyCard />
             </el-col>
           </el-row>
 
-          <h2 class="mt-5">Well, that's not all</h2>
+          <h2 class="mt-5">Summary</h2>
           <el-row :gutter="24">
             <el-col :span="16">
-              <p>
-                Cras purus sapien, tempor sed nisi quis, elementum ornare quam.
-                Quisque sed ullamcorper neque, eget ultrices nisi. Ut vehicula,
-                ligula ac euismod sodales, ligula erat tempus ante, in convallis
-                mi nunc quis libero. Mauris at magna vel turpis finibus
-                consequat. Nullam congue lacinia odio, eu luctus ligula iaculis
-                at. Donec at semper orci. Integer mattis mauris quis tortor
-                eleifend lacinia. Mauris faucibus massa eu mauris commodo, ac
-                scelerisque ipsum mattis. Phasellus at ullamcorper velit.
-                Integer porta enim nec felis tempor, in elementum eros dictum.
-              </p>
-              <p>
-                Phasellus aliquam erat id risus iaculis convallis. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Proin sed odio
-                vitae lorem ultricies ultricies. Vestibulum at magna ac orci
-                sollicitudin dictum. Donec tincidunt magna nec nunc lobortis
-                iaculis. Phasellus pharetra, sapien at suscipit feugiat, enim
-                augue elementum dolor, id ultrices leo mi et lectus. Suspendisse
-                potenti. Aenean aliquet, quam non lobortis tristique, ligula
-                ipsum tincidunt enim, eget lobortis mi diam a nunc.
-              </p>
+              <p>Let's summarize the most important information about Decred</p>
+              <ul class="summary-checklist mt-3">
+                <li>
+                  <i class="el-icon-success success" /> Term "Sound money"
+                  represent money which preserve value. Decred is Sound money.
+                </li>
+                <li>
+                  <i class="el-icon-success success" /> Fiat money as USD, EUR
+                  or GBP devalue over time and lose value
+                </li>
+                <li>
+                  <i class="el-icon-success success" /> Decred network is ±40x
+                  more secure thanks to its Proof-of-Stake layer
+                </li>
+                <li>
+                  <i class="el-icon-success success" /> Decred cannot fork,
+                  process of doing protocol upgrades is smooth thanks to Decred
+                  governance
+                </li>
+              </ul>
             </el-col>
           </el-row>
         </el-main>
@@ -174,7 +203,7 @@ export default Vue.extend({
   color: $color-secondary-black;
 }
 
-.subpage-card-header {
+.subpage-card {
   position: absolute;
   // top: -50px;
   top: 0;
@@ -188,6 +217,27 @@ export default Vue.extend({
     font-size: 32px;
     // letter-spacing: 0.025em;
     // margin-bottom: 32px;
+  }
+}
+
+.subpage-card__footer {
+  // position: absolute;
+  // bottom: 16px;
+  font-size: 0.9em;
+}
+
+ul.summary-checklist {
+  list-style: none;
+  padding-left: 16px;
+  li {
+    display: flex;
+    align-items: flex-start;
+
+    & > i {
+      color: #67c23a;
+      margin-top: 4px;
+      margin-right: 8px;
+    }
   }
 }
 </style>

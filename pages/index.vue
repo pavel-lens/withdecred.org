@@ -16,7 +16,7 @@
 
         <el-row :gutter="24">
           <el-col :lg="8" :sm="12" :xs="24">
-            <el-card>
+            <el-card class="card">
               <div slot="header" class="flex">
                 <h3 class="card-title">
                   <i class="el-icon-star-off" />
@@ -27,18 +27,21 @@
                 </div>
               </div>
               Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3">
+              <div class="mt-3 mb-4">
                 <nuxt-link to="/basics">
-                  <el-button type="primary">
+                  <el-button size="small" type="primary">
                     Read more <i class="el-icon-right"></i>
                   </el-button>
                 </nuxt-link>
+              </div>
+              <div class="card-footer">
+                <i class="el-icon-timer mr-1" /> 3 minutes
               </div>
             </el-card>
           </el-col>
 
           <el-col :lg="8" :sm="12" :xs="24">
-            <el-card>
+            <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
                   <i class="el-icon-data-analysis" />
@@ -46,16 +49,19 @@
                 </h3>
               </div>
               Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3">
-                <el-button type="primary" plain>
+              <div class="mt-3 mb-4">
+                <el-button size="small" type="primary" plain>
                   How to stake <i class="el-icon-right"></i>
                 </el-button>
+              </div>
+              <div class="card-footer">
+                <i class="el-icon-timer mr-1" /> 6 minutes
               </div>
             </el-card>
           </el-col>
 
           <el-col :lg="8" :sm="12" :xs="24">
-            <el-card>
+            <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
                   <i class="el-icon-collection-tag" />
@@ -63,16 +69,19 @@
                 </h3>
               </div>
               Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3">
-                <el-button type="primary" plain>
+              <div class="mt-3 mb-4">
+                <el-button size="small" type="primary" plain>
                   How to vote <i class="el-icon-right"></i>
                 </el-button>
+              </div>
+              <div class="card-footer">
+                <i class="el-icon-timer mr-1" /> 7 minutes
               </div>
             </el-card>
           </el-col>
 
           <el-col :lg="8" :sm="12" :xs="24">
-            <el-card>
+            <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
                   <i class="el-icon-collection-tag" />
@@ -80,10 +89,13 @@
                 </h3>
               </div>
               Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3">
-                <el-button type="primary" plain>
+              <div class="mt-3 mb-4">
+                <el-button size="small" type="primary" plain>
                   How to vote <i class="el-icon-right"></i>
                 </el-button>
+              </div>
+              <div class="card-footer">
+                <i class="el-icon-timer mr-1" /> 4 minutes
               </div>
             </el-card>
           </el-col>
@@ -126,6 +138,7 @@ export default Vue.extend({
 }
 
 .card {
+  position: relative;
   &--is-done {
     color: $color-secondary-green;
   }
@@ -135,6 +148,13 @@ export default Vue.extend({
   font-weight: 500;
   font-size: 20px;
   text-align: left;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  font-size: 0.9em;
 }
 
 .title {
