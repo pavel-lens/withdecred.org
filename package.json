@@ -22,7 +22,8 @@
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
@@ -35,7 +36,6 @@
     "node-sass": "^4.14.1",
     "nodemon": "^1.18.9",
     "prettier": "^1.19.1",
-    "reflect-metadata": "^0.1.13",
     "sass-loader": "^8.0.2",
     "supertest": "^4.0.2",
     "ts-jest": "^25.3.0",
