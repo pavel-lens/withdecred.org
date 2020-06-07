@@ -28,6 +28,14 @@
         width="auto"
         height="150"
       />
+      <img
+        v-if="type === 'vote'"
+        slot="reference"
+        @click="isVisible = !isVisible"
+        src="./stakey-vote.png"
+        width="auto"
+        height="150"
+      />
 
       <div>
         We also have a Lightning network!

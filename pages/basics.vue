@@ -95,6 +95,10 @@
                 <a href="">hyper-secure</a>.
               </p>
             </el-col>
+
+            <el-col :lg="6" class="flex">
+              <StakeyCard />
+            </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
@@ -141,9 +145,33 @@
                 </el-alert>
               </p>
             </el-col>
+          </el-row>
 
+          <el-row :gutter="24" class="mt-5">
+            <el-col :span="16">
+              <h2>Decred is Sustainable</h2>
+              <p>
+                Decred continuously funds its treasury with
+                <a href="">10% of each block reward</a> and employs a flexible
+                contractor model that allows contributors to receive
+                compensation for their work. This makes Decred a sustainable and
+                self-funded Decentralized Autonomous Organization.
+              </p>
+              <h3 class="mt-3">Let's run some numbers</h3>
+              <p>
+                Duis tempor sit amet tortor elementum volutpat. Phasellus
+                tincidunt massa ligula, eget consequat ipsum lacinia et. Nulla
+                venenatis turpis ante, nec consectetur purus consequat sit amet.
+                Etiam enim urna, ultricies tincidunt hendrerit eu, ultrices
+                vitae mi. Ut nibh magna, gravida pharetra purus at, aliquam
+                hendrerit ipsum. Praesent lectus lacus, tincidunt eu posuere et,
+                suscipit nec orci. Etiam sed sollicitudin tellus. Phasellus
+                eleifend elementum ipsum. Aenean eu nulla libero. Sed viverra
+                quam ut ligula gravida condimentum.
+              </p>
+            </el-col>
             <el-col :lg="6" class="flex">
-              <StakeyCard />
+              <StakeyCard type="vote" />
             </el-col>
           </el-row>
 
