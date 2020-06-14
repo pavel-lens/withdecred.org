@@ -1,6 +1,6 @@
 <template>
   <div>
-    <script v-if="enableAnalytics" type="text/javascript">
+    <script type="text/javascript">
       //some default pre init
       var Countly = Countly || {}
       Countly.q = Countly.q || []
@@ -45,15 +45,15 @@ export default Vue.extend({
     NavBar,
   },
 
-  data() {
-    console.log({ ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED })
-    const enableAnalytics =
-      process.env.ANALYTICS_ENABLED === 'true' ? true : true
+  // data() {
+  //   console.log({ ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED })
+  //   const enableAnalytics =
+  //     process.env.ANALYTICS_ENABLED === 'true' ? true : true
 
-    return {
-      enableAnalytics,
-    }
-  },
+  //   return {
+  //     enableAnalytics,
+  //   }
+  // },
 })
 </script>
 
