@@ -18,6 +18,7 @@
     "test:server:watch": "npm run test:server -- --watch"
   },
   "dependencies": {
+    "@marcdiethelm/nuxtjs-countly": "^0.6.0",
     "@nuxtjs/dotenv": "^1.4.0",
     "countly-sdk-web": "^20.4.0",
     "cross-env": "^5.2.0",
