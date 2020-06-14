@@ -5,7 +5,10 @@
     <div class="background--alt">
       <div class="container">
         <el-card class="subpage-card">
-          <h1 class="mb-2">Learn most important basics about Decred</h1>
+          <h1 class="mb-2">
+            Learn <span class="underline">most important</span> basics about
+            Decred
+          </h1>
           <p>
             In this page, you will learn why Decred is secure, adaptable and
             sustainable.
@@ -262,7 +265,7 @@ ul.summary-checklist {
     align-items: flex-start;
 
     & > i {
-      color: #67c23a;
+      color: #2ed6a1;
       margin-top: 4px;
       margin-right: 8px;
     }
