@@ -18,9 +18,6 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  env: {
-    ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED || false,
-  },
   /*
    ** Customize the progress-bar color
    */
@@ -57,7 +54,10 @@ module.exports = {
     // Required, the URL of your Countly server
     url: 'https://analytics.withdecred.org',
     // Required, copy from server's management > apps page
-    app_key: process.env.ANALYTICS_KEY,
+    app_key:
+      process.env.ANALYTICS_ENABLED === 'true'
+        ? process.env.ANALYTICS_KEY
+        : null,
     // For self-hosting... use original .js or .min.js (minified)
     trackerSrc: '/countly.min.js',
     // Automatic tracking, if not array this defaults to ['track_sessions', 'track_pageview', 'track_links']
