@@ -48,7 +48,7 @@ export default Vue.extend({
   data() {
     console.log({ ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED })
     const enableAnalytics =
-      process.env.ANALYTICS_ENABLED === 'true' ? true : false
+      process.env.ANALYTICS_ENABLED === 'true' ? true : true
 
     return {
       enableAnalytics,
