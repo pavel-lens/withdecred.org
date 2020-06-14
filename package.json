@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.0",
+    "countly-sdk-web": "^20.4.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
