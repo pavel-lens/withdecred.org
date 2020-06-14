@@ -16,6 +16,9 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  env: {
+    ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED || false,
+  },
   /*
    ** Customize the progress-bar color
    */
