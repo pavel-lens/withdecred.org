@@ -45,6 +45,7 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources',
     '@marcdiethelm/nuxtjs-countly',
   ],
   /*
@@ -71,7 +72,7 @@ module.exports = {
   styleResources: {
     scss: [
       //
-      './assets/_colors.scss',
+      './assets/_variables.scss',
       './assets/_responsive.scss',
     ],
   },
