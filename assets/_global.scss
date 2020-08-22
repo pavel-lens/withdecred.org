@@ -1,14 +1,4 @@
-$color-primary-blue: #2970ff;
-$color-primary-white: #f9fbfc;
-$color-primary-turquiose: #2ed6a1;
-$color-primary-darkblue: #091440;
-$color-secondary-black: #091440;
-$color-secondary-lightblue: #70cbff;
-$color-secondary-green: #41bf53;
-$color-secondary-orange: #ed6d47;
-
-$font-color-dark: $color-primary-darkblue;
-$font-color-light: $color-primary-white;
+@import './variables';
 
 /* Generate Spacing Classes */
 $spacing-sides: (

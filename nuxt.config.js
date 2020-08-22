@@ -55,9 +55,7 @@ module.exports = {
     url: 'https://analytics.withdecred.org',
     // Required, copy from server's management > apps page
     app_key:
-      process.env.ANALYTICS_ENABLED === 'true'
-        ? process.env.ANALYTICS_KEY
-        : null,
+      process.env.ANALYTICS_ENABLED === 'true' && process.env.ANALYTICS_KEY,
     // For self-hosting... use original .js or .min.js (minified)
     trackerSrc: '/countly.min.js',
     // Automatic tracking, if not array this defaults to ['track_sessions', 'track_pageview', 'track_links']
@@ -66,6 +64,16 @@ module.exports = {
     noScript: true,
     // Log Countly debug info to console, default: false
     debug: process.env.NODE_ENV !== 'production',
+  },
+  /*
+   ** Style resources
+   */
+  styleResources: {
+    scss: [
+      //
+      './assets/_colors.scss',
+      './assets/_responsive.scss',
+    ],
   },
   /*
    ** Build configuration

@@ -20,6 +20,7 @@
   "dependencies": {
     "@marcdiethelm/nuxtjs-countly": "^0.6.0",
     "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "countly-sdk-web": "^20.4.0",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",

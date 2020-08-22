@@ -20,7 +20,7 @@
               <div slot="header" class="flex">
                 <h3 class="card-title">
                   <i class="el-icon-star-off" />
-                  Decred basics
+                  Decred 101 - Start here
                 </h3>
                 <div class="ml-auto">
                   <i class="el-icon-check card--is-done" />
@@ -28,7 +28,7 @@
               </div>
               Learn why Decred is a community-directed, superior store of value.
               <div class="mt-3 mb-4">
-                <nuxt-link to="/basics">
+                <nuxt-link to="/a/decred-101">
                   <el-button size="small" type="primary">
                     Read more <i class="el-icon-right"></i>
                   </el-button>
@@ -109,8 +109,6 @@
 import Vue, { PropOptions } from 'vue'
 // import { Vue, Component, Prop } from 'vue-property-decorator'
 import Logo from '~/components/Logo.vue'
-import User from '~/components/User.vue'
-import User2 from '~/components/User2.vue'
 
 interface User {
   firstName: string

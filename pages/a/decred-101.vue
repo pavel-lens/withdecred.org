@@ -225,7 +225,7 @@ export default Vue.extend({
 
 .background {
   // background-image: url('../assets/images/bg-waves.png');
-  background-image: url('../assets/images/bg-waves.webp');
+  background-image: url('../../assets/images/bg-waves.webp');
   background-position-y: -50px;
 }
 
