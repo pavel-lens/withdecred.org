@@ -201,7 +201,7 @@
                 cryptocurrencies.
               </p>
 
-              <BlockHint icon="scale-to-original">
+              <BlockHint icon="c-scale-to-original">
                 Decred uses conventional PoW with a BLAKE-256 hash algorithm,
                 and it is mined exclusively by ASICs.
                 <a href="http://withdecred.org/mining" target="_blank"

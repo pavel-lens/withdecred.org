@@ -110,12 +110,9 @@ import Vue, { PropOptions } from 'vue'
 // import { Vue, Component, Prop } from 'vue-property-decorator'
 import Logo from '~/components/Logo.vue'
 
-interface User {
-  firstName: string
-  lastName: string
-}
-
 export default Vue.extend({
+  layout: 'homepage',
+
   components: {
     Logo,
   },
