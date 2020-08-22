@@ -1,79 +1,83 @@
 <template>
   <div class="background">
-    <el-main class="my-6"> </el-main>
+    <!-- <el-main class="my-6"> </el-main> -->
 
     <div class="background--alt">
       <div class="container">
-        <el-card class="subpage-card">
+        <!-- <el-card class="subpage-card">
           <h1 class="mb-2">
-            Learn <span class="underline">most important</span> basics about
-            Decred
+            <i class="el-icon-magic-stick" /> Decred 101 - Start here
           </h1>
           <p>
-            In this page, you will learn why Decred is secure, adaptable and
-            sustainable.
+            Decred & <span class="underline">Sound money</span>. Learn why
+            Decred is secure, adaptable and sustainable.
           </p>
-          <!-- <ul>
-            <li>Secure.</li>
-            <li>Adaptable</li>
-            <li>Sustainable</li>
-          </ul> -->
           <div class="subpage-card__footer mt-2">
-            <i class="el-icon-timer mr-1" /> 3 minutes
+            <i class="el-icon-timer mr-1" /> 5 minutes
           </div>
-        </el-card>
-        <el-main class="mb-6" style="margin-top: 100px;">
+        </el-card> -->
+        <el-main class="mt-50 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16">
+              <h1 class="article--title">Decred 101 - Start here</h1>
+
               <h2>Decred is Sound Money</h2>
               <p>
-                If you are in crypto, you probably heard alreay about
-                <a href="">sound money</a>. Explaining sound money is out of
-                scope of this introduction, but you can read more about
-                <a href="">sound money</a> in a dedicated article.
+                In current times, traditional paper money or "fiat money" is not
+                backed by anything and central banks are allowed to print new
+                money out of thin air. When doing it, they essentially tax
+                everyone who is holding their money to transfer part of the
+                value to the freshly printed money.
               </p>
 
-              <h2 class="mt-5">Why does it matter?</h2>
               <p>
-                In current times, traditional paper money (so called "fiat
-                money") are not backed by anything and central banks can
-                literally print new money out of thin air.
+                With the Internet, people can easily form networks, and with
+                Bitcoin we discovered that by using a distributed ledger which
+                everyone can download and access, and by gamifying the process
+                for adding new transactions to this "blockchain" the network can
+                effectively ensure that everyone follows the rules - as long as
+                most of the entities which participate in creating the
+                blockchain are honest.
               </p>
-              <b class="mt-1">USA: FED</b>
+
               <p>
-                FED's balance sheet was $0.8T USD in 2008. FED's balance sheet
-                in May 2020 crossed $6.2T USD. That means that FED printed more
-                than 7x more money in last 12 years alone.
+                Decred is a blockchain-based cryptocurrency like Bitcoin, but
+                with a strong focus on community input, open governance and
+                sustainable funding for development. It is money designed to be
+                predictable and scarce. Nobody has the power to print DCR out of
+                thin air and there will never be more than 21 million DCR.
               </p>
-              <b class="mt-1">Europe: ECB (TODO)</b>
-              <p>
-                ECB's balance sheet was $0.8T USD in 2008. ECB's balance sheet
-                in May 2020 crossed $6.2T USD. That means that ECB printed more
-                than 7x more money in last 12 years alone.
-              </p>
-              <h3 class="mt-3">
-                2.4B+ people have no access to financial services
-              </h3>
-              <p>
-                Another important fact is that (accord to current statistics)
-                more than 2.4 billion people don't have access to bank accounts
-                and traditional financial services such as loans. Imagine how
-                much harder would your life be, if you can't get loan for car,
-                business or place to live in.
-              </p>
-              <el-alert type="warning" :closable="false" class="mt-3">
+
+              <!-- <el-alert type="warning" :closable="false" class="mt-3">
                 <div slot="title" class="flex">
                   <i class="el-alert__icon el-icon-warning mr-2"></i>
-                  Money on your bank account lose value
+                  Money in your bank account continuously lose value
                 </div>
                 <div>
+                  Your money is losing value! It's inevitable, with fiat money
+                  printing, more dollars or euros devalue your savings. How much
+                  would you be able to purchase for $100 USD now and say, 15
+                  years ago?
+
                   It's only inevitable, that all this money printing, simply
                   more dollars (or euros) devalue your savings.
                   <div class="mt-2"><strong>Think back</strong></div>
                   How much would you be able to purchase for $100 USD now and
                   say, 15 years ago?
                 </div>
-              </el-alert>
+              </el-alert> -->
+
+              <BlockHint>
+                <strong
+                  >Money in your bank account continuously lose value</strong
+                >
+                <p>
+                  Your money is losing value! It's inevitable, with fiat money
+                  printing, more dollars or euros devalue your savings. How much
+                  would you be able to purchase for $100 USD now and say, 15
+                  years ago?
+                </p>
+              </BlockHint>
             </el-col>
             <el-col :lg="6">
               <StakeyCard type="explorer" />
@@ -82,103 +86,227 @@
 
           <el-row :gutter="24" class="mt-5">
             <el-col :span="16">
-              <h2>Decred is Secure</h2>
+              <h2>Decred is a community</h2>
               <p>
-                Decred employs an innovative hybrid Proof-of-Work/Proof-of-Stake
-                system that layers security and carefully aligns incentives.
-                This system yields the best of both worlds, making it an order
-                of magnitude more expensive to attack than pure Proof-of-Work or
-                pure Proof-of-Stake.
+                The Decred project is led by its community of stakeholders and
+                contractors following six simple principles:
               </p>
+
+              <ul>
+                <li>
+                  Free and open-source software: All software developed as part
+                  of Decred shall be free and open-source software.
+                </li>
+                <li>
+                  Free speech and consideration: Everyone has the right to
+                  communicate opinions and ideas without fear of censorship.
+                  Consideration shall be given to all constructive speech that
+                  is based in fact and reason.
+                </li>
+                <li>
+                  Multi-stakeholder inclusivity: Inclusivity represents a
+                  multi-stakeholder system and an active effort shall be
+                  maintained to include a diverse set of views and users.
+                </li>
+                <li>
+                  Incremental privacy and security: Privacy and security
+                  technology shall be implemented on a continuing and
+                  incremental basis, both proactively and on-demand in response
+                  to attacks.
+                </li>
+                <li>
+                  <span class="underline">Fixed finite supply:</span> Issuance
+                  is finite and the total issuance shall not exceed
+                  20,999,999.99800912 DCR
+                </li>
+                <li>
+                  Universal fungibility: Universal
+                  <a
+                    href="https://en.wikipedia.org/wiki/Fungibility"
+                    target="_blank"
+                    class="underline"
+                    >fungibility</a
+                  >
+                  is fundamental to Decred being a store of value and attacks
+                  against it shall be actively monitored and countermeasures
+                  pursued as necessary.
+                </li>
+              </ul>
+
+              <BlockHint>
+                Fungibility refers to the truth that
+                <span class="underline">all DCR have the same value</span>,
+                regardless of who owns them or their history.
+              </BlockHint>
+
               <p>
-                In simple words, if you would compare Decred to Bitcoin,
-                Decred's network is <a href="">~40x more secure</a> than
-                Bitcoin's network (assuming same amount of mining hardware). If
-                Bitcoin network is secure, Decred network is
-                <a href="">hyper-secure</a>.
+                Being a decentralized community means there is no official
+                Decred channel. People hang out, discuss and coordinate using
+                different channels and social media platforms.
               </p>
+
+              <BlockHint icon="chat-dot-square">
+                Join the Decred community at
+                <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank"
+                  >Discord</a
+                >, <a href="https://t.me/Decred" target="_blank">Telegram</a>,
+                <a href="https://www.reddit.com/r/decred/" target="_blank"
+                  >Reddit</a
+                >
+                and
+                <a
+                  href="https://docs.decred.org/getting-started/joining-matrix-channels/"
+                  target="_blank"
+                  >Matrix</a
+                >.
+              </BlockHint>
             </el-col>
 
             <el-col :lg="6" class="flex">
-              <StakeyCard />
+              <!-- <StakeyCard /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
             <el-col :span="16">
-              <h2>Decred is Adaptable</h2>
+              <h2>Decred is secure</h2>
               <p>
-                Decred’s built-in
-                <a href="">governance system Politeia</a> empowers its community
-                with formal rights to make consensus changes and manage
-                project-level decisions. These systems make Decred adaptable,
-                allowing it to evolve per the will of the stakeholders, resist
-                forks and incorporate new technology over the long run.
-              </p>
-              <h3 class="mt-3">Decred can't fork</h3>
-              <p>
-                If you look at Bitcon's history, you will find a lot of
-                unresolved community debates which eventually resulted in
-                Bitcoin fork. Fork is a split of network into separate networks.
-                That's why there are multiple Bitcoin networks now - Bitcoin
-                Cash, Bitcoin SV, Bitcoin Gold and Bitcoin Diamond.
+                Network security is the foundation to any financial system.
+                Agreement on transactions and account balances, also known as
+                consensus, is vital to confidence in the currency and can be
+                measured by both longevity and analysis of its resistance to
+                various attack vectors.
               </p>
               <p>
-                What is important is that every fork makes Bitcoin network
-                weaker, because miners need to decide which network they belong
-                to, but it also makes the price of Bitcoin lower, because the
-                money is split into two different networks.
+                Decred uses a hybrid system:
               </p>
-              <p>
-                Decred already
-                <a href="">implemented several network improvements</a>
-                and all miners upgraded without forking. This is possible,
-                again, thanks to Decred unique governance mechanism Politeia,
-                which is used by both parts of the community - miners and people
-                who own Decred.
+              <ul>
+                <li>a Proof-of-Work (PoW) mining system as Bitcoin has</li>
+                <li>
+                  a Proof-of-Stake (PoS) system to validate blocks produced by
+                  PoW miners
+                </li>
+              </ul>
 
-                <el-alert type="success" :closable="false" class="mt-3">
-                  <div slot="title" class="flex">
-                    <i class="el-icon-success mr-2" /> Decred cannot fork
-                  </div>
-                  <div>
-                    Decred already implemented several network improvements and
-                    all miners upgraded without forking.
-                  </div>
-                </el-alert>
+              <p>
+                PoS ensures that a small group of miners cannot dominate the
+                flow of transactions or make changes to Decred without the
+                approval of the Decred stakeholders community.
               </p>
+
+              <p>
+                Decred employs a combination of PoW and PoS to yield the best of
+                both systems, mitigate their weaknesses, and deliver a layered
+                consensus mechanism that makes it far more secure than other
+                cryptocurrencies.
+              </p>
+
+              <BlockHint icon="scale-to-original">
+                Decred uses conventional PoW with a BLAKE-256 hash algorithm,
+                and it is mined exclusively by ASICs.
+                <a href="http://withdecred.org/mining" target="_blank"
+                  >Learn more about DCR mining.</a
+                >
+              </BlockHint>
+
+              <p>
+                Decred stakeholders lock their funds for a certain time to
+                purchase tickets in a "lottery". These tickets are added to a
+                pool of roughly 41,000 tickets. Five tickets are pseudorandomly
+                selected to validate the Proof-of-Work transactions from a
+                previously mined block. If at least 3 of 5 of the chosen tickets
+                approve the block from the miner, the miner’s reward is approved
+                and the block is added to the blockchain.
+              </p>
+
+              <p>
+                However, if the mined block is rejected by the PoS system, the
+                block is rejected and a new block has to be mined. This prevents
+                miners from misbehaving as they would waste precious electricity
+                and hardware resources if they continue to produce malicious
+                blocks.
+              </p>
+
+              <BlockHint>
+                Its
+                <span class="underline"
+                  >PoS system makes it 41X more costly to attack</span
+                >
+                than pure PoW cryptocurrency networks like Bitcoin. Check out
+                how much it would cost to attack the Decred network with the
+                interactive
+                <a
+                  href="https://dcrdata.decred.org/attack-cost"
+                  target="_blank"
+                  class="underline"
+                  >Attack-Cost calculator</a
+                >
+                at
+                <a href="https://dcrdata.org" target="_blank">dcrdata.org</a>.
+              </BlockHint>
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
             <el-col :span="16">
-              <h2>Decred is Sustainable</h2>
+              <h2>Decred is evolving</h2>
               <p>
-                Decred continuously funds its treasury with
-                <a href="">10% of each block reward</a> and employs a flexible
-                contractor model that allows contributors to receive
-                compensation for their work. This makes Decred a sustainable and
-                self-funded Decentralized Autonomous Organization.
+                Stakeholders agree on and enforce the blockchain’s consensus
+                rules, they set a course for future development together, and
+                can make use of a development fund which receives 10% of each
+                block's reward. Decred’s blockchain is similar to Bitcoin’s, but
+                with major improvements of transparent and inclusive
+                <a
+                  href="https://docs.decred.org/governance/overview/"
+                  target="_blank"
+                  class="underline"
+                  >governance</a
+                >
+                baked into the protocol.
               </p>
-              <h3 class="mt-3">Let's run some numbers</h3>
+
               <p>
-                Duis tempor sit amet tortor elementum volutpat. Phasellus
-                tincidunt massa ligula, eget consequat ipsum lacinia et. Nulla
-                venenatis turpis ante, nec consectetur purus consequat sit amet.
-                Etiam enim urna, ultricies tincidunt hendrerit eu, ultrices
-                vitae mi. Ut nibh magna, gravida pharetra purus at, aliquam
-                hendrerit ipsum. Praesent lectus lacus, tincidunt eu posuere et,
-                suscipit nec orci. Etiam sed sollicitudin tellus. Phasellus
-                eleifend elementum ipsum. Aenean eu nulla libero. Sed viverra
-                quam ut ligula gravida condimentum.
+                To align incentives, block rewards are split between
+                Proof-of-Work (PoW) miners, stakeholders and the Decred
+                Treasury. Decred Treasury is used to fund continuous project
+                development.
               </p>
+
+              <p>
+                The
+                <a
+                  href="https://proposals.decred.org/"
+                  target="_blank"
+                  class="underline"
+                  >Politeia Proposal System</a
+                >
+                plays a vital role within the Decred DAO (Decentralized
+                Autonomous Organization), empowering stakeholders to manage
+                Decredʼs Treasury expenditures and policies.
+              </p>
+
+              <p>
+                Proposals to date include new software features, marketing
+                expenditures, partner integrations, bug bounties and further
+                research. Politeia is a governance platform that uses on-chain
+                timestamps and signatures to record all activity related to the
+                submission, discussion about and voting for proposals. Once a
+                proposal is approved by Stakeholders, the proposal author is
+                authorized to begin work, knowing their efforts are supported by
+                the community and financed by the Treasury.
+              </p>
+
+              <BlockHint icon="mic">
+                Have an idea to make Decred better? Speak your mind at Matrix
+                and write a Politeia proposal to seek funding!
+              </BlockHint>
             </el-col>
             <el-col :lg="6" class="flex">
               <StakeyCard type="vote" />
             </el-col>
           </el-row>
 
-          <h2 class="mt-5">Summary</h2>
+          <!-- <h2 class="mt-5">Summary</h2>
           <el-row :gutter="24">
             <el-col :span="16">
               <p>Let's summarize the most important information about Decred</p>
@@ -202,6 +330,25 @@
                 </li>
               </ul>
             </el-col>
+          </el-row> -->
+
+          <el-row>
+            <el-col :gutter="24" :span="16">
+              <NavButtonGroup class="mt-5">
+                <NavButton prependIcon="back">
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Homepage
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton appendIcon="right">
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Decred & Sound money
+                  </template>
+                  Next article
+                </NavButton>
+              </NavButtonGroup>
+            </el-col>
           </el-row>
         </el-main>
       </div>
@@ -211,10 +358,16 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import BlockHint from '@/components/BlockHint/index.vue'
+import NavButton from '@/components/NavButton/index.vue'
+import NavButtonGroup from '@/components/NavButtonGroup/index.vue'
 import StakeyCard from '@/components/StakeyCard/index.vue'
 
 export default Vue.extend({
   components: {
+    BlockHint,
+    NavButton,
+    NavButtonGroup,
     StakeyCard,
   },
 })
@@ -244,8 +397,9 @@ export default Vue.extend({
 
   h1 {
     display: block;
-    font-weight: 400;
     font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
     // letter-spacing: 0.025em;
     // margin-bottom: 32px;
   }
