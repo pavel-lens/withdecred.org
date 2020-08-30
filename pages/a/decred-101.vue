@@ -3,6 +3,28 @@
     <!-- <el-main class="my-6"> </el-main> -->
 
     <div class="background--alt">
+      <ContentNav>
+        <label>Navigation</label>
+        <nuxt-link to="/a/decred-101">
+          Decred 101
+        </nuxt-link>
+        <nuxt-link to="/a/decred-sound-money">
+          Decred & Sound Money
+        </nuxt-link>
+        <nuxt-link to="/a/decred-hybrid-consensus">
+          Hybrid Consensus
+        </nuxt-link>
+        <nuxt-link to="/a/decred-staking-governance">
+          Staking & Governance
+        </nuxt-link>
+        <nuxt-link to="/a/decred-whats-next">
+          What's Next?
+        </nuxt-link>
+        <nuxt-link to="/a/decred-purchase">
+          <i class="el-icon-coin" /> Purchase $DCR
+        </nuxt-link>
+      </ContentNav>
+
       <div class="container">
         <!-- <el-card class="subpage-card">
           <h1 class="mb-2">
@@ -359,6 +381,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import BlockHint from '@/components/BlockHint/index.vue'
+import ContentNav from '@/components/ContentNav/index.vue'
 import NavButton from '@/components/NavButton/index.vue'
 import NavButtonGroup from '@/components/NavButtonGroup/index.vue'
 import StakeyCard from '@/components/StakeyCard/index.vue'
@@ -366,6 +389,7 @@ import StakeyCard from '@/components/StakeyCard/index.vue'
 export default Vue.extend({
   components: {
     BlockHint,
+    ContentNav,
     NavButton,
     NavButtonGroup,
     StakeyCard,
