@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <el-container class="container is-row text--align-center">
+    <el-container class="container text--align-center">
       <el-main>
         <el-row class="mb-6">
           <div>
@@ -9,97 +9,16 @@
               alt="Decred logo"
               class="nav-logo mb-2"
             />
-            <h1 class="title">withDecred<span class="dot">.</span>org</h1>
-            <h2 class="subtitle">Let's help others learn about Decred</h2>
+            <h1 class="title my-0">withDecred<span class="dot">.</span>org</h1>
+            <h2 class="subtitle my-0">Let's help others learn about Decred</h2>
+            <h2 class="subtitle my-0">(coming late Sep 2020)</h2>
+
+            <div class="follow-us mt-3">
+              <a href="https://twitter.com/withdecred">Follow us on Twitter <i class="el-icon-link"></i></a>
+            </div>
           </div>
         </el-row>
 
-        <el-row :gutter="24">
-          <el-col :lg="8" :sm="12" :xs="24">
-            <el-card class="card">
-              <div slot="header" class="flex">
-                <h3 class="card-title">
-                  <i class="el-icon-star-off" />
-                  Decred 101 - Start here
-                </h3>
-                <div class="ml-auto">
-                  <i class="el-icon-check card--is-done" />
-                </div>
-              </div>
-              Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3 mb-4">
-                <nuxt-link to="/a/decred-101">
-                  <el-button size="small" type="primary">
-                    Read more <i class="el-icon-right"></i>
-                  </el-button>
-                </nuxt-link>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 3 minutes
-              </div>
-            </el-card>
-          </el-col>
-
-          <el-col :lg="8" :sm="12" :xs="24">
-            <el-card class="card">
-              <div slot="header">
-                <h3 class="card-title">
-                  <i class="el-icon-data-analysis" />
-                  How to stake
-                </h3>
-              </div>
-              Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to stake <i class="el-icon-right"></i>
-                </el-button>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 6 minutes
-              </div>
-            </el-card>
-          </el-col>
-
-          <el-col :lg="8" :sm="12" :xs="24">
-            <el-card class="card">
-              <div slot="header">
-                <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
-                  How to vote
-                </h3>
-              </div>
-              Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to vote <i class="el-icon-right"></i>
-                </el-button>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 7 minutes
-              </div>
-            </el-card>
-          </el-col>
-
-          <el-col :lg="8" :sm="12" :xs="24">
-            <el-card class="card">
-              <div slot="header">
-                <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
-                  What is Politeia
-                </h3>
-              </div>
-              Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to vote <i class="el-icon-right"></i>
-                </el-button>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 4 minutes
-              </div>
-            </el-card>
-          </el-col>
-        </el-row>
       </el-main>
     </el-container>
   </div>
@@ -158,13 +77,20 @@ export default Vue.extend({
   font-weight: 400;
   font-size: 52px;
   letter-spacing: 0.025em;
-  margin-bottom: 32px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 28px;
   color: $font-color-light;
+}
+
+.follow-us {
+  color: $font-color-light;
+
+  a, a:hover, a:visited, a:active {
+    color: $font-color-light;
+  }
 }
 
 .dot {
