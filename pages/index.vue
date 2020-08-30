@@ -2,7 +2,7 @@
   <div class="background">
     <el-container class="container text--align-center">
       <el-main>
-        <el-row class="mb-6">
+        <el-row class="mt-70 mb-6">
           <div>
             <img
               src="@/assets/logo/decred-logo.png"
