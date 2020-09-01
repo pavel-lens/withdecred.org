@@ -38,8 +38,8 @@
             <i class="el-icon-timer mr-1" /> 5 minutes
           </div>
         </el-card> -->
-        <el-main class="mt-50 mb-6">
-          <el-row :gutter="24">
+        <el-main class="article mt-50 mb-6">
+          <el-row :gutter="24" type="flex">
             <el-col :lg="16">
               <h1 class="article--title">Decred 101 - Start here</h1>
 
@@ -51,6 +51,10 @@
                 everyone who is holding their money to transfer part of the
                 value to the freshly printed money.
               </p>
+
+              <div class="image my-5">
+                <img src="@/assets/articles/dollar-purchasing-power.jpg" />
+              </div>
 
               <p>
                 With the Internet, people can easily form networks, and with
@@ -102,11 +106,22 @@
               </BlockHint>
             </el-col>
             <el-col :lg="6">
-              <StakeyCard type="explorer" />
+              <!-- <StakeyCard type="explorer" /> -->
+
+              <div v-sticky>
+                <!-- <Tweet id="1228071422574157830" /> -->
+                <Tweet id="1297258616790155264" />
+                <div class="commentary">
+                  <i>
+                    CryptoWhale (30k+ followers), a popular trader based in
+                    United States, commenting on erroding value of US dollar.
+                  </i>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
-          <el-row :gutter="24" class="mt-5">
+          <el-row :gutter="24" type="flex" class="mt-5">
             <el-col :span="16">
               <h2>Decred is a community</h2>
               <p>
@@ -184,9 +199,7 @@
               </BlockHint>
             </el-col>
 
-            <el-col :lg="6" class="flex">
-              <!-- <StakeyCard /> -->
-            </el-col>
+            <el-col :lg="6" class="flex"> </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
@@ -269,7 +282,7 @@
             </el-col>
           </el-row>
 
-          <el-row :gutter="24" class="mt-5">
+          <el-row :gutter="24" type="flex" class="mt-5">
             <el-col :span="16">
               <h2>Decred is evolving</h2>
               <p>
@@ -323,8 +336,17 @@
                 and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
-            <el-col :lg="6" class="flex">
-              <StakeyCard type="vote" />
+            <el-col :lg="6">
+              <div v-sticky>
+                <Tweet id="1228071422574157830" />
+                <div class="commentary">
+                  <i>
+                    Chris Burniske (125k+ followers) from PlaceholderVC
+                    commenting that despite of recent economic crisis, Decred
+                    continues to build at its own pace.
+                  </i>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
@@ -388,6 +410,10 @@ import ContentNav from '@/components/ContentNav/index.vue'
 import NavButton from '@/components/NavButton/index.vue'
 import NavButtonGroup from '@/components/NavButtonGroup/index.vue'
 import StakeyCard from '@/components/StakeyCard/index.vue'
+// import Tweet from '@/components/Tweet/index.vue'
+import { Tweet } from 'vue-tweet-embed'
+// import Tweet from 'vue-tweet-embed/dist/tweet/index.js'
+// const Tweet = require('vue-tweet-embed/dist/tweet/index.js')
 
 export default Vue.extend({
   components: {
@@ -396,6 +422,7 @@ export default Vue.extend({
     NavButton,
     NavButtonGroup,
     StakeyCard,
+    Tweet,
   },
 })
 </script>

@@ -87,10 +87,10 @@
 
               <p>
                 Digital money can't be unstoppable and censorship resistant if
-                its users can be tracked and pursued. Since Bitcoin launch, many
-                cryptocurrency projects have tackled the privacy problem and
-                there is a wide range of implementations in the wild, but some
-                diminish auditability and others add too much complexity.
+                its users can be tracked and pursued. Since Bitcoin's launch,
+                many cryptocurrency projects have tackled the privacy problem
+                and there is a wide range of implementations in the wild, but
+                some diminish auditability and others add too much complexity.
               </p>
 
               <BlockHint>

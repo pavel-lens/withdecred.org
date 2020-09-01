@@ -150,7 +150,12 @@ strong {
     .image {
       img {
         width: 100%;
+        max-width: 100%;
       }
+    }
+
+    .commentary {
+      font-size: 0.9em;
     }
   }
 
@@ -214,11 +219,14 @@ strong {
 }
 
 /* flex */
-.flex {
+.m--flex {
   display: flex;
-  align-items: center;
 
-  .justify-center {
+  &.align-center {
+    align-items: center;
+  }
+
+  &.justify-center {
     justify-content: center;
   }
 }
