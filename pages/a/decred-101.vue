@@ -264,7 +264,7 @@
               <p>
                 To align incentives, block rewards are split between
                 Proof-of-Work (PoW) miners, stakeholders and the Decred
-                Treasury. Decred Treasury is used to fund continuous project
+                Treasury. Decred's Treasury is used to fund continuous project
                 development.
               </p>
 
@@ -285,7 +285,7 @@
                 Proposals to date include new software features, marketing
                 expenditures, partner integrations, bug bounties and further
                 research. Politeia is a governance platform that uses on-chain
-                timestamps and signatures to record all activity related to the
+                timestamps and signatures to anchor all activity related to the
                 submission, discussion about and voting for proposals. Once a
                 proposal is approved by Stakeholders, the proposal author is
                 authorized to begin work, knowing their efforts are supported by
@@ -293,7 +293,7 @@
               </p>
 
               <BlockHint icon="mic">
-                Have an idea to make Decred better? Speak your mind at Matrix
+                Have an idea to make Decred better? Speak your mind on Matrix
                 and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
@@ -308,19 +308,19 @@
               <p>Let's summarize the most important information about Decred</p>
               <ul class="summary-checklist mt-3">
                 <li>
-                  <i class="el-icon-success success" /> Term "Sound money"
-                  represent money which preserve value. Decred is Sound money.
+                  <i class="el-icon-success success" /> The term "Sound money"
+                  represent money which preserves value. Decred is Sound money.
                 </li>
                 <li>
                   <i class="el-icon-success success" /> Fiat money as USD, EUR
                   or GBP devalue over time and lose value
                 </li>
                 <li>
-                  <i class="el-icon-success success" /> Decred network is ±40x
+                  <i class="el-icon-success success" /> Decred network is ~40x
                   more secure thanks to its Proof-of-Stake layer
                 </li>
                 <li>
-                  <i class="el-icon-success success" /> Decred cannot fork,
+                  <i class="el-icon-success success" /> Decred won't fork,
                   process of doing protocol upgrades is smooth thanks to Decred
                   governance
                 </li>
