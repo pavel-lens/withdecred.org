@@ -3,7 +3,7 @@
     <!-- <el-main class="my-6"> </el-main> -->
 
     <div class="background--alt">
-      <ContentNav>
+      <!-- <ContentNav>
         <label>Navigation</label>
         <nuxt-link to="/a/decred-101">
           Decred 101
@@ -23,7 +23,7 @@
         <nuxt-link to="/a/decred-purchase">
           <i class="el-icon-coin" /> Purchase $DCR
         </nuxt-link>
-      </ContentNav>
+      </ContentNav> -->
 
       <div class="container">
         <!-- <el-card class="subpage-card">
@@ -357,13 +357,16 @@
           <el-row>
             <el-col :gutter="24" :span="16">
               <NavButtonGroup class="mt-5">
-                <NavButton prependIcon="back">
+                <NavButton prependIcon="back" @click="$router.push('/')">
                   <template v-slot:label>
                     <i class="el-icon-magic-stick" /> Homepage
                   </template>
                   Previous article
                 </NavButton>
-                <NavButton appendIcon="right">
+                <NavButton
+                  appendIcon="right"
+                  @click="$router.push('/a/decred-sound-money')"
+                >
                   <template v-slot:label>
                     <i class="el-icon-magic-stick" /> Decred & Sound money
                   </template>

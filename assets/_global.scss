@@ -146,6 +146,14 @@ strong {
   //   padding: 2px;
   // }
 
+  &.article {
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .article--title {
     margin: 0;
     display: block;

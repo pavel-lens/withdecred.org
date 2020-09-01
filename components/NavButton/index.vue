@@ -2,6 +2,7 @@
   <div
     class="c-nav-button"
     :class="{ 'has-prepend-icon': prependIcon, 'has-append-icon': appendIcon }"
+    v-on="$listeners"
   >
     <div v-if="prependIcon" class="icon icon--prepend">
       <i :class="`el-icon-${prependIcon}`" />
@@ -81,6 +82,7 @@ export default Vue.extend({
   &.has-prepend-icon {
     .content {
       margin-left: auto;
+      text-align: right;
 
       .label {
         text-align: right;
