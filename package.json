@@ -27,7 +27,9 @@
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "reflect-metadata": "^0.1.13",
-    "typedi": "^0.8.0"
+    "typedi": "^0.8.0",
+    "vue-sticky-directive": "0.0.10",
+    "vue-tweet-embed": "^2.4.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
@@ -45,6 +47,8 @@
     "ts-jest": "^25.3.0",
     "ts-node": "^8.6.2",
     "vue-jest": "^4.0.0-0",
-    "vue-property-decorator": "^8.4.1"
+    "vue-property-decorator": "^8.4.1",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.11"
   }
 }
