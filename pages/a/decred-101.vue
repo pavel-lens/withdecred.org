@@ -23,18 +23,16 @@
 
               <h2>Decred is Sound Money</h2>
               <p>
-                In current times, traditional paper money or "fiat money" is not
-                backed by anything and central banks are allowed to print new
-                money out of thin air. When doing it, they essentially tax
-                everyone who is holding their money to transfer part of the
-                value to the freshly printed money.
+                In current times, traditional paper money or "fiat money" (dollars, euros, etc.)
+                is controlled by banks, which create new money as credit. The money supply is
+				controlled to target specific economic conditions, usually including a degree of inflation in prices.
+				This inflation means that everyone who is not benefitting directly from the creation of the new money is losing out.
               </p>
 
               <p>
-                With the Internet, people can easily form networks, and with
-                Bitcoin we discovered that by using a distributed ledger which
-                everyone can download and access, and by gamifying the process
-                for adding new transactions to this "blockchain" the network can
+                With the Internet, people can easily form networks and produce resources or deliver services together.
+				With Bitcoin we discovered a way to maintain a distributed ledger for recording transactions, without relying on any specific (centralized) authority to enforce the rules.
+				By gamifying the process for adding new transactions to this "blockchain", and making this role "permissionless" (anyone with the hardware can do it) the network's miners and nodes can
                 effectively ensure that everyone follows the rules - as long as
                 most of the entities which participate in creating the
                 blockchain are honest.
