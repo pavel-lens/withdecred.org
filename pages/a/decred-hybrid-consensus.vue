@@ -31,7 +31,7 @@
             <el-col :lg="16">
               <h1 class="article--title">Hybrid Consensus</h1>
 
-              <p class="mt-3">
+              <p>
                 In a nutshell, Decred's hybrid PoW/PoS consensus system was
                 designed from the ground up to solve
                 <a
@@ -187,7 +187,7 @@
               </BlockHint>
             </el-col>
 
-            <el-col :lg="6" class="flex">
+            <el-col :lg="6" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>

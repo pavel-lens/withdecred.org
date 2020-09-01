@@ -165,6 +165,10 @@ strong {
     padding: 0;
     border-bottom: 2px solid #e6ecf1;
     padding-bottom: 32px;
+
+    & + p {
+      margin-top: 16px;
+    }
   }
 
   h2 {

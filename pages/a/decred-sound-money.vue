@@ -149,7 +149,7 @@
               </p>
             </el-col>
 
-            <el-col :lg="6" class="flex">
+            <el-col :lg="6" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>

@@ -75,7 +75,7 @@
               </p>
 
               <!-- <el-alert type="warning" :closable="false" class="mt-3">
-                <div slot="title" class="flex">
+                <div slot="title" class="m--flex">
                   <i class="el-alert__icon el-icon-warning mr-2"></i>
                   Money in your bank account continuously lose value
                 </div>
@@ -105,9 +105,7 @@
                 </p>
               </BlockHint>
             </el-col>
-            <el-col :lg="6">
-              <!-- <StakeyCard type="explorer" /> -->
-
+            <el-col :lg="8">
               <div v-sticky>
                 <!-- <Tweet id="1228071422574157830" /> -->
                 <Tweet id="1297258616790155264" />
@@ -197,13 +195,7 @@
                   >Matrix</a
                 >.
               </BlockHint>
-            </el-col>
 
-            <el-col :lg="6" class="flex"> </el-col>
-          </el-row>
-
-          <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
               <h2>Decred is secure</h2>
               <p>
                 Network security is the foundation to any financial system.
@@ -280,6 +272,18 @@
                 <a href="https://dcrdata.org" target="_blank">dcrdata.org</a>.
               </BlockHint>
             </el-col>
+            <el-col :span="8">
+              <div v-sticky>
+                <Tweet id="1120736949067833345" />
+                <div class="commentary">
+                  <i>
+                    Josh Rager (80k+ followers), a successful crypto trader,
+                    confesses that $DCR is one of the crypto coins he's
+                    investing into for long-term.
+                  </i>
+                </div>
+              </div>
+            </el-col>
           </el-row>
 
           <el-row :gutter="24" type="flex" class="mt-5">
@@ -336,7 +340,7 @@
                 and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
-            <el-col :lg="6">
+            <el-col :lg="8">
               <div v-sticky>
                 <Tweet id="1228071422574157830" />
                 <div class="commentary">
