@@ -43,7 +43,7 @@
             <el-col :lg="16">
               <h1 class="article--title">Decred 101 - Start here</h1>
 
-              <h2>Decred is Sound Money</h2>
+              <h2>Decred is Sound Money - This is El Captain edit</h2>
               <p>
                 In current times, traditional paper money or "fiat money" (dollars, euros, etc.)
                 is controlled by banks, which create new money as credit. The money supply is
