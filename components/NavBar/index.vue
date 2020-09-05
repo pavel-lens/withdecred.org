@@ -10,12 +10,15 @@
         />
       </nuxt-link>
     </div>
-    <nav class="nav ml-5">
+    <!-- <nav class="nav ml-5">
       <nuxt-link to="/basics">Decred Basics</nuxt-link>
       <nuxt-link to="/staking">How to Stake</nuxt-link>
       <nuxt-link to="/voting">How to Vote</nuxt-link>
       <nuxt-link to="/politeia">What is Politeia</nuxt-link>
-    </nav>
+    </nav> -->
+    <div class="ml-auto mr-4">
+      <el-button type="primary" size="medium" icon="el-icon-money"><strong>Buy Decred</strong></el-button>
+    </div>
   </div>
 </template>
 
@@ -35,6 +38,7 @@ $border-size: 2px;
   left: 0;
   right: 0;
   height: 70px;
+  /* width: 100%; */
   max-width: 1120px;
   margin: 0 auto;
   display: flex;
@@ -45,9 +49,9 @@ $border-size: 2px;
 }
 
 .logo {
-  // height: 40px;
+  height: 36px;
   // border-bottom: $border-size solid transparent;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
 }
 
 .nav {
