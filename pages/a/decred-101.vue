@@ -48,7 +48,7 @@
                 In current times, traditional paper money or "fiat money" (dollars, euros, etc.)
                 is controlled by banks, which create new money as credit. The money supply is
 				controlled to target specific economic conditions, usually including a degree of inflation in prices.
-				This inflation means that everyone who is not benefitting directly from the creation of the new money is losing out.
+				Essentially, anyone who is not benefitting directly from the creation of the new money is losing out.
               </p>
 
               <div class="image my-5">
@@ -57,7 +57,7 @@
 
               <p>
                 With the Internet, people can easily form networks and produce resources or deliver services together.
-				With Bitcoin we discovered a way to maintain a distributed ledger for recording transactions, without relying on any specific (centralized) authority to enforce the rules.
+				With Bitcoin, we discovered a way to maintain a distributed ledger for recording transactions without relying on any specific (centralized) authority to enforce the rules.
 				By gamifying the process for adding new transactions to this "blockchain", and making this role "permissionless" (anyone with the hardware can do it) the network's miners and nodes can
                 effectively ensure that everyone follows the rules - as long as
                 most of the entities which participate in creating the
@@ -66,22 +66,22 @@
 
               <p>
                 Decred is a blockchain-based cryptocurrency like Bitcoin, but
-                with a strong focus on community input, open governance and
+                focuses more strongly on community input, open governance and
                 sustainable funding for development. It is money designed to be
-                predictable and scarce. Nobody has the power to print DCR out of
+                predictable and scarce. No one person or centralized group has the power to print DCR out of
                 thin air and there will never be more than 21 million DCR.
               </p>
 
               <!-- <el-alert type="warning" :closable="false" class="mt-3">
                 <div slot="title" class="m--flex">
                   <i class="el-alert__icon el-icon-warning mr-2"></i>
-                  Money in your bank account continuously loses value
+                  Money sitting in your bank account continuously loses value
                 </div>
                 <div>
-                  Your money is losing value! It's inevitable, with banks creating
-				  new dollars and euros as loans every day, the value of your savings is 
-				  decreasing at a rate depending on your country's bankers. How much
-                  would you be able to purchase for $100 USD now and say, 15
+                  Your money is losing value! It's inevitable! With banks creating
+				  new dollars and euros as loans every day, the value (purchasing power) of your savings is 
+				  decreasing at a rate depending on the rate at which the money supply is increased. How much
+                  would you be able to purchase for $100 USD now vs. 15
                   years ago?
 
                 </div>
@@ -89,7 +89,7 @@
 
               <BlockHint>
                 <strong
-                  >Money in your bank account continuously lose value</strong
+                  >Money sitting in your bank account continuously loses value</strong
                 >
                 <p>
                   Your money is losing value! It's inevitable, with fiat money
@@ -133,7 +133,7 @@
                   Free speech and consideration: Everyone has the right to
                   communicate opinions and ideas without fear of censorship.
                   Consideration shall be given to all constructive speech that
-                  is based in fact and reason.
+                  is based on fact and reason.
                 </li>
                 <li>
                   Multi-stakeholder inclusivity: Inclusivity represents a
@@ -236,9 +236,9 @@
               </BlockHint>
 
               <p>
-                Decred stakeholders lock their funds for an unknown period of time to
+                Decred stakeholders lock their funds for a pseudorandom period of time (average: ~28 days; minimum: 1 day; maximum: 142 days) to
                 purchase tickets in what is effectively a lottery. These tickets are added to a
-                pool of roughly 41,000 tickets. In every block, five tickets are pseudorandomly
+                pool of roughly 41,000 tickets. Each block, five tickets are pseudorandomly
                 selected to validate the Proof-of-Work transactions from a
                 previously mined block. If at least 3 of 5 of the chosen tickets
                 approve the block from the miner, the miner’s reward is approved
@@ -254,7 +254,7 @@
               </p>
 
               <BlockHint>
-                Its
+                Decred's
                 <span class="underline"
                   >PoS system makes it 41X more costly to attack</span
                 >
@@ -305,7 +305,7 @@
 
               <p>
                 To align incentives, block rewards are split between
-                Proof-of-Work (PoW) miners, stakeholders and the Decred
+                Proof-of-Work (PoW) miners, Proof-of-Stake (PoS) stakeholders and the Decred
                 Treasury. Decred's Treasury is used to fund continuous project
                 development.
               </p>
@@ -328,7 +328,7 @@
                 expenditures, partner integrations, bug bounties and further
                 research. Politeia is a governance platform that uses on-chain
                 timestamps and signatures to anchor all activity related to the
-                submission, discussion about and voting for proposals. Once a
+                submission, discussion, and voting for proposals. Once a
                 proposal is approved by Stakeholders, the proposal author is
                 authorized to begin work, knowing their efforts are supported by
                 the community and financed by the Treasury.
