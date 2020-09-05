@@ -28,7 +28,7 @@
       <div class="container">
         <el-main class="article mt-50 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">
                 What's next? (DEX, Lightning network and Privacy)
               </h1>
@@ -134,13 +134,13 @@
                 <span class="underline">a highly anticipated Version 1.6</span>.
               </p>
             </el-col>
-            <el-col :lg="6">
+            <el-col :lg="6" :xs="24">
               <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Lightning Network</h2>
 
               <iframe
@@ -150,6 +150,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                class="video"
               ></iframe>
 
               <p>
@@ -212,13 +213,13 @@
               </p>
             </el-col>
 
-            <el-col :lg="6" type="flex">
+            <el-col :lg="6" :xs="24" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>
                 Decentralized Exchange,
                 <span class="underline">without fees & KYC</span>
@@ -289,7 +290,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"

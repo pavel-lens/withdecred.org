@@ -138,6 +138,14 @@ strong {
   }
 }
 
+.el-row {
+  &.el-row--flex {
+    @include media('<=sm') {
+      flex-direction: column;
+    }
+  }
+}
+
 .el-main {
   // h1,
   // h2 {
@@ -152,6 +160,10 @@ strong {
         width: 100%;
         max-width: 100%;
       }
+    }
+
+    .video {
+      max-width: 100%;
     }
 
     .commentary {

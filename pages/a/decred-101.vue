@@ -40,7 +40,7 @@
         </el-card> -->
         <el-main class="article mt-50 mb-6">
           <el-row :gutter="24" type="flex">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Decred 101 - Start here</h1>
 
               <h2>Decred is Sound Money</h2>
@@ -105,22 +105,25 @@
                 </p>
               </BlockHint>
             </el-col>
-            <el-col :lg="8">
+            <el-col :lg="8" :xs="24">
               <div v-sticky>
                 <!-- <Tweet id="1228071422574157830" /> -->
-                <Tweet id="1297258616790155264" />
+                <!-- <Tweet
+                  id="1297258616790155264"
+                  widget-class="mt-3 my-custom-class"
+                />
                 <div class="commentary">
                   <i>
                     CryptoWhale (30k+ followers), a popular trader based in
                     United States, commenting on erroding value of US dollar.
                   </i>
-                </div>
+                </div> -->
               </div>
             </el-col>
           </el-row>
 
           <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Decred is a community</h2>
               <p>
                 The Decred project is led by its community of stakeholders and
@@ -272,7 +275,7 @@
                 <a href="https://dcrdata.org" target="_blank">dcrdata.org</a>.
               </BlockHint>
             </el-col>
-            <el-col :span="8">
+            <el-col :lg="8" :xs="24">
               <div v-sticky>
                 <Tweet id="1120736949067833345" />
                 <div class="commentary">
@@ -287,7 +290,7 @@
           </el-row>
 
           <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :span="16">
+            <el-col  :lg="16" :xs="24">
               <h2>Decred is evolving</h2>
               <p>
                 Stakeholders agree on and enforce the blockchain’s consensus
@@ -340,7 +343,7 @@
                 and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
-            <el-col :lg="8">
+            <el-col :lg="8" :xs="24">
               <div v-sticky>
                 <Tweet id="1228071422574157830" />
                 <div class="commentary">
@@ -381,7 +384,7 @@
           </el-row> -->
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24"  :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton prependIcon="back" @click="$router.push('/')">
                   <template v-slot:label>

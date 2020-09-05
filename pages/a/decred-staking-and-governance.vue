@@ -28,7 +28,7 @@
       <div class="container">
         <el-main class="article mt-50 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Staking & Governance</h1>
 
               <p>
@@ -107,13 +107,13 @@
                 receives the PoS reward.
               </p>
             </el-col>
-            <el-col :lg="6">
+            <el-col :lg="6" :xs="24">
               <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Consensus Rules</h2>
               <p>
                 Decred has a built-in upgrade mechanism which allows consensus
@@ -195,7 +195,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>Treasury</h2>
 
               <p>
@@ -249,7 +249,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>
                 Politeia,
                 <span class="underline">an inclusive governance system</span>
@@ -346,7 +346,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"

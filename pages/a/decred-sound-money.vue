@@ -28,7 +28,7 @@
       <div class="container">
         <el-main class="article mt-50 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Decred & Sound Money</h1>
 
               <h2>Decred is Sound Money</h2>
@@ -84,13 +84,13 @@
                 .
               </BlockHint>
             </el-col>
-            <el-col :lg="6">
-              <StakeyCard type="explorer" />
+            <el-col :lg="6" :xs="24">
+              <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Predictable Issuance</h2>
               <p>
                 Decred's issuance is predictable. New blocks are generated every
@@ -149,13 +149,13 @@
               </p>
             </el-col>
 
-            <el-col :lg="6" type="flex">
+            <el-col :lg="6" :xs="24" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
