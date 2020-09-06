@@ -24,5 +24,18 @@ export default Vue.extend({
       margin-right: 32px;
     }
   }
+
+  @include media('<=sm') {
+    flex-direction: column;
+
+    & > * {
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+        margin-right: 0;
+
+      }
+    }
+  }
 }
 </style>

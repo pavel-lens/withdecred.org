@@ -34,7 +34,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/element-ui'],
+  plugins: [
+    '@/plugins/element-ui',
+    { src: '@/plugins/sticky-directive.js', mode: 'client' },
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -84,6 +87,36 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, ctx) {
+      // Load SVG files as components
+      // https://vue-svg-loader.js.org/
+
+      // Replace all existing rules which include SVG files
+      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'))
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/
+
+      // Create new rule for SVG loading
+      config.module.rules.push({
+        test: /\.svg$/,
+        oneOf: [
+          {
+            resourceQuery: /inline/,
+            use: ['babel-loader', 'vue-svg-loader'],
+          },
+          {
+            loader: 'file-loader',
+            query: {
+              name: 'assets/[name].[hash:8].[ext]',
+            },
+          },
+        ],
+        // loader: 'vue-svg-loader',
+        // options: {
+        //   svgo: {
+        //     plugins: [{ removeDimensions: true }, { removeViewBox: false }],
+        //   },
+        // },
+      })
+    },
   },
 }

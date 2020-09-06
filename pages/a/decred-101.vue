@@ -38,46 +38,57 @@
             <i class="el-icon-timer mr-1" /> 5 minutes
           </div>
         </el-card> -->
-        <el-main class="mt-50 mb-6">
-          <el-row :gutter="24">
-            <el-col :lg="16">
+        <el-main class="article mt-20 mb-6">
+          <el-row :gutter="24" type="flex">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Decred 101 - Start here</h1>
 
               <h2>Decred is Sound Money - This is El Captain edit</h2>
               <p>
-                In current times, traditional paper money or "fiat money" (dollars, euros, etc.)
-                is controlled by banks, which create new money as credit. The money supply is
-				controlled to target specific economic conditions, usually including a degree of inflation in prices.
-				This inflation means that everyone who is not benefitting directly from the creation of the new money is losing out.
+                In current times, traditional paper money or "fiat money"
+                (dollars, euros, etc.) is controlled by banks, which create new
+                money as credit. The money supply is controlled to target
+                specific economic conditions, usually including a degree of
+                inflation in prices. Essentially, anyone who is not benefitting
+                directly from the creation of the new money is losing out.
               </p>
 
+              <div class="image my-5">
+                <img src="@/assets/articles/dollar-purchasing-power.jpg" />
+              </div>
+
               <p>
-                With the Internet, people can easily form networks and produce resources or deliver services together.
-				With Bitcoin we discovered a way to maintain a distributed ledger for recording transactions, without relying on any specific (centralized) authority to enforce the rules.
-				By gamifying the process for adding new transactions to this "blockchain", and making this role "permissionless" (anyone with the hardware can do it) the network's miners and nodes can
-                effectively ensure that everyone follows the rules - as long as
-                most of the entities which participate in creating the
-                blockchain are honest.
+                With the Internet, people can easily form networks and produce
+                resources or deliver services together. With Bitcoin, we
+                discovered a way to maintain a distributed ledger for recording
+                transactions without relying on any specific (centralized)
+                authority to enforce the rules. By gamifying the process for
+                adding new transactions to this "blockchain", and making this
+                role "permissionless" (anyone with the hardware can do it) the
+                network's miners and nodes can effectively ensure that everyone
+                follows the rules - as long as most of the entities which
+                participate in creating the blockchain are honest.
               </p>
 
               <p>
                 Decred is a blockchain-based cryptocurrency like Bitcoin, but
-                with a strong focus on community input, open governance and
+                focuses more strongly on community input, open governance and
                 sustainable funding for development. It is money designed to be
-                predictable and scarce. Nobody has the power to print DCR out of
-                thin air and there will never be more than 21 million DCR.
+                predictable and scarce. No one person or centralized group has
+                the power to print DCR out of thin air and there will never be
+                more than 21 million DCR.
               </p>
 
               <!-- <el-alert type="warning" :closable="false" class="mt-3">
-                <div slot="title" class="flex">
+                <div slot="title" class="m--flex">
                   <i class="el-alert__icon el-icon-warning mr-2"></i>
-                  Money in your bank account continuously loses value
+                  Money sitting in your bank account continuously loses value
                 </div>
                 <div>
-                  Your money is losing value! It's inevitable, with banks creating
-				  new dollars and euros as loans every day, the value of your savings is 
-				  decreasing at a rate depending on your country's bankers. How much
-                  would you be able to purchase for $100 USD now and say, 15
+                  Your money is losing value! It's inevitable! With banks creating
+				  new dollars and euros as loans every day, the value (purchasing power) of your savings is
+				  decreasing at a rate depending on the rate at which the money supply is increased. How much
+                  would you be able to purchase for $100 USD now vs. 15
                   years ago?
 
                 </div>
@@ -85,7 +96,8 @@
 
               <BlockHint>
                 <strong
-                  >Money in your bank account continuously lose value</strong
+                  >Money sitting in your bank account continuously loses
+                  value</strong
                 >
                 <p>
                   Your money is losing value! It's inevitable, with fiat money
@@ -95,13 +107,25 @@
                 </p>
               </BlockHint>
             </el-col>
-            <el-col :lg="6">
-              <StakeyCard type="explorer" />
+            <el-col :lg="8" :xs="24">
+              <div v-sticky>
+                <!-- <Tweet id="1228071422574157830" /> -->
+                <!-- <Tweet
+                  id="1297258616790155264"
+                  widget-class="mt-3 my-custom-class"
+                />
+                <div class="commentary">
+                  <i>
+                    CryptoWhale (30k+ followers), a popular trader based in
+                    United States, commenting on erroding value of US dollar.
+                  </i>
+                </div> -->
+              </div>
             </el-col>
           </el-row>
 
-          <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+          <el-row :gutter="24" type="flex" class="mt-5">
+            <el-col :lg="16" :xs="24">
               <h2>Decred is a community</h2>
               <p>
                 The Decred project is led by its community of stakeholders and
@@ -117,7 +141,7 @@
                   Free speech and consideration: Everyone has the right to
                   communicate opinions and ideas without fear of censorship.
                   Consideration shall be given to all constructive speech that
-                  is based in fact and reason.
+                  is based on fact and reason.
                 </li>
                 <li>
                   Multi-stakeholder inclusivity: Inclusivity represents a
@@ -176,24 +200,16 @@
                   >Matrix</a
                 >.
               </BlockHint>
-            </el-col>
 
-            <el-col :lg="6" class="flex">
-              <!-- <StakeyCard /> -->
-            </el-col>
-          </el-row>
-
-          <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
               <h2>Decred is secure</h2>
               <p>
                 Network security is the foundation of any financial system.
                 Agreement on transactions and account balances, also known as
                 consensus, is vital to confidence in the network and currency.
-				As cryptocurrencies are quite new, it takes time for people to
-				develop confidence that they are secure and stable, and their
-				resistence to various attack vectors is scrutinised in detail
-				by potential investors and attackers.
+                As cryptocurrencies are quite new, it takes time for people to
+                develop confidence that they are secure and stable, and their
+                resistence to various attack vectors is scrutinised in detail by
+                potential investors and attackers.
               </p>
               <p>
                 Decred uses a hybrid system:
@@ -213,10 +229,10 @@
               </p>
 
               <p>
-                Decred employs a combination of PoW and PoS to leverage the best of
-                both systems, mitigate their weaknesses, and deliver a layered
-                consensus mechanism that makes it far more secure than other
-                cryptocurrencies.
+                Decred employs a combination of PoW and PoS to leverage the best
+                of both systems, mitigate their weaknesses, and deliver a
+                layered consensus mechanism that makes it far more secure than
+                other cryptocurrencies.
               </p>
 
               <BlockHint icon="c-scale-to-original">
@@ -228,25 +244,27 @@
               </BlockHint>
 
               <p>
-                Decred stakeholders lock their funds for an unknown period of time to
-                purchase tickets in what is effectively a lottery. These tickets are added to a
-                pool of roughly 41,000 tickets. In every block, five tickets are pseudorandomly
-                selected to validate the Proof-of-Work transactions from a
-                previously mined block. If at least 3 of 5 of the chosen tickets
-                approve the block from the miner, the miner’s reward is approved
-                and the block is added to the blockchain.
+                Decred stakeholders lock their funds for a pseudorandom period
+                of time (average: ~28 days; minimum: 1 day; maximum: 142 days)
+                to purchase tickets in what is effectively a lottery. These
+                tickets are added to a pool of roughly 41,000 tickets. Each
+                block, five tickets are pseudorandomly selected to validate the
+                Proof-of-Work transactions from a previously mined block. If at
+                least 3 of 5 of the chosen tickets approve the block from the
+                miner, the miner’s reward is approved and the block is added to
+                the blockchain.
               </p>
 
               <p>
                 However, if the mined block is rejected by the PoS system, the
-                transactions are rejected and a miner does not get their reward. 
-				This prevents miners from misbehaving as they would waste precious electricity
-                and hardware resources if they continue to produce malicious
-                blocks.
+                transactions are rejected and a miner does not get their reward.
+                This prevents miners from misbehaving as they would waste
+                precious electricity and hardware resources if they continue to
+                produce malicious blocks.
               </p>
 
               <BlockHint>
-                Its
+                Decred's
                 <span class="underline"
                   >PoS system makes it 41X more costly to attack</span
                 >
@@ -263,10 +281,22 @@
                 <a href="https://dcrdata.org" target="_blank">dcrdata.org</a>.
               </BlockHint>
             </el-col>
+            <el-col :lg="8" :xs="24">
+              <div v-sticky>
+                <Tweet id="1120736949067833345" />
+                <div class="commentary">
+                  <i>
+                    Josh Rager (80k+ followers), a successful crypto trader,
+                    confesses that $DCR is one of the crypto coins he's
+                    investing into for long-term.
+                  </i>
+                </div>
+              </div>
+            </el-col>
           </el-row>
 
-          <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+          <el-row :gutter="24" type="flex" class="mt-5">
+            <el-col :lg="16" :xs="24">
               <h2>Decred is evolving</h2>
               <p>
                 Stakeholders agree on and enforce the blockchain’s consensus
@@ -285,9 +315,9 @@
 
               <p>
                 To align incentives, block rewards are split between
-                Proof-of-Work (PoW) miners, stakeholders and the Decred
-                Treasury. Decred's Treasury is used to fund continuous project
-                development.
+                Proof-of-Work (PoW) miners, Proof-of-Stake (PoS) stakeholders
+                and the Decred Treasury. Decred's Treasury is used to fund
+                continuous project development.
               </p>
 
               <p>
@@ -308,7 +338,7 @@
                 expenditures, partner integrations, bug bounties and further
                 research. Politeia is a governance platform that uses on-chain
                 timestamps and signatures to anchor all activity related to the
-                submission, discussion about and voting for proposals. Once a
+                submission, discussion, and voting for proposals. Once a
                 proposal is approved by Stakeholders, the proposal author is
                 authorized to begin work, knowing their efforts are supported by
                 the community and financed by the Treasury.
@@ -319,8 +349,17 @@
                 and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
-            <el-col :lg="6" class="flex">
-              <StakeyCard type="vote" />
+            <el-col :lg="8" :xs="24">
+              <div v-sticky>
+                <Tweet id="1228071422574157830" />
+                <div class="commentary">
+                  <i>
+                    Chris Burniske (125k+ followers) from PlaceholderVC
+                    commenting that despite of recent economic crisis, Decred
+                    continues to build at its own pace.
+                  </i>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
@@ -351,7 +390,7 @@
           </el-row> -->
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton prependIcon="back" @click="$router.push('/')">
                   <template v-slot:label>
@@ -384,6 +423,10 @@ import ContentNav from '@/components/ContentNav/index.vue'
 import NavButton from '@/components/NavButton/index.vue'
 import NavButtonGroup from '@/components/NavButtonGroup/index.vue'
 import StakeyCard from '@/components/StakeyCard/index.vue'
+// import Tweet from '@/components/Tweet/index.vue'
+import { Tweet } from 'vue-tweet-embed'
+// import Tweet from 'vue-tweet-embed/dist/tweet/index.js'
+// const Tweet = require('vue-tweet-embed/dist/tweet/index.js')
 
 export default Vue.extend({
   components: {
@@ -392,6 +435,7 @@ export default Vue.extend({
     NavButton,
     NavButtonGroup,
     StakeyCard,
+    Tweet,
   },
 })
 </script>

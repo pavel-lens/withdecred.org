@@ -26,9 +26,9 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Staking & Governance</h1>
 
               <p>
@@ -107,13 +107,13 @@
                 receives the PoS reward.
               </p>
             </el-col>
-            <el-col :lg="6">
+            <el-col :lg="6" :xs="24">
               <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
-          <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+          <el-row :gutter="24" type="flex" class="mt-5">
+            <el-col :lg="16" :xs="24">
               <h2>Consensus Rules</h2>
               <p>
                 Decred has a built-in upgrade mechanism which allows consensus
@@ -156,15 +156,7 @@
               <div class="image my-3">
                 <img src="@/assets/articles/voting-cycle.png" />
               </div>
-            </el-col>
 
-            <el-col :lg="6" class="flex">
-              <!-- <StakeyCard /> -->
-            </el-col>
-          </el-row>
-
-          <el-row>
-            <el-col :gutter="24" :span="16">
               <h2>Block Voting</h2>
 
               <p>
@@ -176,8 +168,17 @@
                 transactions from that block are returned to the mempool. This
                 power provides a check against malicious PoW miner behavior
                 (e.g. mining empty blocks), as well as forming the basis of
-                Decred’s fork resistance.
+                <span class="underline">Decred’s fork resistance</span>.
               </p>
+
+              <BlockHint>
+                <h4>Decred blockchain can't fork</h4>
+                <p>
+                  Every fork of Bitcoin blockchain network sucks value out of
+                  the network. Not only capital, but also miners have to decide
+                  which fork to support.
+                </p>
+              </BlockHint>
 
               <h2>Treasury</h2>
 
@@ -229,10 +230,22 @@
                 </li>
               </ul>
             </el-col>
+
+            <el-col :lg="8" type="flex">
+              <div v-sticky>
+                <Tweet id="990306973164933122" />
+                <div class="commentary">
+                  <i>
+                    @NotSoFast (145k+ followers), a veteran in altcoin mining,
+                    commenting on Decred fork-resitance.
+                  </i>
+                </div>
+              </div>
+            </el-col>
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>
                 Politeia,
                 <span class="underline">an inclusive governance system</span>
@@ -329,7 +342,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
@@ -345,8 +358,8 @@
                   @click="$router.push('/a/decred-whats-next')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> What's next (DEX,
-                    Lightning network and Privacy)
+                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                    Privacy)
                   </template>
                   Next article
                 </NavButton>
@@ -366,6 +379,7 @@ import ContentNav from '@/components/ContentNav/index.vue'
 import NavButton from '@/components/NavButton/index.vue'
 import NavButtonGroup from '@/components/NavButtonGroup/index.vue'
 import StakeyCard from '@/components/StakeyCard/index.vue'
+import { Tweet } from 'vue-tweet-embed'
 
 export default Vue.extend({
   components: {
@@ -374,6 +388,7 @@ export default Vue.extend({
     NavButton,
     NavButtonGroup,
     StakeyCard,
+    Tweet,
   },
 })
 </script>

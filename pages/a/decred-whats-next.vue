@@ -26,9 +26,9 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">
                 What's next? (DEX, Lightning network and Privacy)
               </h1>
@@ -42,10 +42,11 @@
               </p>
 
               <BlockHint>
-                The Decred Treasury holds $10M as of Sep 1st, 2020. If it had a
-                marketcap similar to Bitcoin's, Decred would control a
-                $7.000.000.000 development fund. Audit the Treasury in real time
-                using the
+                The Decred Treasury holds
+                <span class="underline">$10,788,744 USD</span> as of Sep 1st,
+                2020. If it had a marketcap similar to Bitcoin's, Decred would
+                control a $7.000.000.000 development fund. Audit the Treasury in
+                real time using the
                 <a
                   href="https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx"
                   target="_blank"
@@ -87,10 +88,10 @@
 
               <p>
                 Digital money can't be unstoppable and censorship resistant if
-                its users can be tracked and pursued. Since Bitcoin launch, many
-                cryptocurrency projects have tackled the privacy problem and
-                there is a wide range of implementations in the wild, but some
-                diminish auditability and others add too much complexity.
+                its users can be tracked and pursued. Since Bitcoin's launch,
+                many cryptocurrency projects have tackled the privacy problem
+                and there is a wide range of implementations in the wild, but
+                some diminish auditability and others add too much complexity.
               </p>
 
               <BlockHint>
@@ -134,23 +135,26 @@
                 <span class="underline">a highly anticipated Version 1.6</span>.
               </p>
             </el-col>
-            <el-col :lg="6">
+            <el-col :lg="6" :xs="24">
               <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Lightning Network</h2>
 
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/7uFhevIkuhk"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="video my-4">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/7uFhevIkuhk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="video"
+                ></iframe>
+              </div>
 
               <p>
                 Decred is one of the few cryptocurrency networks with it's own
@@ -212,13 +216,13 @@
               </p>
             </el-col>
 
-            <el-col :lg="6" class="flex">
+            <el-col :lg="6" :xs="24" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>
                 Decentralized Exchange,
                 <span class="underline">without fees & KYC</span>
@@ -289,7 +293,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
@@ -302,7 +306,7 @@
                 </NavButton>
                 <NavButton
                   appendIcon="right"
-                  @click="$router.push('/a/how-to-purchase-decred')"
+                  @click="$router.push('/a/how-to-get-decred')"
                 >
                   <template v-slot:label>
                     <i class="el-icon-magic-stick" /> How to purchase $DCR

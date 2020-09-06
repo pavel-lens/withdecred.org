@@ -26,12 +26,12 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
-            <el-col :lg="16">
+            <el-col :lg="16" :xs="24">
               <h1 class="article--title">Hybrid Consensus</h1>
 
-              <p class="mt-3">
+              <p>
                 In a nutshell, Decred's hybrid PoW/PoS consensus system was
                 designed from the ground up to solve
                 <a
@@ -55,10 +55,15 @@
                 hybrid consensus.
               </p>
 
-              <div class="image my-3">
-                <img
-                  src="@/assets/articles/hybrid-consensus-video-preview.png"
-                />
+              <div class="video my-3">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/GAMp5V_gG1E"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
 
               <p>
@@ -94,13 +99,13 @@
                 fund.
               </BlockHint>
             </el-col>
-            <el-col :lg="6">
-              <StakeyCard type="explorer" />
+            <el-col :lg="6" :xs="24">
+              <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
 
           <el-row :gutter="24" class="mt-5">
-            <el-col :span="16">
+            <el-col :lg="16" :xs="24">
               <h2>Proof-of-Work component</h2>
               <p>
                 Proof-of-Work participants commit their computer hardware and
@@ -187,13 +192,13 @@
               </BlockHint>
             </el-col>
 
-            <el-col :lg="6" class="flex">
+            <el-col :lg="6" :xs="24" type="flex">
               <!-- <StakeyCard /> -->
             </el-col>
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>The Armored Lizard</h2>
 
               <p>
@@ -220,7 +225,7 @@
           </el-row>
 
           <el-row>
-            <el-col :gutter="24" :span="16">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"

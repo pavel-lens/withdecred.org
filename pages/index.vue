@@ -17,7 +17,7 @@
         <el-row :gutter="24">
           <el-col :lg="8" :sm="12" :xs="24">
             <el-card class="card">
-              <div slot="header" class="flex">
+              <div slot="header" class="m--flex">
                 <h3 class="card-title">
                   <i class="el-icon-star-off" />
                   Decred 101 - Start here
