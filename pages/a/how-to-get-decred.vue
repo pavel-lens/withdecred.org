@@ -39,24 +39,14 @@
                 you are buying into.
               </p>
               <ul class="summary-checklist">
-                <li>
-                  <i class="el-icon-success" /> Fair, predictable, scarce money
-                </li>
-                <li><i class="el-icon-success" /> Hyper-secure network</li>
-                <li>
-                  <i class="el-icon-success" /> Decentralized &amp; inclusive
-                  governance
-                </li>
-                <li><i class="el-icon-success" /> Staking with 8% APY</li>
-                <li>
-                  <i class="el-icon-success" /> DEX with no KYC &amp; no fees
-                </li>
-                <li><i class="el-icon-success" /> Lightning network</li>
-                <li><i class="el-icon-success" /> Private transactions</li>
-                <li>
-                  <i class="el-icon-success" /> $10,000,000 USD in treasury for
-                  further development
-                </li>
+                <li>Fair, predictable, scarce money</li>
+                <li>Hyper-secure network</li>
+                <li>Decentralized &amp; inclusive governance</li>
+                <li>Staking with 8% APY</li>
+                <li>DEX with no KYC &amp; no fees</li>
+                <li>Lightning network</li>
+                <li>Private transactions</li>
+                <li>$10,000,000 USD in treasury</li>
               </ul>
               <p></p>
 
@@ -228,9 +218,27 @@ export default Vue.extend({
 .summary-checklist {
   list-style: none;
   font-size: 1.125em;
+  padding-left: 20px;
 
   li {
+    display: flex;
     margin-bottom: 4px;
+    line-height: 29px;
+
+    &::before {
+      content: ' ';
+      width: 1.2em;
+      height: 29px;
+      background: URL('../../assets/icons/decred-checkmark.svg') no-repeat;
+      background-size: 18px;
+      background-position-y: 50%;
+      margin-right: 8px;
+    }
+
+    & > img {
+      margin-right: 8px;
+      width: 18px;
+    }
 
     & > i {
       /* color: $color-primary-turquiose; */
