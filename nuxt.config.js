@@ -98,24 +98,24 @@ module.exports = {
       // Create new rule for SVG loading
       config.module.rules.push({
         test: /\.svg$/,
-        // oneOf: [
-        //   {
-        //     resourceQuery: /inline/,
-        //     use: ['babel-loader', 'vue-svg-loader'],
-        //   },
-        //   {
-        //     loader: 'file-loader',
-        //     query: {
-        //       name: 'assets/[name].[hash:8].[ext]',
-        //     },
-        //   },
-        // ],
-        loader: 'vue-svg-loader',
-        options: {
-          svgo: {
-            plugins: [{ removeDimensions: true }, { removeViewBox: false }],
+        oneOf: [
+          {
+            resourceQuery: /inline/,
+            use: ['babel-loader', 'vue-svg-loader'],
           },
-        },
+          {
+            loader: 'file-loader',
+            query: {
+              name: 'assets/[name].[hash:8].[ext]',
+            },
+          },
+        ],
+        // loader: 'vue-svg-loader',
+        // options: {
+        //   svgo: {
+        //     plugins: [{ removeDimensions: true }, { removeViewBox: false }],
+        //   },
+        // },
       })
     },
   },

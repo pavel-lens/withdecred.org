@@ -26,7 +26,7 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Hybrid Consensus</h1>
@@ -55,10 +55,15 @@
                 hybrid consensus.
               </p>
 
-              <div class="image my-3">
-                <img
-                  src="@/assets/articles/hybrid-consensus-video-preview.png"
-                />
+              <div class="video my-3">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/GAMp5V_gG1E"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
 
               <p>

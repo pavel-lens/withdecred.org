@@ -17,7 +17,11 @@
       <nuxt-link to="/politeia">What is Politeia</nuxt-link>
     </nav> -->
     <div class="ml-auto mr-4">
-      <el-button type="primary" size="medium" icon="el-icon-money"><strong>Buy Decred</strong></el-button>
+      <nuxt-link to="/a/how-to-get-decred">
+        <el-button type="primary" size="medium" icon="el-icon-money">
+          <strong>Get Decred</strong>
+        </el-button>
+      </nuxt-link>
     </div>
   </div>
 </template>

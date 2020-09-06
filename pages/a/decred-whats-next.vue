@@ -26,7 +26,7 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">
@@ -42,10 +42,11 @@
               </p>
 
               <BlockHint>
-                The Decred Treasury holds $10M as of Sep 1st, 2020. If it had a
-                marketcap similar to Bitcoin's, Decred would control a
-                $7.000.000.000 development fund. Audit the Treasury in real time
-                using the
+                The Decred Treasury holds
+                <span class="underline">$10,788,744 USD</span> as of Sep 1st,
+                2020. If it had a marketcap similar to Bitcoin's, Decred would
+                control a $7.000.000.000 development fund. Audit the Treasury in
+                real time using the
                 <a
                   href="https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx"
                   target="_blank"
@@ -143,15 +144,17 @@
             <el-col :lg="16" :xs="24">
               <h2>Lightning Network</h2>
 
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/7uFhevIkuhk"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                class="video"
-              ></iframe>
+              <div class="video my-4">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/7uFhevIkuhk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="video"
+                ></iframe>
+              </div>
 
               <p>
                 Decred is one of the few cryptocurrency networks with it's own
@@ -303,7 +306,7 @@
                 </NavButton>
                 <NavButton
                   appendIcon="right"
-                  @click="$router.push('/a/how-to-purchase-decred')"
+                  @click="$router.push('/a/how-to-get-decred')"
                 >
                   <template v-slot:label>
                     <i class="el-icon-magic-stick" /> How to purchase $DCR

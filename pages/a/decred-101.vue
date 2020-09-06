@@ -38,17 +38,20 @@
             <i class="el-icon-timer mr-1" /> 5 minutes
           </div>
         </el-card> -->
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24" type="flex">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Decred 101 - Start here</h1>
 
               <h2>Decred is Sound Money</h2>
               <p>
-                In current times, traditional paper money or "fiat money" (dollars, euros, etc.)
-                is controlled by banks, which create new money as credit. The money supply is
-				controlled to target specific economic conditions, usually including a degree of inflation in prices.
-				This inflation means that everyone who is not benefitting directly from the creation of the new money is losing out.
+                In current times, traditional paper money or "fiat money"
+                (dollars, euros, etc.) is controlled by banks, which create new
+                money as credit. The money supply is controlled to target
+                specific economic conditions, usually including a degree of
+                inflation in prices. This inflation means that everyone who is
+                not benefitting directly from the creation of the new money is
+                losing out.
               </p>
 
               <div class="image my-5">
@@ -56,12 +59,16 @@
               </div>
 
               <p>
-                With the Internet, people can easily form networks and produce resources or deliver services together.
-				With Bitcoin we discovered a way to maintain a distributed ledger for recording transactions, without relying on any specific (centralized) authority to enforce the rules.
-				By gamifying the process for adding new transactions to this "blockchain", and making this role "permissionless" (anyone with the hardware can do it) the network's miners and nodes can
-                effectively ensure that everyone follows the rules - as long as
-                most of the entities which participate in creating the
-                blockchain are honest.
+                With the Internet, people can easily form networks and produce
+                resources or deliver services together. With Bitcoin we
+                discovered a way to maintain a distributed ledger for recording
+                transactions, without relying on any specific (centralized)
+                authority to enforce the rules. By gamifying the process for
+                adding new transactions to this "blockchain", and making this
+                role "permissionless" (anyone with the hardware can do it) the
+                network's miners and nodes can effectively ensure that everyone
+                follows the rules - as long as most of the entities which
+                participate in creating the blockchain are honest.
               </p>
 
               <p>
@@ -79,7 +86,7 @@
                 </div>
                 <div>
                   Your money is losing value! It's inevitable, with banks creating
-				  new dollars and euros as loans every day, the value of your savings is 
+				  new dollars and euros as loans every day, the value of your savings is
 				  decreasing at a rate depending on your country's bankers. How much
                   would you be able to purchase for $100 USD now and say, 15
                   years ago?
@@ -198,10 +205,10 @@
                 Network security is the foundation of any financial system.
                 Agreement on transactions and account balances, also known as
                 consensus, is vital to confidence in the network and currency.
-				As cryptocurrencies are quite new, it takes time for people to
-				develop confidence that they are secure and stable, and their
-				resistence to various attack vectors is scrutinised in detail
-				by potential investors and attackers.
+                As cryptocurrencies are quite new, it takes time for people to
+                develop confidence that they are secure and stable, and their
+                resistence to various attack vectors is scrutinised in detail by
+                potential investors and attackers.
               </p>
               <p>
                 Decred uses a hybrid system:
@@ -221,10 +228,10 @@
               </p>
 
               <p>
-                Decred employs a combination of PoW and PoS to leverage the best of
-                both systems, mitigate their weaknesses, and deliver a layered
-                consensus mechanism that makes it far more secure than other
-                cryptocurrencies.
+                Decred employs a combination of PoW and PoS to leverage the best
+                of both systems, mitigate their weaknesses, and deliver a
+                layered consensus mechanism that makes it far more secure than
+                other cryptocurrencies.
               </p>
 
               <BlockHint icon="c-scale-to-original">
@@ -236,21 +243,22 @@
               </BlockHint>
 
               <p>
-                Decred stakeholders lock their funds for an unknown period of time to
-                purchase tickets in what is effectively a lottery. These tickets are added to a
-                pool of roughly 41,000 tickets. In every block, five tickets are pseudorandomly
-                selected to validate the Proof-of-Work transactions from a
-                previously mined block. If at least 3 of 5 of the chosen tickets
-                approve the block from the miner, the miner’s reward is approved
-                and the block is added to the blockchain.
+                Decred stakeholders lock their funds for an unknown period of
+                time to purchase tickets in what is effectively a lottery. These
+                tickets are added to a pool of roughly 41,000 tickets. In every
+                block, five tickets are pseudorandomly selected to validate the
+                Proof-of-Work transactions from a previously mined block. If at
+                least 3 of 5 of the chosen tickets approve the block from the
+                miner, the miner’s reward is approved and the block is added to
+                the blockchain.
               </p>
 
               <p>
                 However, if the mined block is rejected by the PoS system, the
-                transactions are rejected and a miner does not get their reward. 
-				This prevents miners from misbehaving as they would waste precious electricity
-                and hardware resources if they continue to produce malicious
-                blocks.
+                transactions are rejected and a miner does not get their reward.
+                This prevents miners from misbehaving as they would waste
+                precious electricity and hardware resources if they continue to
+                produce malicious blocks.
               </p>
 
               <BlockHint>
@@ -286,7 +294,7 @@
           </el-row>
 
           <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col  :lg="16" :xs="24">
+            <el-col :lg="16" :xs="24">
               <h2>Decred is evolving</h2>
               <p>
                 Stakeholders agree on and enforce the blockchain’s consensus
@@ -380,7 +388,7 @@
           </el-row> -->
 
           <el-row>
-            <el-col :gutter="24"  :lg="16" :xs="24">
+            <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
                 <NavButton prependIcon="back" @click="$router.push('/')">
                   <template v-slot:label>

@@ -26,7 +26,7 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Decred & Sound Money</h1>

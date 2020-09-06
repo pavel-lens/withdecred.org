@@ -26,7 +26,7 @@
       </ContentNav> -->
 
       <div class="container">
-        <el-main class="article mt-50 mb-6">
+        <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Staking & Governance</h1>
@@ -179,23 +179,7 @@
                   which fork to support.
                 </p>
               </BlockHint>
-            </el-col>
 
-            <el-col :lg="8" type="flex">
-              <div v-sticky>
-                <Tweet id="990306973164933122" />
-                <div class="commentary">
-                  <i>
-                    @NotSoFast (145k+ followers), a veteran in altcoin mining,
-                    commenting on Decred fork-resitance.
-                  </i>
-                </div>
-              </div>
-            </el-col>
-          </el-row>
-
-          <el-row>
-            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>Treasury</h2>
 
               <p>
@@ -245,6 +229,18 @@
                   considered valid.
                 </li>
               </ul>
+            </el-col>
+
+            <el-col :lg="8" type="flex">
+              <div v-sticky>
+                <Tweet id="990306973164933122" />
+                <div class="commentary">
+                  <i>
+                    @NotSoFast (145k+ followers), a veteran in altcoin mining,
+                    commenting on Decred fork-resitance.
+                  </i>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
