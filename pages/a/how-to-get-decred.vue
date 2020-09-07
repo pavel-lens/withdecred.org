@@ -73,8 +73,10 @@
                   </div>
                 </el-col>
               </el-row>
-              <!-- <p></p> -->
 
+              <div class="hr mt-5 mb-4" />
+
+              <h1>Buy Decred on one of these exchanges 👇</h1>
               <h2>United States 🇺🇸</h2>
 
               <NavButtonGroup class="mt-3">
@@ -192,8 +194,8 @@
               <div class="hr my-5" />
 
               <BlockHint icon="chat-dot-square">
-                Still have some questions? You our communities on Discord or
-                Telegram and get all the information you need!
+                Still have some questions? Join our community on Discord or
+                Telegram.
                 <div>
                   <a
                     href="https://discordapp.com/invite/GJ2GXfz"

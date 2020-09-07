@@ -244,8 +244,11 @@
                 techniques which prevent sibyl attacks and unfair censorship.
               </p>
 
-              <div class="image my-3">
-                <img src="@/assets/articles/politeia-preview.png" />
+              <div class="image my-4">
+                <img src="@/assets/articles/politeia-preview-2.png" />
+                <div class="description">
+                  Find more at https://proposals.decred.org
+                </div>
               </div>
 
               <p>

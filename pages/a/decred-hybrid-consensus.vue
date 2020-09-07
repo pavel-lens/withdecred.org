@@ -237,10 +237,10 @@
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
-                  @click="$router.push('/a/decred-sound-money')"
+                  @click="$router.push('/a/decred-101')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Decred & Sound money
+                    <i class="el-icon-magic-stick" /> Decred 101 - Start here
                   </template>
                   Previous article
                 </NavButton>
