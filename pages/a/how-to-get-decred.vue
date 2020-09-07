@@ -38,17 +38,42 @@
                 enough information to make your first purchase. Let's recap what
                 you are buying into.
               </p>
-              <ul class="summary-checklist">
-                <li>Fair, predictable, scarce money</li>
-                <li>Hyper-secure network</li>
-                <li>Decentralized &amp; inclusive governance</li>
-                <li>Staking with 8% APY</li>
-                <li>DEX with no KYC &amp; no fees</li>
-                <li>Lightning network</li>
-                <li>Private transactions</li>
-                <li>$10,000,000 USD in treasury</li>
-              </ul>
-              <p></p>
+
+              <el-row :gutter="12" class="mt-3">
+                <el-col :lg="12" :sm="24">
+                  <ul class="summary-checklist">
+                    <li>Fair, predictable, scarce money</li>
+                    <li>Hyper-secure network</li>
+                    <li>Decentralized &amp; inclusive governance</li>
+                    <li>Staking with 8% APY</li>
+                    <li>DEX with no KYC &amp; no fees</li>
+                    <li>Lightning network</li>
+                    <li>Private transactions</li>
+                    <li>$10,000,000 USD in treasury</li>
+                  </ul>
+                </el-col>
+                <el-col :lg="12" :sm="24">
+                  <div class="">
+                    💥💥 <b>Zach Segal</b> Head of Listings @Coinbase
+                  </div>
+                  <i>
+                    If you were to buy 1 crypto asset for next 15 years, what
+                    would it be? 🎧
+                  </i>
+                  <!-- </a> -->
+                  <div class="video mt-2">
+                    <iframe
+                      width="560"
+                      height="200"
+                      src="https://www.youtube.com/embed/Yere5mbhYNg?start=7"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </el-col>
+              </el-row>
+              <!-- <p></p> -->
 
               <h2>United States 🇺🇸</h2>
 
@@ -219,6 +244,7 @@ export default Vue.extend({
   list-style: none;
   font-size: 1.125em;
   padding-left: 20px;
+  margin-top: 0;
 
   li {
     display: flex;

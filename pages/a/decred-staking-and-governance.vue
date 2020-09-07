@@ -61,7 +61,14 @@
                 consequences of their votes and, if rational, will vote for what
                 they think is best for the network.
               </p>
+            </el-col>
+            <el-col :lg="6" :xs="24">
+              <!-- <StakeyCard type="explorer" /> -->
+            </el-col>
+          </el-row>
 
+          <el-row :gutter="24" type="flex" class="mt-5">
+            <el-col :lg="16" :xs="24">
               <h2>Tickets</h2>
               <p>
                 The Proof-of-Stake component of Decred's consensus is based on
@@ -106,14 +113,6 @@
                 unlocked, and if the ticket successfully voted, the user
                 receives the PoS reward.
               </p>
-            </el-col>
-            <el-col :lg="6" :xs="24">
-              <!-- <StakeyCard type="explorer" /> -->
-            </el-col>
-          </el-row>
-
-          <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :lg="16" :xs="24">
               <h2>Consensus Rules</h2>
               <p>
                 Decred has a built-in upgrade mechanism which allows consensus
@@ -229,23 +228,7 @@
                   considered valid.
                 </li>
               </ul>
-            </el-col>
 
-            <el-col :lg="8" type="flex">
-              <div v-sticky>
-                <Tweet id="990306973164933122" />
-                <div class="commentary">
-                  <i>
-                    @NotSoFast (145k+ followers), a veteran in altcoin mining,
-                    commenting on Decred fork-resitance.
-                  </i>
-                </div>
-              </div>
-            </el-col>
-          </el-row>
-
-          <el-row>
-            <el-col :gutter="24" :lg="16" :xs="24">
               <h2>
                 Politeia,
                 <span class="underline">an inclusive governance system</span>
@@ -338,6 +321,18 @@
                 Users decide how Decred will evolve. What can we expect from the
                 Decred community in the future?
               </BlockHint>
+            </el-col>
+
+            <el-col :lg="8" type="flex">
+              <div v-sticky>
+                <Tweet id="990306973164933122" />
+                <div class="commentary">
+                  <i>
+                    @NotSoFast (145k+ followers), a veteran in altcoin mining,
+                    commenting on Decred fork-resitance.
+                  </i>
+                </div>
+              </div>
             </el-col>
           </el-row>
 

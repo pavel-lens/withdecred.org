@@ -27,7 +27,7 @@
 
       <div class="container">
         <el-main class="article mt-20 mb-6">
-          <el-row :gutter="24">
+          <el-row :gutter="24" type="flex">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">
                 What's next? (DEX, Lightning network and Privacy)
@@ -135,8 +135,35 @@
                 <span class="underline">a highly anticipated Version 1.6</span>.
               </p>
             </el-col>
-            <el-col :lg="6" :xs="24">
-              <!-- <StakeyCard type="explorer" /> -->
+            <el-col :lg="8" :xs="24">
+              <div v-sticky class="video my-4">
+                <iframe
+                  width="560"
+                  height="200"
+                  src="https://www.youtube.com/embed/c50TMCKsktA?start=2354"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <div class="commentary">
+                  <i>
+                    Cathie Wood, CEO of ARK Invest (ark-invest.com), a
+                    successful investment fund, with investments focused on hot
+                    markets from biotech and genomics (CRISPR) to
+                    cryptocurrencies.
+                  </i>
+                  <div class="mt-3">
+                    <i
+                      ><q
+                        >In lot of these crypto funds, you will find Bitcoin
+                        dominating and in terms who the others are going to be,
+                        <span class="underline">Decred looks promising</span>,
+                        so we are looking carefull at that.</q
+                      ></i
+                    >
+                  </div>
+                </div>
+              </div>
             </el-col>
           </el-row>
 
