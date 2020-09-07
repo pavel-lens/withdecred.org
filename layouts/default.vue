@@ -4,15 +4,18 @@
     <div class="content-wrapper">
       <nuxt />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Footer from '@/components/Footer/index.vue'
 import NavBar from '@/components/NavBar/index.vue'
 
 export default Vue.extend({
   components: {
+    Footer,
     NavBar,
   },
 })
