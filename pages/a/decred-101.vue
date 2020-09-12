@@ -106,26 +106,7 @@
                   years ago?
                 </p>
               </BlockHint>
-            </el-col>
-            <el-col :lg="8" :xs="24">
-              <div v-sticky>
-                <!-- <Tweet id="1228071422574157830" /> -->
-                <!-- <Tweet
-                  id="1297258616790155264"
-                  widget-class="mt-3 my-custom-class"
-                />
-                <div class="commentary">
-                  <i>
-                    CryptoWhale (30k+ followers), a popular trader based in
-                    United States, commenting on erroding value of US dollar.
-                  </i>
-                </div> -->
-              </div>
-            </el-col>
-          </el-row>
 
-          <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :lg="16" :xs="24">
               <h2>Decred is a community</h2>
               <p>
                 The Decred project is led by its community of stakeholders and
@@ -348,6 +329,63 @@
                 Have an idea to make Decred better? Speak your mind on Matrix
                 and write a Politeia proposal to seek funding!
               </BlockHint>
+
+              <h2>Predictable Issuance</h2>
+              <p>
+                Decred's issuance is predictable. New blocks are generated every
+                ~5 minutes, and each one creates new DCR. This block rewards are
+                split three ways:
+              </p>
+
+              <ul>
+                <li>60% goes to the PoW miner who found the block</li>
+                <li>
+                  30% goes to the PoS voters on that block (6% to each of the 5
+                  voters)
+                </li>
+                <li>10% goes towards the Decred Treasury</li>
+              </ul>
+
+              <BlockHint>
+                Power must be diluted. Decred's PoS reward is designed to
+                encourage people to stake their coins and help secure the
+                network, but not allow PoS voters to gain share over time simply
+                by staking.
+              </BlockHint>
+
+              <p>
+                The hard cap with no “tail emissions” beyond the scheduled ~21M
+                is designed to provide certainty in the monetary policy and
+                prevent existing holders from being diluted by future
+                manipulation of the monetary supply.
+              </p>
+
+              <p>
+                If a block includes less than 5 PoS votes there will be a
+                fraction of the block reward which is not allocated to anybody.
+                As a result, it is only possible to calculate an upper limit for
+                the total number of decred which will ever be created.
+              </p>
+
+              <BlockHint>
+                The last block reward will be created in September 2120. The
+                upper limit on the total supply of Decred is 20,999,999.99800912
+                coins.
+              </BlockHint>
+
+              <p>
+                The following chart shows an estimate of the coin supply growth
+                over time:
+              </p>
+
+              <div class="image my-3">
+                <img src="@/assets/articles/decred-supply.png" />
+              </div>
+
+              <p>
+                Find out how Decred's Hybrid Consensus system makes it secure,
+                adaptable and sustainable in the next article.
+              </p>
             </el-col>
             <el-col :lg="8" :xs="24">
               <div v-sticky>
@@ -363,32 +401,6 @@
             </el-col>
           </el-row>
 
-          <!-- <h2 class="mt-5">Summary</h2>
-          <el-row :gutter="24">
-            <el-col :span="16">
-              <p>Let's summarize the most important information about Decred</p>
-              <ul class="summary-checklist mt-3">
-                <li>
-                  <i class="el-icon-success success" /> The term "Sound money"
-                  represent money which preserves value. Decred is Sound money.
-                </li>
-                <li>
-                  <i class="el-icon-success success" /> Fiat money as USD, EUR
-                  or GBP devalue over time and lose value
-                </li>
-                <li>
-                  <i class="el-icon-success success" /> Decred network is ~40x
-                  more secure thanks to its Proof-of-Stake layer
-                </li>
-                <li>
-                  <i class="el-icon-success success" /> Decred won't fork,
-                  process of doing protocol upgrades is smooth thanks to Decred
-                  governance
-                </li>
-              </ul>
-            </el-col>
-          </el-row> -->
-
           <el-row>
             <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
@@ -400,10 +412,10 @@
                 </NavButton>
                 <NavButton
                   appendIcon="right"
-                  @click="$router.push('/a/decred-sound-money')"
+                  @click="$router.push('/a/decred-hybrid-consensus')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Decred & Sound money
+                    <i class="el-icon-magic-stick" /> Hybrid consensus
                   </template>
                   Next article
                 </NavButton>

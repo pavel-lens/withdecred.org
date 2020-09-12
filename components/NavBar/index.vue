@@ -5,7 +5,7 @@
         <img
           src="@/assets/logo/decred-logo.png"
           alt="Decred logo"
-          height="40"
+          height="50"
           class="logo"
         />
       </nuxt-link>
@@ -18,7 +18,7 @@
     </nav> -->
     <div class="ml-auto mr-4">
       <nuxt-link to="/a/how-to-get-decred">
-        <el-button type="primary" size="medium" icon="el-icon-money">
+        <el-button type="primary" icon="el-icon-money">
           <strong>Get Decred</strong>
         </el-button>
       </nuxt-link>
@@ -53,7 +53,7 @@ $border-size: 2px;
 }
 
 .logo {
-  height: 36px;
+  height: 50px;
   // border-bottom: $border-size solid transparent;
   /* margin-bottom: 2px; */
 }
