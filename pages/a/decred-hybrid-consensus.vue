@@ -174,7 +174,7 @@
               </p>
 
               <div class="image my-4">
-                <img src="@/assets/articles/decred-attack-cost.png" />
+                <img src="@/assets/articles/decred-attack-cost-2.png" />
                 <div class="description">
                   Find more information on
                   https://dcrdata.decred.org/attack-cost
@@ -224,6 +224,12 @@
                 its implementation as a governance mechanism might be new for
                 most users.
               </p>
+
+              <div class="image my-4">
+                <img
+                  src="@/assets/articles/decred-cost-of-attack-comparison-1.jpg"
+                />
+              </div>
 
               <p>
                 In the next article, you'll learn the basics about Decred's

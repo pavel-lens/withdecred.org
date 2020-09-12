@@ -189,6 +189,10 @@
                 and tickets holders can vote on them using their wallets.
               </p>
 
+              <div class="image my-4">
+                <img src="@/assets/articles/decred-treasury-comparison.jpg" />
+              </div>
+
               <p>
                 The Treasury started off as a special DCR address handled by
                 Decred Holding Group LLC (DHC), a conventional corporate entitiy
