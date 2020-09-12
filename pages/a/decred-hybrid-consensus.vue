@@ -173,6 +173,14 @@
                 and other pure PoW networks given the same hashrate.
               </p>
 
+              <div class="image my-4">
+                <img src="@/assets/articles/decred-attack-cost.png" />
+                <div class="description">
+                  Find more information on
+                  https://dcrdata.decred.org/attack-cost
+                </div>
+              </div>
+
               <BlockHint>
                 <p>
                   <strong>When do tickets unlock?</strong> The ticket lottery is
@@ -229,10 +237,10 @@
               <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
-                  @click="$router.push('/a/decred-sound-money')"
+                  @click="$router.push('/a/decred-101')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Decred & Sound money
+                    <i class="el-icon-magic-stick" /> Decred 101 - Start here
                   </template>
                   Previous article
                 </NavButton>
