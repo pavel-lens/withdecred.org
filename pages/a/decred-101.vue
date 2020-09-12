@@ -84,14 +84,13 @@
               </p>
 
               <p>
-                Fiat is government-issued legal tender (dollars, euros, etc.)
-                whose value is based on supply and demand and the stability of
-                the issuing government. Fiat money is controlled by banks, who
-                create new money as credit and have the keys to control the
-                money supply. The money supply is controlled to target specific
-                economic conditions, usually including a degree of inflation in
-                prices. Essentially, anyone who is not benefiting directly from
-                the creation of the new money is losing value.
+                Fiat is government-issued legal tender whose value is based on 
+                supply and demand and the stability of the issuing government. 
+                Fiat money is controlled by banks, who create new money as credit 
+                and have the keys to control the money supply. The money supply is 
+                controlled to target specific economic conditions, usually including 
+                a degree of inflation in prices. Essentially, anyone who is not benefiting 
+                directly from the creation of the new money is losing value.
               </p>
 
               <div class="image my-5">
@@ -110,7 +109,7 @@
                 do it) the network's miners and nodes can effectively ensure
                 that everyone follows the rules - as long as most of the
                 entities which participate in creating the blockchain are
-                honest.
+                honest.  
               </p>
 
               <p>
@@ -291,7 +290,7 @@
                 precious electricity and hardware resources if they continue to
                 produce malicious blocks.
                 <span class="underline"
-                  > PoS Stakeholders are rewarded for securing the
+                  > PoS Stakeholders are still rewarded for securing the
                   blockchain. </span
                 >
               </p>
@@ -376,8 +375,8 @@
                 expenditures, partner integrations, bug bounties and further
                 research. Politeia is a governance platform that uses on-chain
                 timestamps and signatures to anchor all activity related to the
-                submission, discussion, and voting for proposals. Once a
-                proposal is approved by Stakeholders, the proposal author is
+                submission, discussion, and voting for proposals into the blockchain. 
+                Once a proposal is approved by Stakeholders, the proposal author is
                 authorized to begin work, knowing their efforts are supported by
                 the community and financed by the Treasury.
               </p>
@@ -391,15 +390,15 @@
               <h2>Predictable Issuance</h2>
               <p>
                 Decred's issuance is predictable. New blocks are generated every
-                ~5 minutes, and each one creates new DCR. This block rewards are
+                ~5 minutes, and each one creates new DCR. The block rewards are
                 split three ways:
               </p>
 
               <ul>
-                <li>60% goes to the PoW miner who found the block</li>
+                <li>60% goes to the PoW miner who finds (mines) the block</li>
                 <li>
-                  30% goes to the PoS voters on that block (6% to each of the 5
-                  voters)
+                  30% goes to the PoS voters (Ticketholders) on that block (6% to 
+                  each of the 5 tickets chosen to vote)
                 </li>
                 <li>10% goes towards the Decred Treasury</li>
               </ul>
@@ -442,7 +441,7 @@
 
               <p>
                 Find out how Decred's Hybrid Consensus system makes it secure,
-                adaptable and sustainable in the next article.
+                adaptable and sustainable in the next article!
               </p>
             </el-col>
             <el-col :lg="8" :xs="24">
