@@ -53,13 +53,19 @@
                 a more in depth overview of the history of money, we recommend
                 <a
                   href="https://www.investopedia.com/articles/07/roots_of_money.asp"
-                  target="_blank"
-                  class="underline"
-                  >Investopedia's "The History of Money"</a
-                >
+                  target="_blank" class="underline" >Investopedia's "The History
+                  of Money"</a>.
               </p>
-              Money has 3 specific functions: 1. Store of Value 2. Unit of
-              Measurement 3. Medium of Exchange
+
+              <p>
+                Money has 3 specific functions
+                <ol class="mt-2">
+                  <li>Store of Value</li>
+                  <li>Unit of Measurement</li>
+                  <li>Medium of Exchange</li>
+                </ol>
+              </p>
+
               <p>
                 Gold is currently the de facto global store of value and has
                 withstood the test of time as an investment vehicle and currency
@@ -113,7 +119,8 @@
                 sustainable funding for development. It is money designed to be
                 predictable and scarce. No one person or centralized group has
                 the power to print DCR out of thin air and there will never be
-                more than 21 million DCR. Decred is sound money.
+                more than 21 million DCR.
+                <span class="underline">Decred is sound money.</span>
               </p>
 
               <!-- <el-alert type="warning" :closable="false" class="mt-3">
@@ -282,8 +289,11 @@
                 transactions are rejected and a miner does not get their reward.
                 This prevents miners from misbehaving as they would waste
                 precious electricity and hardware resources if they continue to
-                produce malicious blocks. PoS Stakeholders are still rewarded
-                for securing the blockchain.
+                produce malicious blocks.
+                <span class="underline"
+                  > PoS Stakeholders are rewarded for securing the
+                  blockchain. </span
+                >
               </p>
 
               <BlockHint>
@@ -334,8 +344,11 @@
                   class="underline"
                   >governance</a
                 >
-                baked into the protocol. Coinholders have a say in Decred unlike
-                Bitcoin.
+                baked into the protocol. If you hold Bitcoin, but you don't like
+                how the protocol is evolving (or is not evolving), you can't do
+                much about it. In Decred, people owning Decred can actively
+                participate in "governance" and actively steer the path of the
+                project.
               </p>
 
               <p>
