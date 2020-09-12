@@ -45,23 +45,52 @@
 
               <h2>Decred is Sound Money - This is El Captain edit</h2>
               <p>
-                In current times, traditional paper money or "fiat money"
-                (dollars, euros, etc.) is controlled by banks, which create new
-                money as credit. The money supply is controlled to target
-                specific economic conditions, usually including a degree of
-                inflation in prices. Essentially, anyone who is not benefitting
-                directly from the creation of the new money is losing out.
+                To understand "sound" (not able to be manipulated) money, it is first 
+                important to understand the history of money and money as a funtion of its 
+                characteristics. For the purpose of brevity we will not detail money's history
+                and focus more on the characteristics of money and what makes Decred Sound Money. 
+                For a more in depth overview of the history of money, we recommend 
+               <a
+                    href="https://www.investopedia.com/articles/07/roots_of_money.asp"
+                    target="_blank"
+                    class="underline"
+                    >Investopedia's "The History of Money"</a
+                 
+              <p>
+                Money has 3 specific functions:
+                1. Store of Value
+                2. Unit of Measurement
+                3. Medium of Exchange 
+              <p>
+                Gold is currently the de facto global store of value and has withstood the 
+                test of time as an investment vehicle and currency for over 3,000 years. 
+                Unlike USD, gold cannot be effortlessly printed and is limited in supply - there is only 
+                so much gold to be mined on earth (until Elon Musk sends his rockets and mining equipment 
+                to space to mine the gold in the asteroids circling earth). Gold also requires serious
+                man-power and mining equipment to obtain. Given its difficulty to obtain and 
+                scarcity by nature, gold supply is relatively sound.       
+              <p>  
+                Paper money or "fiat" currency (dollars, euros, etc.) is the de facto global medium of exchange. 
+               <p>
+                Fiat is government-issued legal tender (dollars, euros, etc.) whose value is 
+                based on supply and demand and the stability of the issuing government. Fiat 
+                money is controlled by banks, who create new money as credit and have the
+                keys to control the money supply. The money supply is controlled to target
+                specific economic conditions, usually including a degree of inflation in prices. 
+                Essentially, anyone who is not benefiting directly from the creation of 
+                the new money is losing value.
               </p>
-
+              
+              
               <div class="image my-5">
                 <img src="@/assets/articles/dollar-purchasing-power.jpg" />
               </div>
 
               <p>
-                With the Internet, people can easily form networks and produce
-                resources or deliver services together. With Bitcoin, we
-                discovered a way to maintain a distributed ledger for recording
-                transactions without relying on any specific (centralized)
+                What if there were a way to take the sound money qualities of gold, add the
+                internet and mathematics, and satisfy all the money characteristics listed 
+                above. With Bitcoin, Satoshi Nakamoto discovered a way to maintain a distributed 
+                ledger for recording transactions without relying on any specific (centralized)
                 authority to enforce the rules. By gamifying the process for
                 adding new transactions to this "blockchain", and making this
                 role "permissionless" (anyone with the hardware can do it) the
@@ -76,7 +105,7 @@
                 sustainable funding for development. It is money designed to be
                 predictable and scarce. No one person or centralized group has
                 the power to print DCR out of thin air and there will never be
-                more than 21 million DCR.
+                more than 21 million DCR. Decred is sound money. 
               </p>
 
               <!-- <el-alert type="warning" :closable="false" class="mt-3">
@@ -100,10 +129,11 @@
                   value</strong
                 >
                 <p>
-                  Your money is losing value! It's inevitable, with fiat money
-                  printing, more dollars or euros devalue your savings. How much
-                  would you be able to purchase for $100 USD now and say, 15
-                  years ago?
+                  Your money is losing value! It's inevitable! With fiat money
+                  printing, the value (purchasing power) of your savings is decreasing
+                  at a rate consistent with the rate at which the money supply is increased. 
+                  How much would you be able to purchase for $100 USD now vs. 15 years ago?
+                  Refer back to the money timeline above for an illustrative view. 
                 </p>
               </BlockHint>
             </el-col>
@@ -116,8 +146,8 @@
                 />
                 <div class="commentary">
                   <i>
-                    CryptoWhale (30k+ followers), a popular trader based in
-                    United States, commenting on erroding value of US dollar.
+                    CryptoWhale (30k+ followers), a popular trader based in the 
+                    United States, commenting on the value erosion of the US dollar.
                   </i>
                 </div> -->
               </div>
@@ -186,7 +216,7 @@
               </p>
 
               <BlockHint icon="chat-dot-square">
-                Join the Decred community at
+                Join the Decred community on
                 <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank"
                   >Discord</a
                 >, <a href="https://t.me/Decred" target="_blank">Telegram</a>,
@@ -244,15 +274,16 @@
               </BlockHint>
 
               <p>
-                Decred stakeholders lock their funds for a pseudorandom period
-                of time (average: ~28 days; minimum: 1 day; maximum: 142 days)
-                to purchase tickets in what is effectively a lottery. These
-                tickets are added to a pool of roughly 41,000 tickets. Each
-                block, five tickets are pseudorandomly selected to validate the
-                Proof-of-Work transactions from a previously mined block. If at
+                As part of Decred's PoS system, Decred Stakeholders lock their funds 
+                for a pseudorandom period of time (average: ~28 days; minimum: 1 day; 
+                maximum: 142 days) to purchase tickets in what is effectively a lottery. 
+                These tickets are added to a pool of roughly 41,000 tickets. Each
+                block (~5 minutes), five tickets are pseudorandomly selected to validate 
+                the Proof-of-Work transactions from a previously mined block. If at
                 least 3 of 5 of the chosen tickets approve the block from the
                 miner, the miner’s reward is approved and the block is added to
-                the blockchain.
+                the blockchain. Ticket holders (Stakeholders) are also rewarded
+                for verifying the PoW process. 
               </p>
 
               <p>
@@ -260,7 +291,8 @@
                 transactions are rejected and a miner does not get their reward.
                 This prevents miners from misbehaving as they would waste
                 precious electricity and hardware resources if they continue to
-                produce malicious blocks.
+                produce malicious blocks. PoS Stakeholders are still rewarded for 
+                securing the blockchain. 
               </p>
 
               <BlockHint>
@@ -288,7 +320,7 @@
                   <i>
                     Josh Rager (80k+ followers), a successful crypto trader,
                     confesses that $DCR is one of the crypto coins he's
-                    investing into for long-term.
+                    investing in long-term.
                   </i>
                 </div>
               </div>
@@ -303,14 +335,15 @@
                 rules, they set a course for future development together, and
                 can make use of a development fund which receives 10% of each
                 block's reward. Decred’s blockchain is similar to Bitcoin’s, but
-                with major improvements of transparent and inclusive
+                with major improvements to the funding model as well as transparent 
+                and inclusive
                 <a
                   href="https://docs.decred.org/governance/overview/"
                   target="_blank"
                   class="underline"
                   >governance</a
                 >
-                baked into the protocol.
+                baked into the protocol. Coinholders have a say in Decred unlike Bitcoin. 
               </p>
 
               <p>
@@ -345,8 +378,8 @@
               </p>
 
               <BlockHint icon="mic">
-                Have an idea to make Decred better? Speak your mind on Matrix
-                and write a Politeia proposal to seek funding!
+                Have an idea to make Decred better? Speak your mind on the social media
+                platforms mentioned above and write a Politeia proposal to seek funding!
               </BlockHint>
             </el-col>
             <el-col :lg="8" :xs="24">
@@ -355,7 +388,7 @@
                 <div class="commentary">
                   <i>
                     Chris Burniske (125k+ followers) from PlaceholderVC
-                    commenting that despite of recent economic crisis, Decred
+                    commenting that despite the recent economic crisis, Decred
                     continues to build at its own pace.
                   </i>
                 </div>
