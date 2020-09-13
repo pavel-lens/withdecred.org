@@ -211,6 +211,35 @@
               <!-- <StakeyCard type="explorer" /> -->
             </el-col>
           </el-row>
+
+          <el-row>
+            <el-col :gutter="24" :lg="16" :xs="24">
+              <NavButtonGroup class="mt-5">
+                <NavButton
+                  prependIcon="back"
+                  @click="$router.push('/a/decred-whats-next')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                    Privacy)
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton prependIcon="s-home" @click="$router.push('/')">
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Homepage
+                  </template>
+                  Homepage
+                </NavButton>
+                <!-- <NavButton appendIcon="share">
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Share
+                  </template>
+                  Share with friends
+                </NavButton> -->
+              </NavButtonGroup>
+            </el-col>
+          </el-row>
         </el-main>
       </div>
     </div>
