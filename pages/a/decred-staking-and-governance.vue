@@ -73,7 +73,7 @@
               <p>
                 The Proof-of-Stake component of Decred's consensus is based on
                 tickets. These are locked up DCR that give their owner voting
-                rights in all of Decred governance systems, from on-chain
+                rights in all of Decred's governance systems, from on-chain
                 consensus rules voting to Treasury expenditure proposals through
                 Politeia.
               </p>
@@ -105,7 +105,7 @@
               </BlockHint>
 
               <p>
-                In each mined block, five tickets are selected pseudo-randomly
+                In each mined block, five tickets are selected pseudorandomly
                 and called to vote on-chain. On-chain voting serves two main
                 purposes: validating blocks created by Proof-of-Work (PoW)
                 miners and voting on proposed consensus rule changes. After a
@@ -115,16 +115,16 @@
               </p>
               <h2>Consensus Rules</h2>
               <p>
-                Decred has a built-in upgrade mechanism which allows consensus
+                Decred has a built-in an upgrade mechanism which allows consensus
                 rules to be changed across the entire network in a coordinated
-                fashion. This enables the rules to be changed predictably and
-                without fracturing the network, and allows proof-of-stake voters
-                to exercise sovereignty over whether or not to accept the
+                fashion. This enables the rules to be changed predictably and,
+                most importantly, without fracturing the network. It allows Proof-of-Stake 
+                voters to exercise sovereignty over whether or not to accept the
                 proposed changes.
               </p>
 
               <p>
-                This on-chain voting mechanism allowed stakeholders to
+                This on-chain voting mechanism allows Stakeholders to
                 <a
                   href="https://explorer.dcrdata.org/agenda/sdiffalgorithm"
                   target="_blank"
@@ -145,7 +145,7 @@
                   >improve Simple Payment Verification (SPV) security</a
                 >
                 by introducing new block headers. Decred Change Proposals go
-                through a formal process ensures consensus is reached and that
+                through a formal process ensuring consensus is reached and that
                 new rules are activated. It is a major improvement from
                 Bitcoin's BIPs which may be discussed for long periods of time
                 without a formal procedure.
@@ -173,7 +173,7 @@
               <BlockHint>
                 <h4>Decred blockchain can't fork</h4>
                 <p>
-                  Every fork of Bitcoin blockchain network sucks value out of
+                  Every fork of Bitcoin sucks value out of
                   the network. Not only capital, but also miners have to decide
                   which fork to support.
                 </p>
@@ -183,9 +183,9 @@
 
               <p>
                 Decred solves project funding by taking 10% of the block reward,
-                and putting the usage of those funds up for vote by DCR holders.
+                and putting the usage of those funds up for vote by DCR Stakeholders.
                 Stakeholders can decide which projects to fund by presenting and
-                discussing proposals in Politeia, an online governance platform,
+                discussing proposals in Politeia, the online governance platform,
                 and tickets holders can vote on them using their wallets.
               </p>
 
@@ -195,16 +195,16 @@
 
               <p>
                 The Treasury started off as a special DCR address handled by
-                Decred Holding Group LLC (DHC), a conventional corporate entitiy
+                Decred Holding Group LLC (DHC), a conventional corporate entity
                 that manually executes payments. Security depends on a 3-of-3
                 multi-signature wallet held by the core development team, but
                 stakeholders have the right to vote on changing the keys.
               </p>
 
               <p>
-                In May 2019, a proposal passed to decentralize the spending
+                In May 2019, a proposal passed to decentralize the Treasury's spending
                 process. The new Treasury code is almost done and soon
-                stakeholders will be able to vote on-chain to activate the new
+                Stakeholders will be able to vote on-chain to activate the new
                 rules.
               </p>
 
@@ -215,21 +215,21 @@
 
               <ul>
                 <li>
-                  Every month Politeia generates a treasury transaction that
+                  Every month Politeia generates a Treasury transaction that
                   aggregates all invoices and creates an off-chain transaction
-                  that can be verified with the Pi draft key.
+                  that can be verified with the Politea draft key.
                 </li>
                 <li>
-                  The treasury transaction must be approved by an on-chain vote
+                  The Treasury transaction must be approved by an on-chain vote
                   for 2016 blocks (one week) with a 20% quorum and a 60%
                   approval threshold.
                 </li>
                 <li>
-                  If the treasury transaction is approved then the contractors
-                  can redeem their payouts after it matures. If the treasury
-                  transaction is not approved by the stakeholders it is not
+                  If the Treasury transaction is approved then the contractors
+                  can redeem their payouts after it matures. If the Treasury
+                  transaction is not approved by the Stakeholders it is not
                   considered a valid transaction and its outputs are not
-                  considered valid.
+                  rejected.
                 </li>
               </ul>
 
@@ -239,11 +239,11 @@
               </h2>
 
               <p>
-                While stakeholders tickets are active, they can also participate
+                While Stakeholders tickets are active, they can also participate
                 in Politeia proposals, where a particular snapshot of the ticket
                 pool is used to decide on direction of the project. These
                 decisions include how to spend Treasury funds, amending the
-                Decred Constitution or other policies. Politeia voting is not
+                Decred Constitution, or other policies. Politeia voting is not
                 recorded on chain, but it is still backed by cryptographic
                 techniques which prevent sibyl attacks and unfair censorship.
               </p>
@@ -281,7 +281,7 @@
                   href="https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f"
                   target="_blank"
                   class="underline"
-                  >approve or reject Treasury expenditures</a
+                  >Decentralize the Treasury</a
                 >. While some early initiatives do not have an approved proposal
                 (core dcrd software, Decrediton wallet, Lightning Network), in
                 the future, every expenditure should be linked to an approved
@@ -292,7 +292,7 @@
 
               <p>
                 The added Proof-of-Stake layer sets up the stage for blockchain
-                governance. But automating the voting process and the software
+                governance. But, automating the voting process and the software
                 activation mechanism is not enough. Clean, simple and
                 user-friendly tools must be developed in order to allow that
                 every user, no matter their technical skills or social media
@@ -315,7 +315,7 @@
                   class="underline"
                   >Politeia</a
                 >
-                and explore proposals which are currently or which are currenly
+                and explore proposals which are currently
                 <a
                   href="https://proposals.decred.org/?tab=voting"
                   target="_blank"
