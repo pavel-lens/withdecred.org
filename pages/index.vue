@@ -107,7 +107,6 @@
 
 <script lang="ts">
 import Vue, { PropOptions } from 'vue'
-// import { Vue, Component, Prop } from 'vue-property-decorator'
 import Logo from '~/components/Logo.vue'
 
 export default Vue.extend({
@@ -123,7 +122,7 @@ export default Vue.extend({
 @import '@/assets/_global';
 
 .background {
-  // background-image: url('../assets/images/bg-waves.png');
+  background-image: url('../assets/images/bg-waves.png');
   background-image: url('../assets/images/bg-waves.webp');
   background-position-y: -70px;
 }

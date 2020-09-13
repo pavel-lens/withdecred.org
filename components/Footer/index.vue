@@ -9,16 +9,30 @@
           <a href="#">Community</a>
           <a href="#">Become a contributor</a>
         </div> -->
+        <div>
+          <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank">
+            <el-button class="c-button--style-discord">
+              <!-- <div class="m--flex align-center">
+              <IconDiscord class="mr-2" />
+              Join Discord
+            </div> -->
+              <LogoDiscord />
+            </el-button>
+          </a>
+        </div>
 
         <div class="c-footer__social-links">
-          <IconDiscord />
-          <IconMatrix />
-          <IconMedium />
-          <IconTwitter />
+          <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank"
+            ><IconDiscord
+          /></a>
+          <a href="https://medium.com/decred" target="_blank"><IconMedium /></a>
+          <a href="https://twitter.com/withdecred" target="_blank"
+            ><IconTwitter
+          /></a>
         </div>
       </div>
 
-      <div class="c-footer__row mt-50">
+      <div class="c-footer__row second">
         <div class="c-footer__logo">
           <!-- <Logo style="width: 230px; height: 30px;" /> -->
           <img src="@/assets/logo/decred-logo.png" />
@@ -36,16 +50,16 @@
 <script lang="ts">
 import Vue from 'vue'
 import IconDiscord from './icon-discord.svg?inline'
-import IconMatrix from './icon-matrix.svg?inline'
 import IconMedium from './icon-medium.svg?inline'
 import IconTwitter from './icon-twitter.svg?inline'
+import LogoDiscord from './logo-discord.svg?inline'
 
 export default Vue.extend({
   components: {
     IconDiscord,
-    IconMatrix,
     IconMedium,
     IconTwitter,
+    LogoDiscord,
   },
 })
 </script>
@@ -84,6 +98,14 @@ export default Vue.extend({
     @include media('<=sm') {
       flex-direction: column;
     }
+
+    &.second {
+      margin-top: 50px;
+
+      @include media('<=sm') {
+        margin-top: 12px;
+      }
+    }
   }
 
   &__links {
@@ -119,13 +141,37 @@ export default Vue.extend({
     }
   }
 
+  .c-button--style-discord {
+    background-color: #7289da;
+    border-color: #7289da;
+    color: #fff;
+    padding-bottom: 8px;
+    margin-left: 30px;
+
+    @include media('<=sm') {
+      margin-left: 0;
+    }
+
+    /* span {
+      display: flex;
+      align-items: center;
+    } */
+
+    svg {
+      display: inline-block;
+      color: #fff;
+      width: 80px;
+      /* height: 34px; */
+    }
+  }
+
   &__social-links {
     display: flex;
     margin-left: auto;
 
     @include media('<=sm') {
       margin-left: 0;
-      /* margin-top: 50px; */
+      margin-top: 32px;
 
       & > * {
         &:not(:last-child) {
@@ -134,7 +180,8 @@ export default Vue.extend({
       }
     }
 
-    & > svg {
+    & svg {
+      color: #8997a5;
       width: 22px;
       height: 22px;
       margin-right: 12px;

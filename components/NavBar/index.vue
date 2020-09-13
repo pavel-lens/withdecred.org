@@ -16,10 +16,21 @@
       <nuxt-link to="/voting">How to Vote</nuxt-link>
       <nuxt-link to="/politeia">What is Politeia</nuxt-link>
     </nav> -->
-    <div class="ml-auto mr-4">
+    <div class="m--flex ml-auto mr-4">
+      <el-button
+        type="primary"
+        icon="el-icon-share"
+        class="c-button--style-share mr-3"
+      >
+        <strong>Share</strong>
+      </el-button>
       <nuxt-link to="/a/how-to-get-decred">
-        <el-button type="primary" icon="el-icon-money">
-          <strong>Get Decred</strong>
+        <el-button
+          type="primary"
+          icon="el-icon-money"
+          class="c-button--style-cta"
+        >
+          <strong>Purchase $DCR</strong>
         </el-button>
       </nuxt-link>
     </div>
@@ -50,6 +61,30 @@ $border-size: 2px;
   align-items: center;
   // background-color: #fff;
   // border-bottom: thin solid #aaa;
+}
+
+.c-button--style-cta {
+  &.el-button {
+    background-color: #41bf53;
+    border-color: #41bf53;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    /* padding: 15px 25px; */
+  }
+}
+
+.c-button--style-share {
+  &.el-button {
+    background-color: #2970ff;
+    border-color: #2970ff;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    /* padding: 15px 25px; */
+  }
+
+  @include media('<=sm') {
+    display: none;
+  }
 }
 
 .logo {
