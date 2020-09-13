@@ -25,7 +25,6 @@
           <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank"
             ><IconDiscord
           /></a>
-          <!-- <IconMatrix /> -->
           <a href="https://medium.com/decred" target="_blank"><IconMedium /></a>
           <a href="https://twitter.com/withdecred" target="_blank"
             ><IconTwitter
@@ -51,7 +50,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import IconDiscord from './icon-discord.svg?inline'
-import IconMatrix from './icon-matrix.svg?inline'
 import IconMedium from './icon-medium.svg?inline'
 import IconTwitter from './icon-twitter.svg?inline'
 import LogoDiscord from './logo-discord.svg?inline'
@@ -59,7 +57,6 @@ import LogoDiscord from './logo-discord.svg?inline'
 export default Vue.extend({
   components: {
     IconDiscord,
-    IconMatrix,
     IconMedium,
     IconTwitter,
     LogoDiscord,
