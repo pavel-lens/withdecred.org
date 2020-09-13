@@ -63,7 +63,6 @@ $border-size: 2px;
   background-color: #091440;
   // border-bottom: thin solid #aaa;
   width: 100%;
-  z-index: 100;
 }
 
 .c-navbar {
