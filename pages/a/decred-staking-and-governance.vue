@@ -31,6 +31,30 @@
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Staking & Governance</h1>
 
+              <NavButtonGroup class="mt-5">
+                <NavButton
+                  prependIcon="back"
+                  @click="$router.push('/a/decred-hybrid-consensus')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Hybrid consensus
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton
+                  appendIcon="right"
+                  @click="$router.push('/a/decred-whats-next')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                    Privacy)
+                  </template>
+                  Next article
+                </NavButton>
+              </NavButtonGroup>
+
+              <div class="hr mt-5 mb-5" />
+
               <p>
                 In Bitcoin, miners hold the power and decisions are made
                 off-chain. Decred intends to balance the decision making power
@@ -115,12 +139,12 @@
               </p>
               <h2>Consensus Rules</h2>
               <p>
-                Decred has a built-in an upgrade mechanism which allows consensus
-                rules to be changed across the entire network in a coordinated
-                fashion. This enables the rules to be changed predictably and,
-                most importantly, without fracturing the network. It allows Proof-of-Stake 
-                voters to exercise sovereignty over whether or not to accept the
-                proposed changes.
+                Decred has a built-in an upgrade mechanism which allows
+                consensus rules to be changed across the entire network in a
+                coordinated fashion. This enables the rules to be changed
+                predictably and, most importantly, without fracturing the
+                network. It allows Proof-of-Stake voters to exercise sovereignty
+                over whether or not to accept the proposed changes.
               </p>
 
               <p>
@@ -173,9 +197,8 @@
               <BlockHint>
                 <h4>Decred blockchain can't fork</h4>
                 <p>
-                  Every fork of Bitcoin sucks value out of
-                  the network. Not only capital, but also miners have to decide
-                  which fork to support.
+                  Every fork of Bitcoin sucks value out of the network. Not only
+                  capital, but also miners have to decide which fork to support.
                 </p>
               </BlockHint>
 
@@ -183,10 +206,11 @@
 
               <p>
                 Decred solves project funding by taking 10% of the block reward,
-                and putting the usage of those funds up for vote by DCR Stakeholders.
-                Stakeholders can decide which projects to fund by presenting and
-                discussing proposals in Politeia, the online governance platform,
-                and tickets holders can vote on them using their wallets.
+                and putting the usage of those funds up for vote by DCR
+                Stakeholders. Stakeholders can decide which projects to fund by
+                presenting and discussing proposals in Politeia, the online
+                governance platform, and tickets holders can vote on them using
+                their wallets.
               </p>
 
               <div class="image my-4">
@@ -202,8 +226,8 @@
               </p>
 
               <p>
-                In May 2019, a proposal passed to decentralize the Treasury's spending
-                process. The new Treasury code is almost done and soon
+                In May 2019, a proposal passed to decentralize the Treasury's
+                spending process. The new Treasury code is almost done and soon
                 Stakeholders will be able to vote on-chain to activate the new
                 rules.
               </p>

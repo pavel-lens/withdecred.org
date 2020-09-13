@@ -33,7 +33,30 @@
                 What's next? (DEX, Lightning network and Privacy)
               </h1>
 
-              <p class="mt-3">
+              <NavButtonGroup class="mt-5">
+                <NavButton
+                  prependIcon="back"
+                  @click="$router.push('/a/decred-staking-and-governance')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Staking & Governance
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton
+                  appendIcon="right"
+                  @click="$router.push('/a/how-to-get-decred')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> How to purchase $DCR
+                  </template>
+                  Next article
+                </NavButton>
+              </NavButtonGroup>
+
+              <div class="hr my-5" />
+
+              <p>
                 Decred is adaptable. A self-funding mechanism allows it to fund
                 its own improvement and expansion
                 <span class="underline">without relying on Venture Capital</span
@@ -73,9 +96,9 @@
 
               <p>
                 Projects already approved by stakeholders in Politeia include
-                further implementations of the Coinshuffle++ coin mixer (privacy), an
-                open-source and distributed exchange platform (DEX) and improvements
-                to the Treasury system.
+                further implementations of the Coinshuffle++ coin mixer
+                (privacy), an open-source and distributed exchange platform
+                (DEX) and improvements to the Treasury system.
               </p>
 
               <h2>Privacy</h2>
@@ -196,11 +219,11 @@
                 The DCR Lightning Network is already deployed on mainnet, but it
                 still requires further testing before anyone can safely use it.
                 Decred's LN daemon comes bundled with Decrediton. If you wish to
-                try it out, refer to
+                try it out,
                 <a
                   href="https://medium.com/decred/beginner-guide-to-the-decred-dcr-lightning-network-917f8ad304aa"
                   target="_blank"
-                  >this guide</a
+                  >refer to this guide</a
                 >.
               </p>
 
@@ -225,9 +248,9 @@
 
               <p>
                 Once Decred's LN implementation is stable and up to speed with
-                Bitcoin's LN implementation, Decred has the capacity and the ability
-                to implement new features that have not been tested on BTC yet,
-                because these require on-chain changes.
+                Bitcoin's LN implementation, Decred has the capacity and the
+                ability to implement new features that have not been tested on
+                BTC yet, because these require on-chain changes.
               </p>
 
               <p>
@@ -263,8 +286,8 @@
                 Decentralized Exchange (DEX) is a key component of the
                 decentralized economy landscape. As a result of centralized
                 exchanges being hacked, used as exit scams and pursued by
-                regulators, DEXs present users with a much more secure
-                and private alternative.
+                regulators, DEXs present users with a much more secure and
+                private alternative.
               </p>
 
               <p>

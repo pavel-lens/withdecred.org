@@ -31,6 +31,29 @@
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Hybrid Consensus</h1>
 
+              <NavButtonGroup class="mt-5">
+                <NavButton
+                  prependIcon="back"
+                  @click="$router.push('/a/decred-101')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Decred 101 - Start here
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton
+                  appendIcon="right"
+                  @click="$router.push('/a/decred-staking-and-governance')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Staking & Governance
+                  </template>
+                  Next article
+                </NavButton>
+              </NavButtonGroup>
+
+              <div class="hr mt-5" />
+
               <p>
                 In a nutshell, Decred's hybrid PoW/PoS consensus system was
                 designed from the ground up to solve
