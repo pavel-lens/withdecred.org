@@ -1,17 +1,102 @@
 <template>
   <div class="background">
-    <el-container class="container is-row text--align-center">
-      <el-main>
-        <el-row class="mb-6">
+    <el-container class="container text--align-center">
+      <el-main class="mb-5">
+        <el-row>
           <div>
             <img
               src="@/assets/logo/decred-logo.png"
               alt="Decred logo"
-              class="nav-logo mb-2"
+              class="nav-logo mb-0"
             />
-            <h1 class="title">withDecred<span class="dot">.</span>org</h1>
-            <h2 class="subtitle">Let's help others learn about Decred</h2>
+            <div class="title">withDecred<span class="dot">.</span>org</div>
+            <div class="subtitle">Stakeholder-Governed Sound Money</div>
           </div>
+        </el-row>
+
+        <el-row :gutter="24">
+          <el-col :lg="24" :sm="12" :xs="24">
+            <el-card class="card">
+              <div slot="header" class="m--flex">
+                <h3 class="card-title">
+                  <i class="el-icon-magic-stick" />
+                  Preface - Decred, cryptocurrency under the radar
+                </h3>
+                <!-- <div class="ml-auto">
+                  <i class="el-icon-check card--is-done" />
+                </div> -->
+              </div>
+              <p>
+                Cryptocurrencies can feel overwhelming with scams and jargon.
+                DeFi? Yield Farming? Governance? ICOmania? All of these
+                buzzwords can make it hard to pick out the diamonds in the
+                rough. We’re going to cut through the clutter and help you get
+                acclimated - <strong>@withDecred</strong>.
+              </p>
+              <!-- <div class="hr my-3" /> -->
+              <p>
+                After 2.5 years of "cold and bloody" bear market, crypto finally
+                entered a bull market.
+              </p>
+              <p>
+                Unfortunately, even in bull market, many people lose money? How
+                is it possible?
+              </p>
+              <p>
+                After seeing random tokens doing 50x or 100x returns in the
+                matter of few weeks, people throw money on other random,
+                Twitter-hyped coins such as $YAM, $YAM2, $SUSHI, $FARM, $AMPL,
+                $BASED and likes. Most of them plummet 95% down after the crowd
+                buys them and people end with huge loses. Most of these coins
+                are only ERC-20 tokens created on top of Ethereum and bring
+                little to no innovation
+              </p>
+              <p>
+                Let's explore Decred, a cryptocurrency which is still under the
+                radar of most people.
+              </p>
+              <p>
+                You will discover a deep "rabbit hole" of Decred in series of 4
+                articles, but before we start, let's look at what are the
+                trending topics of crypto in 2020:
+              </p>
+              <ul>
+                <li>DEX (Decentralized Exchanges, eg. Uniswap, Kyberswap)</li>
+                <li>Governance ($YFI, $CRV, $KNC, ..)</li>
+                <li>
+                  Scaling (ETH2.0, SKALE network, Loopring, BTC Lighting
+                  network)
+                </li>
+                <li>Staking (ETH2.0, $YFI, Dash, Cosmos ..)</li>
+                <li>
+                  Privacy (mixers, zero-knowledge proofs, bullet-proofs;
+                  high-level cryptography)
+                </li>
+              </ul>
+
+              <p>
+                These are the most important trends in crypto markets in 2020
+                and many new projects are trying to leverage these trends to
+                squeeze money out of the market by creating a new website in "2
+                days" and marketing it to the world like "The Next Big Thing".
+              </p>
+
+              <p>
+                Now, let's explore how Decred.
+              </p>
+
+              <div class="mt-3 mb-4">
+                <nuxt-link to="/a/decred-101">
+                  <el-button type="primary" class="huge-cta">
+                    Continue reading Decred 101 <i class="el-icon-right"></i>
+                  </el-button>
+                </nuxt-link>
+              </div>
+              <div class="card-footer">
+                <i class="el-icon-timer mr-1" /> 6 minutes
+              </div>
+            </el-card>
+          </el-col>
         </el-row>
 
         <el-row :gutter="24">
@@ -19,39 +104,43 @@
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
-                  <i class="el-icon-star-off" />
-                  Decred 101 - Start here
+                  <i class="el-icon-collection-tag" />
+                  Hybrid Consensus
                 </h3>
                 <div class="ml-auto">
-                  <i class="el-icon-check card--is-done" />
+                  <i class="el-icon-lock" />
                 </div>
               </div>
-              Learn why Decred is a community-directed, superior store of value.
+              Learn how Decred's 2-level consensus is ±41x more secure than
+              traditional Proof-of-Work blockchains such as Bitcoin or Ethereum.
               <div class="mt-3 mb-4">
-                <nuxt-link to="/a/decred-101">
-                  <el-button size="small" type="primary">
-                    Read more <i class="el-icon-right"></i>
-                  </el-button>
-                </nuxt-link>
+                <el-button disabled size="medium" type="primary">
+                  <i class="el-icon-lock mr-1"></i> Article locked
+                </el-button>
               </div>
               <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 3 minutes
+                <i class="el-icon-timer mr-1" /> 8 minutes
               </div>
             </el-card>
           </el-col>
 
           <el-col :lg="8" :sm="12" :xs="24">
             <el-card class="card">
-              <div slot="header">
-                <h3 class="card-title">
+              <div slot="header" class="m--flex">
+                <h3 class="">
                   <i class="el-icon-data-analysis" />
-                  How to stake
+                  Staking &amp; Governance
                 </h3>
+                <div class="ml-auto">
+                  <i class="el-icon-lock" />
+                </div>
               </div>
-              Learn why Decred is a community-directed, superior store of value.
+              Learn how you can stake $DCR, earn 8% per anum and vote in
+              Decred's governance. Unlike Bitcoin, you can influence how the
+              protocol will evolve.
               <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to stake <i class="el-icon-right"></i>
+                <el-button disabled size="medium" type="primary">
+                  <i class="el-icon-lock mr-1"></i> Article locked
                 </el-button>
               </div>
               <div class="card-footer">
@@ -65,37 +154,18 @@
               <div slot="header">
                 <h3 class="card-title">
                   <i class="el-icon-collection-tag" />
-                  How to vote
+                  What's next (future)
                 </h3>
               </div>
-              Learn why Decred is a community-directed, superior store of value.
+              Explore exciting new things coming - Decentralized Exchange,
+              Lightning network and unique privacy implementation Coinshuffle++.
               <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to vote <i class="el-icon-right"></i>
+                <el-button disabled size="medium" type="primary">
+                  <i class="el-icon-lock mr-1"></i> Article locked
                 </el-button>
               </div>
               <div class="card-footer">
                 <i class="el-icon-timer mr-1" /> 7 minutes
-              </div>
-            </el-card>
-          </el-col>
-
-          <el-col :lg="8" :sm="12" :xs="24">
-            <el-card class="card">
-              <div slot="header">
-                <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
-                  What is Politeia
-                </h3>
-              </div>
-              Learn why Decred is a community-directed, superior store of value.
-              <div class="mt-3 mb-4">
-                <el-button size="small" type="primary" plain>
-                  How to vote <i class="el-icon-right"></i>
-                </el-button>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 4 minutes
               </div>
             </el-card>
           </el-col>
@@ -133,8 +203,24 @@ export default Vue.extend({
 
 .card {
   position: relative;
+  text-align: left;
+
   &--is-done {
     color: $color-secondary-green;
+  }
+
+  p + p {
+    margin-top: 12px;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  .huge-cta {
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 
@@ -157,13 +243,21 @@ export default Vue.extend({
   font-weight: 400;
   font-size: 52px;
   letter-spacing: 0.025em;
-  margin-bottom: 32px;
+
+  @include media('<=sm') {
+    font-size: 48px;
+  }
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 28px;
   color: $font-color-light;
+  margin-bottom: 32px;
+
+  @include media('<=sm') {
+    font-size: 22px;
+  }
 }
 
 .dot {
