@@ -15,7 +15,7 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="24" :sm="12" :xs="24">
+          <el-col :lg="24" :sm="24" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -100,7 +100,7 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -138,7 +138,7 @@
             </el-card>
           </el-col>
 
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="">
@@ -177,7 +177,7 @@
             </el-card>
           </el-col>
 
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
