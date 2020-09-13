@@ -301,7 +301,7 @@ export default Vue.extend({
       content: ' ';
       width: 1.2em;
       height: 29px;
-      background: URL('../../assets/icons/decred-checkmark.svg') no-repeat;
+      background: URL('/icons/decred-checkmark.svg') no-repeat;
       background-size: 18px;
       background-position-y: 50%;
       margin-right: 8px;

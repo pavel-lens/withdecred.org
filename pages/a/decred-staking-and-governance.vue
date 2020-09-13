@@ -27,7 +27,7 @@
 
       <div class="container">
         <el-main class="article mt-20 mb-6">
-          <el-row :gutter="24">
+          <el-row :gutter="24" type="flex">
             <el-col :lg="16" :xs="24">
               <h1 class="article--title">Staking & Governance</h1>
 
@@ -37,7 +37,7 @@
                   @click="$router.push('/a/decred-hybrid-consensus')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid consensus
+                    <i class="el-icon-magic-stick" /> Hybrid Consensus
                   </template>
                   Previous article
                 </NavButton>
@@ -85,14 +85,7 @@
                 consequences of their votes and, if rational, will vote for what
                 they think is best for the network.
               </p>
-            </el-col>
-            <el-col :lg="6" :xs="24">
-              <!-- <StakeyCard type="explorer" /> -->
-            </el-col>
-          </el-row>
 
-          <el-row :gutter="24" type="flex" class="mt-5">
-            <el-col :lg="16" :xs="24">
               <h2>Tickets</h2>
               <p>
                 The Proof-of-Stake component of Decred's consensus is based on
@@ -375,7 +368,7 @@
                   @click="$router.push('/a/decred-hybrid-consensus')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid consensus
+                    <i class="el-icon-magic-stick" /> Hybrid Consensus
                   </template>
                   Previous article
                 </NavButton>
