@@ -33,7 +33,7 @@
                 How to get Decred 💰
               </h1>
 
-              <NavButtonGroup class="mt-5">
+              <!-- <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
                   @click="$router.push('/a/decred-whats-next')"
@@ -52,7 +52,7 @@
                 </NavButton>
               </NavButtonGroup>
 
-              <div class="hr my-5" />
+              <div class="hr my-5" /> -->
 
               <p>
                 If you came all the way here, congratulations! 🎉🎉 Now you have
