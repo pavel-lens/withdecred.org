@@ -11,10 +11,14 @@
         </div> -->
 
         <div class="c-footer__social-links">
-          <IconDiscord />
-          <IconMatrix />
-          <IconMedium />
-          <IconTwitter />
+          <a href="https://discordapp.com/invite/GJ2GXfz" target="_blank"
+            ><IconDiscord
+          /></a>
+          <!-- <IconMatrix /> -->
+          <a href="https://medium.com/decred" target="_blank"><IconMedium /></a>
+          <a href="https://twitter.com/withdecred" target="_blank"
+            ><IconTwitter
+          /></a>
         </div>
       </div>
 
@@ -134,7 +138,7 @@ export default Vue.extend({
       }
     }
 
-    & > svg {
+    & svg {
       width: 22px;
       height: 22px;
       margin-right: 12px;
