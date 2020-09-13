@@ -52,7 +52,7 @@
                 </NavButton>
               </NavButtonGroup>
 
-              <div class="hr mt-5" />
+              <div class="hr my-5" />
 
               <p>
                 In a nutshell, Decred's hybrid PoW/PoS consensus system was
