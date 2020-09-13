@@ -348,7 +348,7 @@
             </el-col>
 
             <el-col :lg="8" type="flex">
-              <div v-sticky>
+              <div v-sticky sticky-offset="{ top: 90 }">
                 <Tweet id="990306973164933122" />
                 <div class="commentary">
                   <i>
@@ -409,12 +409,14 @@ export default Vue.extend({
     StakeyCard,
     Tweet,
   },
+
+  mounted() {
+    localStorage.setItem('withdecred:article:staking-and-governance', 'true')
+  },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_global';
-
 .background {
   // background-image: url('../assets/images/bg-waves.png');
   background-image: url('../../assets/images/bg-waves.webp');

@@ -15,7 +15,7 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="24" :sm="12" :xs="24">
+          <el-col :lg="24" :sm="24" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -85,26 +85,26 @@
                 Now, let's explore how Decred.
               </p>
 
-              <div class="mt-3 mb-4">
+              <div class="mt-3 mb-2">
                 <nuxt-link to="/a/decred-101">
                   <el-button type="primary" class="huge-cta">
                     Continue reading Decred 101 <i class="el-icon-right"></i>
                   </el-button>
                 </nuxt-link>
               </div>
-              <div class="card-footer">
+              <!-- <div class="card-footer">
                 <i class="el-icon-timer mr-1" /> 6 minutes
-              </div>
+              </div> -->
             </el-card>
           </el-col>
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
+                  <i class="el-icon-connection" />
                   Hybrid Consensus
                 </h3>
                 <div class="ml-auto">
@@ -114,9 +114,23 @@
               Learn how Decred's 2-level consensus is ±41x more secure than
               traditional Proof-of-Work blockchains such as Bitcoin or Ethereum.
               <div class="mt-3 mb-4">
-                <el-button disabled size="medium" type="primary">
+                <el-button
+                  v-if="!isArticleHybridConsensusUnlocked"
+                  disabled
+                  size="medium"
+                  type="primary"
+                >
                   <i class="el-icon-lock mr-1"></i> Article locked
                 </el-button>
+
+                <nuxt-link
+                  v-if="isArticleHybridConsensusUnlocked"
+                  to="/a/decred-hybrid-consensus"
+                >
+                  <el-button size="medium" type="primary">
+                    Read more <i class="el-icon-right ml-1"></i>
+                  </el-button>
+                </nuxt-link>
               </div>
               <div class="card-footer">
                 <i class="el-icon-timer mr-1" /> 8 minutes
@@ -124,7 +138,7 @@
             </el-card>
           </el-col>
 
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="">
@@ -139,9 +153,23 @@
               Decred's governance. Unlike Bitcoin, you can influence how the
               protocol will evolve.
               <div class="mt-3 mb-4">
-                <el-button disabled size="medium" type="primary">
+                <el-button
+                  v-if="!isArticleStakingAndGovernanceUnlocked"
+                  disabled
+                  size="medium"
+                  type="primary"
+                >
                   <i class="el-icon-lock mr-1"></i> Article locked
                 </el-button>
+
+                <nuxt-link
+                  v-if="isArticleStakingAndGovernanceUnlocked"
+                  to="/a/decred-staking-and-governance"
+                >
+                  <el-button size="medium" type="primary">
+                    Read more <i class="el-icon-right ml-1"></i>
+                  </el-button>
+                </nuxt-link>
               </div>
               <div class="card-footer">
                 <i class="el-icon-timer mr-1" /> 6 minutes
@@ -149,20 +177,34 @@
             </el-card>
           </el-col>
 
-          <el-col :lg="8" :sm="12" :xs="24">
+          <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
+                  <i class="el-icon-magic-stick" />
                   What's next (future)
                 </h3>
               </div>
               Explore exciting new things coming - Decentralized Exchange,
               Lightning network and unique privacy implementation Coinshuffle++.
               <div class="mt-3 mb-4">
-                <el-button disabled size="medium" type="primary">
+                <el-button
+                  v-if="!isArticleWhatsNextUnlocked"
+                  disabled
+                  size="medium"
+                  type="primary"
+                >
                   <i class="el-icon-lock mr-1"></i> Article locked
                 </el-button>
+
+                <nuxt-link
+                  v-if="isArticleWhatsNextUnlocked"
+                  to="/a/decred-whats-next"
+                >
+                  <el-button size="medium" type="primary">
+                    Read more <i class="el-icon-right ml-1"></i>
+                  </el-button>
+                </nuxt-link>
               </div>
               <div class="card-footer">
                 <i class="el-icon-timer mr-1" /> 7 minutes
@@ -185,12 +227,30 @@ export default Vue.extend({
   components: {
     Logo,
   },
+
+  data() {
+    return {
+      isArticleHybridConsensusUnlocked: false,
+      isArticleStakingAndGovernanceUnlocked: false,
+      isArticleWhatsNextUnlocked: false,
+    }
+  },
+
+  mounted() {
+    this.isArticleHybridConsensusUnlocked = Boolean(
+      localStorage.getItem('withdecred:article:hybrid-consensus')
+    )
+    this.isArticleStakingAndGovernanceUnlocked = Boolean(
+      localStorage.getItem('withdecred:article:staking-and-governance')
+    )
+    this.isArticleWhatsNextUnlocked = Boolean(
+      localStorage.getItem('withdecred:article:whats-next')
+    )
+  },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_global';
-
 .background {
   background-image: url('../assets/images/bg-waves.png');
   background-image: url('../assets/images/bg-waves.webp');

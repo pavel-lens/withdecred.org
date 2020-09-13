@@ -317,12 +317,14 @@ export default Vue.extend({
     NavButtonGroup,
     StakeyCard,
   },
+
+  mounted() {
+    localStorage.setItem('withdecred:article:hybrid-consensus', 'true')
+  },
 })
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_global';
-
 .background {
   // background-image: url('../assets/images/bg-waves.png');
   background-image: url('../../assets/images/bg-waves.webp');

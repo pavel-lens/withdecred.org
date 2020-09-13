@@ -33,7 +33,7 @@
                 How to get Decred 💰
               </h1>
 
-              <NavButtonGroup class="mt-5">
+              <!-- <NavButtonGroup class="mt-5">
                 <NavButton
                   prependIcon="back"
                   @click="$router.push('/a/decred-whats-next')"
@@ -52,7 +52,7 @@
                 </NavButton>
               </NavButtonGroup>
 
-              <div class="hr my-5" />
+              <div class="hr my-5" /> -->
 
               <p>
                 If you came all the way here, congratulations! 🎉🎉 Now you have
@@ -63,6 +63,7 @@
               <el-row :gutter="12" class="mt-3">
                 <el-col :lg="12" :sm="24">
                   <ul class="summary-checklist">
+                    <li>Only 21,000,000 coins (like $BTC)</li>
                     <li>Fair, predictable, scarce money</li>
                     <li>Hyper-secure network</li>
                     <li>Decentralized &amp; inclusive governance</li>

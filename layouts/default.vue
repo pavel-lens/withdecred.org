@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NavBar />
+  <div class="layout-wrapper">
+    <NavBar v-sticky sticky-z-index="50" />
     <div class="content-wrapper">
       <nuxt />
     </div>
@@ -22,7 +22,11 @@ export default Vue.extend({
 </script>
 
 <style>
+.layout-wrapper {
+  position: relative;
+}
+
 .content-wrapper {
-  padding-top: 70px;
+  /* padding-top: 70px; */
 }
 </style>
