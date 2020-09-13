@@ -104,7 +104,7 @@
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
+                  <i class="el-icon-connection" />
                   Hybrid Consensus
                 </h3>
                 <div class="ml-auto">
@@ -181,7 +181,7 @@
             <el-card class="card">
               <div slot="header">
                 <h3 class="card-title">
-                  <i class="el-icon-collection-tag" />
+                  <i class="el-icon-magic-stick" />
                   What's next (future)
                 </h3>
               </div>
