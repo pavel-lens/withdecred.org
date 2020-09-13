@@ -17,13 +17,13 @@
       <nuxt-link to="/politeia">What is Politeia</nuxt-link>
     </nav> -->
     <div class="m--flex ml-auto mr-4">
-      <el-button
+      <!-- <el-button
         type="primary"
         icon="el-icon-share"
         class="c-button--style-share mr-3"
       >
         <strong>Share</strong>
-      </el-button>
+      </el-button> -->
       <nuxt-link to="/a/how-to-get-decred">
         <el-button
           type="primary"
