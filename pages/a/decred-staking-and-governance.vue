@@ -37,7 +37,7 @@
                   @click="$router.push('/a/decred-hybrid-consensus')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid consensus
+                    <i class="el-icon-magic-stick" /> Hybrid Consensus
                   </template>
                   Previous article
                 </NavButton>
@@ -375,7 +375,7 @@
                   @click="$router.push('/a/decred-hybrid-consensus')"
                 >
                   <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid consensus
+                    <i class="el-icon-magic-stick" /> Hybrid Consensus
                   </template>
                   Previous article
                 </NavButton>
