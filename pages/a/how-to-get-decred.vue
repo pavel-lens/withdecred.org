@@ -33,7 +33,28 @@
                 How to get Decred 💰
               </h1>
 
-              <p class="mt-3">
+              <NavButtonGroup class="mt-5">
+                <NavButton
+                  prependIcon="back"
+                  @click="$router.push('/a/decred-whats-next')"
+                >
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                    Privacy)
+                  </template>
+                  Previous article
+                </NavButton>
+                <NavButton prependIcon="s-home" @click="$router.push('/')">
+                  <template v-slot:label>
+                    <i class="el-icon-magic-stick" /> Homepage
+                  </template>
+                  Homepage
+                </NavButton>
+              </NavButtonGroup>
+
+              <div class="hr my-5" />
+
+              <p>
                 If you came all the way here, congratulations! 🎉🎉 Now you have
                 enough information to make your first purchase. Let's recap what
                 you are buying into.
@@ -231,12 +252,6 @@
                   </template>
                   Homepage
                 </NavButton>
-                <!-- <NavButton appendIcon="share">
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Share
-                  </template>
-                  Share with friends
-                </NavButton> -->
               </NavButtonGroup>
             </el-col>
           </el-row>
