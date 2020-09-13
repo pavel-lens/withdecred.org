@@ -63,6 +63,7 @@
               <el-row :gutter="12" class="mt-3">
                 <el-col :lg="12" :sm="24">
                   <ul class="summary-checklist">
+                    <li>Only 21,000,000 coins (like $BTC)</li>
                     <li>Fair, predictable, scarce money</li>
                     <li>Hyper-secure network</li>
                     <li>Decentralized &amp; inclusive governance</li>
