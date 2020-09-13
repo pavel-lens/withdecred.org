@@ -72,9 +72,9 @@
               </p>
 
               <p>
-                Projects already approved by stakeholders at Politeia include
-                further implementations of the Coinshuffle++ coin mixer, an
-                open-source and distributed exchange platform and improvements
+                Projects already approved by stakeholders in Politeia include
+                further implementations of the Coinshuffle++ coin mixer (privacy), an
+                open-source and distributed exchange platform (DEX) and improvements
                 to the Treasury system.
               </p>
 
@@ -224,8 +224,8 @@
               </BlockHint>
 
               <p>
-                Once Decred's implementation is stable and up to date with
-                Bitcoin implementation, Decred has the capacity and the ability
+                Once Decred's LN implementation is stable and up to speed with
+                Bitcoin's LN implementation, Decred has the capacity and the ability
                 to implement new features that have not been tested on BTC yet,
                 because these require on-chain changes.
               </p>
@@ -260,10 +260,10 @@
               </div>
 
               <p>
-                Decentralized Exchange (DEX) are a key component of the
+                Decentralized Exchange (DEX) is a key component of the
                 decentralized economy landscape. As a result of centralized
                 exchanges being hacked, used as exit scams and pursued by
-                regulators, decentralized present users with a much more secure
+                regulators, DEXs present users with a much more secure
                 and private alternative.
               </p>
 
