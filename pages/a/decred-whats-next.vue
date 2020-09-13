@@ -159,7 +159,7 @@
               </p>
             </el-col>
             <el-col :lg="8" :xs="24">
-              <div v-sticky class="video my-4">
+              <div v-sticky sticky-offset="{ top: 90 }">
                 <iframe
                   width="560"
                   height="200"
@@ -392,8 +392,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_global';
-
 .background {
   // background-image: url('../assets/images/bg-waves.png');
   background-image: url('../../assets/images/bg-waves.webp');

@@ -189,8 +189,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_global';
-
 .background {
   background-image: url('../assets/images/bg-waves.png');
   background-image: url('../assets/images/bg-waves.webp');
