@@ -45,14 +45,17 @@
 
               <p>
                 Each new block on the Decred chain goes through a
-                <span class="underline">multi-factor security verification process</span>, 
-                similar to a 2 factor authentication, before being considered fully valid.
-                Similar to Bitcoin, Decred transactions are first aggregated 
-                by Proof-of-Work miners into new blocks. However, in the hybrid consensus model,
-                Decred mined blocks are then required to be signed/approved by Proof-of-Stake voters 
-                who hold tickets (locked DCR), for which 5 tickets (out of ~41,000) are pseudorandomly 
-                chosen (similar to a lottery) each block to vote. This two-step process that mixes both  
-                PoW and PoS systems is at the core of Decred's hybrid consensus.
+                <span class="underline"
+                  >multi-factor security verification process</span
+                >, similar to a 2 factor authentication, before being considered
+                fully valid. Similar to Bitcoin, Decred transactions are first
+                aggregated by Proof-of-Work miners into new blocks. However, in
+                the hybrid consensus model, Decred mined blocks are then
+                required to be signed/approved by Proof-of-Stake voters who hold
+                tickets (locked DCR), for which 5 tickets (out of ~41,000) are
+                pseudorandomly chosen (similar to a lottery) each block to vote.
+                This two-step process that mixes both PoW and PoS systems is at
+                the core of Decred's hybrid consensus.
               </p>
 
               <div class="video my-3">
@@ -68,38 +71,42 @@
 
               <p>
                 Instead of issuing 100% of the block reward through the
-                Proof-of-Work system (Bitcoin model), newly minted DCR is shared between
-                miners, stakeholders, and the Decred Treasury (Development Fund) as shown below:
+                Proof-of-Work system (Bitcoin model), newly minted DCR is shared
+                between miners, stakeholders, and the Decred Treasury
+                (Development Fund) as shown below:
               </p>
 
               <ul>
                 <li>
-                  60% to fairly compensate miners who have the biggest running costs
+                  60% to fairly compensate miners who have the biggest running
+                  costs
                 </li>
                 <li>
                   30% to reward those who time-lock DCR to help secure the
                   network
                 </li>
                 <li>
-                  10% is deposited in the Treasury to fund future project development
+                  10% is deposited in the Treasury to fund future project
+                  development
                 </li>
               </ul>
 
               <p>
                 DCR issuance is fixed and known at every point in time. You can
-                find additional issuance detail details about it in the 
-                       <a
+                find additional issuance detail details about it in the
+                <a
                   href="https://blog.companyzero.com/2015/11/bitcoins-biggest-challenges/"
                   target="_blank"
                   class="underline"
                   >Decred Documentation</a
-                
+                >
               </p>
 
               <BlockHint>
-                Proof-of-Stake voters are the Decred Project decision makers who 
+                Proof-of-Stake voters are the Decred Project decision makers who
                 oversee/safeguard the Treasury funds. Currently, there are 6
-                million DCR locked in Stakeholder tickets which control a 600K DCR or
+                million DCR locked in Stakeholder tickets which control a 600K
+                DCR or
                 <span class="underline">±$10,000,000 USD</span> development
                 fund.
               </BlockHint>
@@ -126,10 +133,10 @@
 
               <p>
                 Decred uses the <strong>BLAKE-256</strong> hashing function. PoW
-                mining can be done using GPUs, however, more powerful DCR ASICs are
-                now available. Since the introduction of ASIC mining, the PoW difficulty
-                has become high enough to make GPU mining unlikely to be
-                profitable.
+                mining can be done using GPUs, however, more powerful DCR ASICs
+                are now available. Since the introduction of ASIC mining, the
+                PoW difficulty has become high enough to make GPU mining
+                unlikely to be profitable.
               </p>
 
               <BlockHint>
@@ -149,8 +156,8 @@
 
               <p>
                 Decred holders time-lock their DCR to buy tickets, and in each
-                block 5 tickets are pseudorandomly selected and called to vote. When a
-                ticket is called it makes two kinds of votes:
+                block 5 tickets are pseudorandomly selected and called to vote.
+                When a ticket is called it makes two kinds of votes:
               </p>
 
               <ul>
@@ -189,12 +196,12 @@
               <BlockHint>
                 <p>
                   <strong>When do tickets unlock?</strong> The ticket lottery is
-                  pseudorandom. PoS voters commit to locking their funds
-                  for a pseudorandom period of time, and it can go on for up to
-                  142 days. 
+                  pseudorandom. PoS voters commit to locking their funds for a
+                  pseudorandom period of time, and it can go on for up to 142
+                  days.
                 </p>
                 <p>
-                  This mechanism ensures that 
+                  This mechanism ensures that
                   <span class="underline"
                     >stakeholders will behave in the network's best
                     interests</span
@@ -224,8 +231,8 @@
               <p>
                 While the Proof-of-Work system is extensively documented in the
                 cryptocurrency space, the addition of a Proof-of-Stake layer and
-                its implementation as a governance mechanism is an absolute differentiator
-                in the space.
+                its implementation as a governance mechanism is an absolute
+                differentiator in the space.
               </p>
 
               <div class="image my-4">
