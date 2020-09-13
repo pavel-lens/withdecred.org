@@ -317,6 +317,10 @@ export default Vue.extend({
     NavButtonGroup,
     StakeyCard,
   },
+
+  mounted() {
+    localStorage.setItem('withdecred:article:hybrid-consensus', 'true')
+  },
 })
 </script>
 

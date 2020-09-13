@@ -409,6 +409,10 @@ export default Vue.extend({
     StakeyCard,
     Tweet,
   },
+
+  mounted() {
+    localStorage.setItem('withdecred:article:staking-and-governance', 'true')
+  },
 })
 </script>
 

@@ -388,6 +388,10 @@ export default Vue.extend({
     NavButtonGroup,
     StakeyCard,
   },
+
+  mounted() {
+    localStorage.setItem('withdecred:article:whats-next', 'true')
+  },
 })
 </script>
 
