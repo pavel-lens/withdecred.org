@@ -107,7 +107,7 @@
                   <i class="el-icon-connection" />
                   Hybrid Consensus
                 </h3>
-                <div class="ml-auto">
+                <div v-if="!isArticleHybridConsensusUnlocked" class="ml-auto">
                   <i class="el-icon-lock" />
                 </div>
               </div>
@@ -141,11 +141,14 @@
           <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
-                <h3 class="">
+                <h3>
                   <i class="el-icon-data-analysis" />
                   Staking &amp; Governance
                 </h3>
-                <div class="ml-auto">
+                <div
+                  v-if="!isArticleStakingAndGovernanceUnlocked"
+                  class="ml-auto"
+                >
                   <i class="el-icon-lock" />
                 </div>
               </div>
@@ -179,11 +182,14 @@
 
           <el-col :lg="8" :sm="8" :xs="24">
             <el-card class="card">
-              <div slot="header">
+              <div slot="header" class="m--flex">
                 <h3 class="card-title">
                   <i class="el-icon-magic-stick" />
                   What's next (future)
                 </h3>
+                <div v-if="!isArticleWhatsNextUnlocked" class="ml-auto">
+                  <i class="el-icon-lock" />
+                </div>
               </div>
               Explore exciting new things coming - Decentralized Exchange,
               Lightning network and unique privacy implementation Coinshuffle++.
