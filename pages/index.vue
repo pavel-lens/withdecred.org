@@ -31,7 +31,7 @@
                 on community input, inclusive governance, and sustainable
                 funding for development. Utilizing a superior hybrid
                 Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model,
-                Decred ensures to ensure that a small group cannot dominate the
+                Decred ensures that a small group cannot dominate the
                 flow of transactions or make changes to Decred without the
                 approval of the community.
               </p>
