@@ -63,7 +63,7 @@
               <p>
                 Decred is in the slim minority of projects that
                 <span class="underline">consistently delivers on promises</span
-                >, is built to last, positioned to take the main stage as a
+                >, is built to last, and positioned to take the main stage as a
                 powerhouse in the cryptocurrency space.
 
                 <!-- We are sold on Decred
