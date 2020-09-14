@@ -74,7 +74,7 @@
                 <span class="underline">The Decred Project</span>. -->
               </p>
               <p>
-                Here is your chance to learn about Decred while it's still
+                Here is your opportunity to learn about Decred while it's still
                 undiscovered by the mass market.
               </p>
               <p>
