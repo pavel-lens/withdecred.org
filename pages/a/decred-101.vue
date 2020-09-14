@@ -63,7 +63,7 @@
 
               <div class="hr mt-5" />
 
-              <h2>Decred isamp; Sound Money</h2>
+              <h2>Decred is Sound Money</h2>
               <p>
                 To understand "sound" (not able to be manipulated) money, it is
                 first important to understand the history of money and money as
@@ -109,7 +109,7 @@
                 Fiat money is controlled by banks, who create new money as credit
                 and have the keys to control the money supply. The money supply is
                 controlled to target specific economic conditions, usually including
-                a degree of inflation in prices. This monetary manipulation is what we consider 
+                a degree of inflation in prices. This monetary manipulation is what we consider
                 "unsound". Also, anyone who is not benefiting
                 directly from the creation of the new money is losing value.
               </p>
@@ -120,8 +120,8 @@
 
               <p>
                 What if there were a way to take the sound money qualities of
-                gold, add the internet and mathematics, be decentralized from central manipulation, 
-                and satisfy all the money characteristics listed above? With Bitcoin, 
+                gold, add the internet and mathematics, be decentralized from central manipulation,
+                and satisfy all the money characteristics listed above? With Bitcoin,
                 Satoshi Nakamoto discovered a way to maintain a distributed ledger for
                 recording transactions without relying on any specific
                 (centralized) authority to enforce the rules. By gamifying the
