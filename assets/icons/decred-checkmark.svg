@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450">
+  <title>checkmark</title>
+  <g>
+    <rect width="450" height="450" fill="none"/>
+    <circle cx="225" cy="225" r="200" fill="#c4cbd2"/>
+    <polygon points="200 304.55 111.611 216.162 129.289 198.484 200 269.194 314.905 154.289 332.583 171.967 200 304.55" fill="#091440"/>
+  </g>
+</svg>

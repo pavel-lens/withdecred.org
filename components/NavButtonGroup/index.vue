@@ -18,10 +18,21 @@ export default Vue.extend({
   flex-direction: row;
 
   & > * {
-    flex: 0 1 100%;
+    flex: 0 1 50%;
 
     &:not(:last-child) {
       margin-right: 32px;
+    }
+  }
+
+  @include media('<=sm') {
+    flex-direction: column;
+
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
     }
   }
 }
