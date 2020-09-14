@@ -15,74 +15,59 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="24" :sm="24" :xs="24">
+          <el-col :lg="{span: 16, offset: 0}" :sm="24" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
                   <i class="el-icon-magic-stick" />
-                  Preface - Decred, cryptocurrency under the radar
+                  Preface - building upon Bitcoin's strengths
                 </h3>
                 <!-- <div class="ml-auto">
                   <i class="el-icon-check card--is-done" />
                 </div> -->
               </div>
               <p>
-                Cryptocurrencies can feel overwhelming with scams and jargon.
-                DeFi? Yield Farming? Governance? ICOmania? All of these
-                buzzwords can make it hard to pick out the diamonds in the
-                rough. We’re going to cut through the clutter and help you get
-                acclimated - <strong>@withDecred</strong>.
+                Decred is a blockchain-based cryptocurrency with a strong focus
+                on community input, inclusive governance, and sustainable
+                funding for development. It utilizes a unique hybrid
+                Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model to
+                ensure that a small group cannot dominate the flow of
+                transactions or make changes to Decred without the approval of
+                the community.
               </p>
               <!-- <div class="hr my-3" /> -->
               <p>
-                After 2.5 years of "cold and bloody" bear market, crypto finally
-                entered a bull market.
+                Decred builds on the strengths of Bitcoin, but improves upon its
+                weaknesses. The Decred team (then Conformal Systems) was
+                originally part of the Bitcoin core community and most notably
+                built the 2nd most used Bitcoin node implementation:
+                Btcsuite/btcd. To put it more simply, the Decred team developed
+                Bitcoin software which was and is still
+                <span class="underline"
+                  >used to transact $BTC worth hundreds of millions USD</span
+                >.
               </p>
               <p>
-                Unfortunately, even in bull market, many people lose money? How
-                is it possible?
+                Participating in Bitcoin core development first-hand, the Decred
+                team identified the weaknesses in Bitcoin protocol and the
+                decided to build Decred to address them.
               </p>
               <p>
-                After seeing random tokens doing 50x or 100x returns in the
-                matter of few weeks, people throw money on other random,
-                Twitter-hyped coins such as $YAM, $YAM2, $SUSHI, $FARM, $AMPL,
-                $BASED and likes. Most of them plummet 95% down after the crowd
-                buys them and people end with huge loses. Most of these coins
-                are only ERC-20 tokens created on top of Ethereum and bring
-                little to no innovation
+                Much like Bitcoin in 2014, Decred is now 5 years old and is
+                still under the radar. Like in 2014 with Bitcoin, most people
+                haven't heard about Decred, yet. Most people didn't understand
+                Bitcoin or they simply didn't pay attention. We believe we stand
+                in similar situation now in regards to Decred.
               </p>
               <p>
-                Let's explore Decred, a cryptocurrency which is still under the
-                radar of most people.
+                Here is your chance to learn about Decred while it's still
+                undiscovered by the mass market.
               </p>
               <p>
-                You will discover a deep "rabbit hole" of Decred in series of 4
-                articles, but before we start, let's look at what are the
-                trending topics of crypto in 2020:
-              </p>
-              <ul>
-                <li>DEX (Decentralized Exchanges, eg. Uniswap, Kyberswap)</li>
-                <li>Governance ($YFI, $CRV, $KNC, ..)</li>
-                <li>
-                  Scaling (ETH2.0, SKALE network, Loopring, BTC Lighting
-                  network)
-                </li>
-                <li>Staking (ETH2.0, $YFI, Dash, Cosmos ..)</li>
-                <li>
-                  Privacy (mixers, zero-knowledge proofs, bullet-proofs;
-                  high-level cryptography)
-                </li>
-              </ul>
-
-              <p>
-                These are the most important trends in crypto markets in 2020
-                and many new projects are trying to leverage these trends to
-                squeeze money out of the market by creating a new website in "2
-                days" and marketing it to the world like "The Next Big Thing".
-              </p>
-
-              <p>
-                Now, let's explore how Decred.
+                Are you
+                <a href="" target="_blank" class="underline">@withdecred</a>?
+                Dive right into Decred 101 by clicking the “continue” button
+                below.
               </p>
 
               <div class="mt-3 mb-2">
