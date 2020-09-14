@@ -20,7 +20,7 @@
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
                   <i class="el-icon-magic-stick" />
-                  Preface - building upon Bitcoin's strengths
+                  Preface - Building Upon Bitcoin's Strengths
                 </h3>
                 <!-- <div class="ml-auto">
                   <i class="el-icon-check card--is-done" />
@@ -31,18 +31,18 @@
                 on community input, inclusive governance, and sustainable
                 funding for development. Utilizing a superior hybrid
                 Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model,
-                Decred ensure that a small group cannot dominate the
+                Decred ensures that a small group cannot dominate the
                 flow of transactions or make changes to Decred without the
                 approval of the community.
               </p>
               <!-- <div class="hr my-3" /> -->
               <p>
-                Decred builds on the strengths of Bitcoin, but improves upon its
-                weaknesses. The Decred team (then Conformal Systems) was
-                originally part of the Bitcoin core community and most notably
-                built the 2nd most used Bitcoin node implementation:
-                Btcsuite/btcd. More simply, the Decred team developed Bitcoin
-                software which was and is still
+                Decred builds on the strengths of Bitcoin, and improves on
+                areas where Bitcoin is weak. The Decred team (then Conformal
+                Systems) was originally part of the Bitcoin core community and
+                most notably built the 2nd most used Bitcoin node
+                implementation: Btcsuite/btcd. More simply, the Decred team
+                developed Bitcoin software which was and is still
                 <span class="underline"
                   >used to transact $BTC worth hundreds of millions of
                   $USD</span
@@ -54,17 +54,18 @@
                 Decred to address and improve upon Bitcoin.
               </p>
               <p>
-                Much like Bitcoin in 2014, Decred is now 5 years old and is
-                still under the radar. Like in 2014 with Bitcoin, most people
-                have yet to hear of Decred. Most people didn't understand
-                Bitcoin or they simply didn't pay attention. We believe we stand
-                in similar situation now in regards to Decred.
+                In 2014, Bitcoin was 5 years old and still relatively under the
+                radar. In Feb 2021, Decred's mainnet will turn 5 years old.
+                Like Bitcoin in 2014, most people have yet to hear of Decred.
+                Most people didn't understand Bitcoin then, or they simply
+                didn't pay attention. We believe Decred is currently in a
+                similar phase as early Bitcoin.
               </p>
               <p>
                 Decred is in the minority of projects that
                 <span class="underline">consistently delivers on promises</span
-                >, is built to last, and positioned to take the main stage as a
-                powerhouse in the cryptocurrency space.
+                >, is built to last, and is positioned to take the main stage
+                as a powerhouse in the cryptocurrency space.
 
                 <!-- We are sold on Decred
                 and this community driven website and initiative is to provide
@@ -110,8 +111,9 @@
                   <i class="el-icon-lock" />
                 </div>
               </div>
-              Learn how Decred's 2-level consensus is ±41x more secure than
-              traditional Proof-of-Work blockchains such as Bitcoin or Ethereum.
+              Learn how Decred's 2-level consensus is up to 41x more secure
+              than traditional Proof-of-Work blockchains such as Bitcoin or
+              Ethereum.
               <div class="mt-3 mb-4">
                 <el-button
                   v-if="!isArticleHybridConsensusUnlocked"
