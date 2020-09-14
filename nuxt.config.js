@@ -7,14 +7,14 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Decred Community Portal - withDecred.org',
+    title: 'Stakeholder-governed sound money',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Decred community portal with educational resources',
+        content: 'withDecred.org - Stakeholder-governed sound money',
       },
       {
         hid: 'description',
