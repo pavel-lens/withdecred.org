@@ -159,7 +159,7 @@
               </p>
             </el-col>
             <el-col :lg="8" :xs="24">
-              <div v-sticky sticky-offset="{ top: 90 }">
+              <div v-sticky sticky-offset="{ top: 90 }" class="video">
                 <iframe
                   width="560"
                   height="200"
