@@ -49,13 +49,13 @@
               </p>
               <p>
                 Participating in Bitcoin core development first-hand, the Decred
-                team identified the weaknesses in Bitcoin protocol and the
-                decided to build Decred to address them.
+                team identified the weaknesses in Bitcoin protocol and built
+                Decred to address and improve upon Bitcoin.
               </p>
               <p>
                 Much like Bitcoin in 2014, Decred is now 5 years old and is
                 still under the radar. Like in 2014 with Bitcoin, most people
-                haven't heard about Decred, yet. Most people didn't understand
+                have yet to hear of Decred. Most people didn't understand
                 Bitcoin or they simply didn't pay attention. We believe we stand
                 in similar situation now in regards to Decred.
               </p>
