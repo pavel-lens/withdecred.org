@@ -64,12 +64,14 @@
                 Decred is in the slim minority of projects that
                 <span class="underline">consistently delivers on promises</span
                 >, is built to last, positioned to take the main stage as a
-                powerhouse in the cryptocurrency space. We are sold on Decred
+                powerhouse in the cryptocurrency space.
+
+                <!-- We are sold on Decred
                 and this community driven website and initiative is to provide
                 readers and believers with the fundamental knowledge, resources
                 and support to simplify what we know to be a complex but
                 extremely valuable project:
-                <span class="underline">The Decred Project</span>.
+                <span class="underline">The Decred Project</span>. -->
               </p>
               <p>
                 Here is your chance to learn about Decred while it's still
