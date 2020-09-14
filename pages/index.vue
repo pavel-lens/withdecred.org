@@ -29,11 +29,11 @@
               <p>
                 Decred is a blockchain-based cryptocurrency with a strong focus
                 on community input, inclusive governance, and sustainable
-                funding for development. It utilizes a unique hybrid
-                Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model to
-                ensure that a small group cannot dominate the flow of
-                transactions or make changes to Decred without the approval of
-                the community.
+                funding for development. Utilizing a superior hybrid
+                Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model,
+                Decred ensures to ensure that a small group cannot dominate the
+                flow of transactions or make changes to Decred without the
+                approval of the community.
               </p>
               <!-- <div class="hr my-3" /> -->
               <p>
@@ -41,10 +41,11 @@
                 weaknesses. The Decred team (then Conformal Systems) was
                 originally part of the Bitcoin core community and most notably
                 built the 2nd most used Bitcoin node implementation:
-                Btcsuite/btcd. To put it more simply, the Decred team developed
-                Bitcoin software which was and is still
+                Btcsuite/btcd. More simply, the Decred team developed Bitcoin
+                software which was and is still
                 <span class="underline"
-                  >used to transact $BTC worth hundreds of millions USD</span
+                  >used to transact $BTC worth hundreds of millions of
+                  $USD</span
                 >.
               </p>
               <p>
@@ -62,12 +63,12 @@
               <p>
                 Decred is in the slim minority of projects that
                 <span class="underline">consistently delivers on promises</span
-                >, is built to last, and is positioned to take the main stage as
-                a powerhouse in the the cryptocurrency space. We are sold on
-                Decred and this community driven website and initiative is to
-                provide readers and believers with the fundamental knowledge,
-                resources and support to simplify what we know to be a complex
-                but extremely valuable project:
+                >, is built to last, positioned to take the main stage as a
+                powerhouse in the cryptocurrency space. We are sold on Decred
+                and this community driven website and initiative is to provide
+                readers and believers with the fundamental knowledge, resources
+                and support to simplify what we know to be a complex but
+                extremely valuable project:
                 <span class="underline">The Decred Project</span>.
               </p>
               <p>
