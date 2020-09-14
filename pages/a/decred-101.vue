@@ -63,13 +63,13 @@
 
               <div class="hr mt-5" />
 
-              <h2>Decred &amp; Sound Money</h2>
+              <h2>Decred isamp; Sound Money</h2>
               <p>
                 To understand "sound" (not able to be manipulated) money, it is
                 first important to understand the history of money and money as
                 a funtion of its characteristics. For the purpose of brevity we
                 will not detail money's history and focus more on the
-                characteristics of money and what makes Decred Sound Money. For
+                characteristics of money and what makes Decred "sound money". For
                 a more in depth overview of the history of money, we recommend
                 <a
                   href="https://www.investopedia.com/articles/07/roots_of_money.asp"
@@ -109,7 +109,8 @@
                 Fiat money is controlled by banks, who create new money as credit
                 and have the keys to control the money supply. The money supply is
                 controlled to target specific economic conditions, usually including
-                a degree of inflation in prices. Essentially, anyone who is not benefiting
+                a degree of inflation in prices. This monetary manipulation is what we consider 
+                "unsound". Also, anyone who is not benefiting
                 directly from the creation of the new money is losing value.
               </p>
 
@@ -119,14 +120,14 @@
 
               <p>
                 What if there were a way to take the sound money qualities of
-                gold, add the internet and mathematics, and satisfy all the
-                money characteristics listed above. With Bitcoin, Satoshi
-                Nakamoto discovered a way to maintain a distributed ledger for
+                gold, add the internet and mathematics, be decentralized from central manipulation, 
+                and satisfy all the money characteristics listed above? With Bitcoin, 
+                Satoshi Nakamoto discovered a way to maintain a distributed ledger for
                 recording transactions without relying on any specific
                 (centralized) authority to enforce the rules. By gamifying the
                 process for adding new transactions to this "blockchain", and
                 making this role "permissionless" (anyone with the hardware can
-                do it) the network's miners and nodes can effectively ensure
+                participate) the network's miners and nodes can effectively ensure
                 that everyone follows the rules - as long as most of the
                 entities which participate in creating the blockchain are
                 honest.
@@ -174,39 +175,39 @@
 
               <h2>Decred is a community</h2>
               <p>
-                The Decred project is led by its community of stakeholders and
-                contractors following six simple principles:
+                The Decred project is led by its community of Stakeholders and
+                Contractors following six simple principles:
               </p>
 
               <ul>
                 <li>
-                  Free and open-source software: All software developed as part
+                  Free and open-source software: all software developed as part
                   of Decred shall be free and open-source software.
                 </li>
                 <li>
-                  Free speech and consideration: Everyone has the right to
+                  Free speech and consideration: everyone has the right to
                   communicate opinions and ideas without fear of censorship.
                   Consideration shall be given to all constructive speech that
                   is based on fact and reason.
                 </li>
                 <li>
-                  Multi-stakeholder inclusivity: Inclusivity represents a
+                  Multi-stakeholder inclusivity: inclusivity represents a
                   multi-stakeholder system and an active effort shall be
                   maintained to include a diverse set of views and users.
                 </li>
                 <li>
-                  Incremental privacy and security: Privacy and security
+                  Incremental privacy and security: privacy and security
                   technology shall be implemented on a continuing and
                   incremental basis, both proactively and on-demand in response
                   to attacks.
                 </li>
                 <li>
-                  <span class="underline">Fixed finite supply:</span> Issuance
+                  <span class="underline">Fixed finite supply:</span> issuance
                   is finite and the total issuance shall not exceed
                   20,999,999.99800912 DCR
                 </li>
                 <li>
-                  Universal fungibility: Universal
+                  Universal fungibility: universal
                   <a
                     href="https://en.wikipedia.org/wiki/Fungibility"
                     target="_blank"
@@ -271,7 +272,7 @@
               <p>
                 PoS ensures that a small group of miners cannot dominate the
                 flow of transactions or make changes to Decred without the
-                approval of the Decred stakeholder community.
+                approval of the Decred Stakeholder community.
               </p>
 
               <p>
@@ -372,7 +373,7 @@
 
               <p>
                 To align incentives, block rewards are split between
-                Proof-of-Work (PoW) miners, Proof-of-Stake (PoS) stakeholders
+                Proof-of-Work (PoW) miners, Proof-of-Stake (PoS) Stakeholders
                 and the Decred Treasury. Decred's Treasury is used to fund
                 continuous project development.
               </p>
@@ -386,7 +387,7 @@
                   >Politeia Proposal System</a
                 >
                 plays a vital role within the Decred DAO (Decentralized
-                Autonomous Organization), empowering stakeholders to manage
+                Autonomous Organization), empowering Stakeholders to manage
                 Decredʼs Treasury expenditures and policies.
               </p>
 
@@ -441,7 +442,7 @@
                 If a block includes less than 5 PoS votes there will be a
                 fraction of the block reward which is not allocated to anybody.
                 As a result, it is only possible to calculate an upper limit for
-                the total number of decred which will ever be created.
+                the total number of Decred which will ever be created.
               </p>
 
               <BlockHint>
