@@ -61,7 +61,7 @@
                 in similar situation now in regards to Decred.
               </p>
               <p>
-                Decred is in the slim minority of projects that
+                Decred is in the minority of projects that
                 <span class="underline">consistently delivers on promises</span
                 >, is built to last, and positioned to take the main stage as a
                 powerhouse in the cryptocurrency space.
