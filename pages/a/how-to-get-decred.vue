@@ -79,39 +79,50 @@
               <h2>United States 🇺🇸</h2>
 
               <NavButtonGroup class="mt-3">
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Bittrex Global
-                  </template>
-                  <img src="@/assets/exchanges/bittrex.svg" class="mt-1" />
-                </NavButton>
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Sequoir
-                  </template>
-                  <img src="@/assets/exchanges/sequoir.svg" class="mt-1 ml-0" />
-                </NavButton>
+                <a href="https://global.bittrex.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Bittrex Global
+                    </template>
+                    <img src="@/assets/exchanges/bittrex.svg" class="mt-1" />
+                  </NavButton>
+                </a>
+                <a href="https://www.sequoir.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Sequoir
+                    </template>
+                    <img
+                      src="@/assets/exchanges/sequoir.svg"
+                      class="mt-1 ml-0"
+                    />
+                  </NavButton>
+                </a>
               </NavButtonGroup>
               <NavButtonGroup class="mt-3">
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Changelly
-                  </template>
-                  <img
-                    src="@/assets/exchanges/changelly.svg"
-                    class="mt-1 ml-0"
-                  />
-                </NavButton>
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Metalpay
-                  </template>
-                  <img
-                    src="@/assets/exchanges/metalpay.svg"
-                    width="120"
-                    class="mt-1 ml-1"
-                  />
-                </NavButton>
+                <a href="https://changelly.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Changelly
+                    </template>
+                    <img
+                      src="@/assets/exchanges/changelly.svg"
+                      class="mt-1 ml-0"
+                    />
+                  </NavButton>
+                </a>
+                <a href="https://www.metalpay.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Metalpay
+                    </template>
+                    <img
+                      src="@/assets/exchanges/metalpay.svg"
+                      width="120"
+                      class="mt-1 ml-1"
+                    />
+                  </NavButton>
+                </a>
               </NavButtonGroup>
 
               <div class="hr my-5" />
@@ -119,26 +130,30 @@
               <h2>Asia 🌏</h2>
 
               <NavButtonGroup class="mt-3">
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Binance
-                  </template>
-                  <img
-                    src="@/assets/exchanges/binance.svg"
-                    width="120"
-                    class="mt-2 ml-1"
-                  />
-                </NavButton>
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Huobi Global
-                  </template>
-                  <img
-                    src="@/assets/exchanges/huobi.png"
-                    width="110"
-                    class="mt-1 ml-0"
-                  />
-                </NavButton>
+                <a href="https://www.binance.com/en">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Binance
+                    </template>
+                    <img
+                      src="@/assets/exchanges/binance.svg"
+                      width="120"
+                      class="mt-2 ml-1"
+                    />
+                  </NavButton>
+                </a>
+                <a href="https://www.huobi.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Huobi Global
+                    </template>
+                    <img
+                      src="@/assets/exchanges/huobi.png"
+                      width="110"
+                      class="mt-1 ml-0"
+                    />
+                  </NavButton>
+                </a>
               </NavButtonGroup>
 
               <div class="hr my-5" />
@@ -146,25 +161,29 @@
               <h2>Europe / European union 🇪🇺</h2>
 
               <NavButtonGroup class="mt-3">
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Bitvavo, Netherlands
-                  </template>
-                  <img
-                    src="@/assets/exchanges/bitvavo.svg"
-                    width="120"
-                    class="mt-2 ml-1"
-                  />
-                </NavButton>
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Changelly
-                  </template>
-                  <img
-                    src="@/assets/exchanges/changelly.svg"
-                    class="mt-1 ml-0"
-                  />
-                </NavButton>
+                <a href="https://bitvavo.com/en">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Bitvavo, Netherlands
+                    </template>
+                    <img
+                      src="@/assets/exchanges/bitvavo.svg"
+                      width="120"
+                      class="mt-2 ml-1"
+                    />
+                  </NavButton>
+                </a>
+                <a href="https://changelly.com/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Changelly
+                    </template>
+                    <img
+                      src="@/assets/exchanges/changelly.svg"
+                      class="mt-1 ml-0"
+                    />
+                  </NavButton>
+                </a>
               </NavButtonGroup>
 
               <div class="hr my-5" />
@@ -172,16 +191,18 @@
               <h2>Australia 🇦🇺</h2>
 
               <NavButtonGroup class="mt-3">
-                <NavButton>
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Coinspot.com.au
-                  </template>
-                  <img
-                    src="@/assets/exchanges/coinspot.png"
-                    height="40"
-                    class="mt-3 ml-1"
-                  />
-                </NavButton>
+                <a href="https://www.coinspot.com.au/">
+                  <NavButton>
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Coinspot.com.au
+                    </template>
+                    <img
+                      src="@/assets/exchanges/coinspot.png"
+                      height="40"
+                      class="mt-3 ml-1"
+                    />
+                  </NavButton>
+                </a>
                 <!-- <NavButton>
                   <template v-slot:label>
                     <i class="el-icon-magic-stick" /> Sequoir
