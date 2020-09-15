@@ -113,14 +113,18 @@
               Learn how Decred's 2-level consensus is ±41x more secure than
               traditional Proof-of-Work blockchains such as Bitcoin or Ethereum.
               <div class="mt-3 mb-4">
-                <el-button
+                <el-tooltip
                   v-if="!isArticleHybridConsensusUnlocked"
-                  disabled
-                  size="medium"
-                  type="primary"
+                  effect="dark"
+                  content='Article will unlock after reading "Decred 101" article'
+                  placement="top"
                 >
-                  <i class="el-icon-lock mr-1"></i> Article locked
-                </el-button>
+                  <span>
+                    <el-button disabled size="medium" type="primary">
+                      <i class="el-icon-lock mr-1"></i> Article locked
+                    </el-button>
+                  </span>
+                </el-tooltip>
 
                 <nuxt-link
                   v-if="isArticleHybridConsensusUnlocked"
@@ -155,14 +159,18 @@
               Decred's governance. Unlike Bitcoin, you can influence how the
               protocol will evolve.
               <div class="mt-3 mb-4">
-                <el-button
+                <el-tooltip
                   v-if="!isArticleStakingAndGovernanceUnlocked"
-                  disabled
-                  size="medium"
-                  type="primary"
+                  effect="dark"
+                  content='Article will unlock after reading "Hybrid Consensus" article'
+                  placement="top"
                 >
-                  <i class="el-icon-lock mr-1"></i> Article locked
-                </el-button>
+                  <span>
+                    <el-button disabled size="medium" type="primary">
+                      <i class="el-icon-lock mr-1"></i> Article locked
+                    </el-button>
+                  </span>
+                </el-tooltip>
 
                 <nuxt-link
                   v-if="isArticleStakingAndGovernanceUnlocked"
@@ -193,14 +201,18 @@
               Explore exciting new things coming - Decentralized Exchange,
               Lightning network and unique privacy implementation Coinshuffle++.
               <div class="mt-3 mb-4">
-                <el-button
+                <el-tooltip
                   v-if="!isArticleWhatsNextUnlocked"
-                  disabled
-                  size="medium"
-                  type="primary"
+                  effect="dark"
+                  content='Article will unlock after reading "Staking &amp; Governance" article'
+                  placement="top"
                 >
-                  <i class="el-icon-lock mr-1"></i> Article locked
-                </el-button>
+                  <span>
+                    <el-button disabled size="medium" type="primary">
+                      <i class="el-icon-lock mr-1"></i> Article locked
+                    </el-button>
+                  </span>
+                </el-tooltip>
 
                 <nuxt-link
                   v-if="isArticleWhatsNextUnlocked"
