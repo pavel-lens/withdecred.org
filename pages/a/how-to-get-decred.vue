@@ -29,30 +29,7 @@
         <el-main class="article mt-20 mb-6">
           <el-row :gutter="24">
             <el-col :lg="16" :xs="24">
-              <h1 class="article--title">
-                How to get Decred 💰
-              </h1>
-
-              <!-- <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-whats-next')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
-                    Privacy)
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton prependIcon="s-home" @click="$router.push('/')">
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Homepage
-                  </template>
-                  Homepage
-                </NavButton>
-              </NavButtonGroup>
-
-              <div class="hr my-5" /> -->
+              <h1 class="article--title">How to get Decred 💰</h1>
 
               <p>
                 If you came all the way here, congratulations! 🎉🎉 Now you have
@@ -237,22 +214,23 @@
           <el-row>
             <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-whats-next')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
-                    Privacy)
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton prependIcon="s-home" @click="$router.push('/')">
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Homepage
-                  </template>
-                  Homepage
-                </NavButton>
+                <nuxt-link to="/a/decred-whats-next">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                      Privacy)
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/">
+                  <NavButton prependIcon="s-home">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Homepage
+                    </template>
+                    Homepage
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
             </el-col>
           </el-row>

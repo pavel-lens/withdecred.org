@@ -15,7 +15,7 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="{span: 16, offset: 0}" :sm="24" :xs="24">
+          <el-col :lg="{ span: 16, offset: 0 }" :sm="24" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -31,9 +31,9 @@
                 on community input, inclusive governance, and sustainable
                 funding for development. Utilizing a superior hybrid
                 Proof-of-Work (PoW) and Proof-of-Stake (PoS) consensus model,
-                Decred ensure that a small group cannot dominate the
-                flow of transactions or make changes to Decred without the
-                approval of the community.
+                Decred ensure that a small group cannot dominate the flow of
+                transactions or make changes to Decred without the approval of
+                the community.
               </p>
               <!-- <div class="hr my-3" /> -->
               <p>
@@ -328,7 +328,10 @@ export default Vue.extend({
 .follow-us {
   color: $font-color-light;
 
-  a, a:hover, a:visited, a:active {
+  a,
+  a:hover,
+  a:visited,
+  a:active {
     color: $font-color-light;
   }
 }

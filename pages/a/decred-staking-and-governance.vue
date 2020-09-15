@@ -32,25 +32,23 @@
               <h1 class="article--title">Staking & Governance</h1>
 
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-hybrid-consensus')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid Consensus
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/decred-whats-next')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
-                    Privacy)
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-hybrid-consensus">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Hybrid Consensus
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/decred-whats-next">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                      Privacy)
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
 
               <div class="hr mt-5 mb-5" />
@@ -95,9 +93,7 @@
                 Politeia.
               </p>
 
-              <p>
-                Tickets serve a number of purposes:
-              </p>
+              <p>Tickets serve a number of purposes:</p>
 
               <ul>
                 <li>
@@ -363,25 +359,23 @@
           <el-row>
             <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-hybrid-consensus')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Hybrid Consensus
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/decred-whats-next')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> What's next (DEX, LN and
-                    Privacy)
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-hybrid-consensus">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Hybrid Consensus
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/decred-whats-next">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> What's next (DEX, LN and
+                      Privacy)
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
             </el-col>
           </el-row>

@@ -32,24 +32,22 @@
               <h1 class="article--title">Hybrid Consensus</h1>
 
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-101')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Decred 101 - Start here
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/decred-staking-and-governance')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Staking & Governance
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-101">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Decred 101 - Start here
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/decred-staking-and-governance">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Staking & Governance
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
 
               <div class="hr my-5" />
@@ -274,24 +272,22 @@
           <el-row>
             <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-101')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Decred 101 - Start here
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/decred-staking-and-governance')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Staking & Governance
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-101">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Decred 101 - Start here
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/decred-staking-and-governance">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Staking & Governance
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
             </el-col>
           </el-row>

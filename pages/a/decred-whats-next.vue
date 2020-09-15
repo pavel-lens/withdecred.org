@@ -34,24 +34,22 @@
               </h1>
 
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-staking-and-governance')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Staking & Governance
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/how-to-get-decred')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> How to purchase $DCR
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-staking-and-governance">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Staking & Governance
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/how-to-get-decred">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> How to purchase $DCR
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
 
               <div class="hr my-5" />
@@ -345,24 +343,22 @@
           <el-row>
             <el-col :gutter="24" :lg="16" :xs="24">
               <NavButtonGroup class="mt-5">
-                <NavButton
-                  prependIcon="back"
-                  @click="$router.push('/a/decred-staking-and-governance')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> Staking & Governance
-                  </template>
-                  Previous article
-                </NavButton>
-                <NavButton
-                  appendIcon="right"
-                  @click="$router.push('/a/how-to-get-decred')"
-                >
-                  <template v-slot:label>
-                    <i class="el-icon-magic-stick" /> How to purchase $DCR
-                  </template>
-                  Next article
-                </NavButton>
+                <nuxt-link to="/a/decred-staking-and-governance">
+                  <NavButton prependIcon="back">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> Staking & Governance
+                    </template>
+                    Previous article
+                  </NavButton>
+                </nuxt-link>
+                <nuxt-link to="/a/how-to-get-decred">
+                  <NavButton appendIcon="right">
+                    <template v-slot:label>
+                      <i class="el-icon-magic-stick" /> How to purchase $DCR
+                    </template>
+                    Next article
+                  </NavButton>
+                </nuxt-link>
               </NavButtonGroup>
             </el-col>
           </el-row>
