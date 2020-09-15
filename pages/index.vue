@@ -15,7 +15,7 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="{ span: 16, offset: 0 }" :sm="24" :xs="24">
+          <el-col :lg="{ span: 16, offset: 4 }" :sm="24" :xs="24">
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -26,7 +26,7 @@
                   <i class="el-icon-check card--is-done" />
                 </div> -->
               </div>
-              <p>
+              <!-- <p>
                 Decred is a blockchain-based cryptocurrency with a strong focus
                 on community input, inclusive governance, and sustainable
                 funding for development. Utilizing a superior hybrid
@@ -34,7 +34,7 @@
                 Decred ensure that a small group cannot dominate the flow of
                 transactions or make changes to Decred without the approval of
                 the community.
-              </p>
+              </p> -->
               <!-- <div class="hr my-3" /> -->
               <p>
                 Decred builds on the strengths of Bitcoin, but improves upon its
@@ -84,7 +84,7 @@
                 below.
               </p>
 
-              <div class="mt-3 mb-2">
+              <div class="mt-5 mb-2">
                 <nuxt-link to="/a/decred-101">
                   <el-button type="primary" class="huge-cta">
                     Continue reading Decred 101 <i class="el-icon-right"></i>
@@ -98,135 +98,145 @@
           </el-col>
         </el-row>
 
-        <el-row :gutter="24">
-          <el-col :lg="8" :sm="8" :xs="24">
-            <el-card class="card">
-              <div slot="header" class="m--flex">
-                <h3 class="card-title">
-                  <i class="el-icon-connection" />
-                  Hybrid Consensus
-                </h3>
-                <div v-if="!isArticleHybridConsensusUnlocked" class="ml-auto">
-                  <i class="el-icon-lock" />
-                </div>
-              </div>
-              Learn how Decred's 2-level consensus is ±41x more secure than
-              traditional Proof-of-Work blockchains such as Bitcoin or Ethereum.
-              <div class="mt-3 mb-4">
-                <el-tooltip
-                  v-if="!isArticleHybridConsensusUnlocked"
-                  effect="dark"
-                  content='Article will unlock after reading "Decred 101" article'
-                  placement="top"
-                >
-                  <span>
-                    <el-button disabled size="medium" type="primary">
-                      <i class="el-icon-lock mr-1"></i> Article locked
-                    </el-button>
-                  </span>
-                </el-tooltip>
+        <el-row>
+          <el-col :lg="{ span: 16, offset: 4 }">
+            <el-row :gutter="24">
+              <el-col :lg="12" :sm="12" :xs="24">
+                <el-card class="card">
+                  <div slot="header" class="m--flex">
+                    <h3 class="card-title">
+                      <i class="el-icon-connection" />
+                      Hybrid Consensus
+                    </h3>
+                    <div
+                      v-if="!isArticleHybridConsensusUnlocked"
+                      class="ml-auto"
+                    >
+                      <i class="el-icon-lock" />
+                    </div>
+                  </div>
+                  Learn how Decred's 2-level consensus is ±41x more secure than
+                  traditional Proof-of-Work blockchains such as Bitcoin or
+                  Ethereum.
+                  <div class="mt-3 mb-4">
+                    <el-tooltip
+                      v-if="!isArticleHybridConsensusUnlocked"
+                      effect="dark"
+                      content='Article will unlock after reading "Decred 101" article'
+                      placement="top"
+                    >
+                      <span>
+                        <el-button disabled size="medium" type="primary">
+                          <i class="el-icon-lock mr-1"></i> Article locked
+                        </el-button>
+                      </span>
+                    </el-tooltip>
 
-                <nuxt-link
-                  v-if="isArticleHybridConsensusUnlocked"
-                  to="/a/decred-hybrid-consensus"
-                >
-                  <el-button size="medium" type="primary">
-                    Read more <i class="el-icon-right ml-1"></i>
-                  </el-button>
-                </nuxt-link>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 8 minutes
-              </div>
-            </el-card>
-          </el-col>
+                    <nuxt-link
+                      v-if="isArticleHybridConsensusUnlocked"
+                      to="/a/decred-hybrid-consensus"
+                    >
+                      <el-button size="medium" type="primary">
+                        Read more <i class="el-icon-right ml-1"></i>
+                      </el-button>
+                    </nuxt-link>
+                  </div>
+                  <div class="card-footer">
+                    <i class="el-icon-timer mr-1" /> 8 minutes
+                  </div>
+                </el-card>
+              </el-col>
 
-          <el-col :lg="8" :sm="8" :xs="24">
-            <el-card class="card">
-              <div slot="header" class="m--flex">
-                <h3>
-                  <i class="el-icon-data-analysis" />
-                  Staking &amp; Governance
-                </h3>
-                <div
-                  v-if="!isArticleStakingAndGovernanceUnlocked"
-                  class="ml-auto"
-                >
-                  <i class="el-icon-lock" />
-                </div>
-              </div>
-              Learn how you can stake $DCR, earn 8% per anum and vote in
-              Decred's governance. Unlike Bitcoin, you can influence how the
-              protocol will evolve.
-              <div class="mt-3 mb-4">
-                <el-tooltip
-                  v-if="!isArticleStakingAndGovernanceUnlocked"
-                  effect="dark"
-                  content='Article will unlock after reading "Hybrid Consensus" article'
-                  placement="top"
-                >
-                  <span>
-                    <el-button disabled size="medium" type="primary">
-                      <i class="el-icon-lock mr-1"></i> Article locked
-                    </el-button>
-                  </span>
-                </el-tooltip>
+              <el-col :lg="12" :sm="12" :xs="24">
+                <el-card class="card">
+                  <div slot="header" class="m--flex">
+                    <h3>
+                      <i class="el-icon-data-analysis" />
+                      Staking &amp; Governance
+                    </h3>
+                    <div
+                      v-if="!isArticleStakingAndGovernanceUnlocked"
+                      class="ml-auto"
+                    >
+                      <i class="el-icon-lock" />
+                    </div>
+                  </div>
+                  Learn how you can stake $DCR, earn 8% per anum and vote in
+                  Decred's governance. Unlike Bitcoin, you can influence how the
+                  protocol will evolve.
+                  <div class="mt-3 mb-4">
+                    <el-tooltip
+                      v-if="!isArticleStakingAndGovernanceUnlocked"
+                      effect="dark"
+                      content='Article will unlock after reading "Hybrid Consensus" article'
+                      placement="top"
+                    >
+                      <span>
+                        <el-button disabled size="medium" type="primary">
+                          <i class="el-icon-lock mr-1"></i> Article locked
+                        </el-button>
+                      </span>
+                    </el-tooltip>
 
-                <nuxt-link
-                  v-if="isArticleStakingAndGovernanceUnlocked"
-                  to="/a/decred-staking-and-governance"
-                >
-                  <el-button size="medium" type="primary">
-                    Read more <i class="el-icon-right ml-1"></i>
-                  </el-button>
-                </nuxt-link>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 6 minutes
-              </div>
-            </el-card>
-          </el-col>
+                    <nuxt-link
+                      v-if="isArticleStakingAndGovernanceUnlocked"
+                      to="/a/decred-staking-and-governance"
+                    >
+                      <el-button size="medium" type="primary">
+                        Read more <i class="el-icon-right ml-1"></i>
+                      </el-button>
+                    </nuxt-link>
+                  </div>
+                  <div class="card-footer">
+                    <i class="el-icon-timer mr-1" /> 6 minutes
+                  </div>
+                </el-card>
+              </el-col>
+            </el-row>
+            <el-row :gutter="24">
+              <el-col :lg="12" :sm="12" :xs="24">
+                <el-card class="card">
+                  <div slot="header" class="m--flex">
+                    <h3 class="card-title">
+                      <i class="el-icon-magic-stick" />
+                      What's next (future)
+                    </h3>
+                    <div v-if="!isArticleWhatsNextUnlocked" class="ml-auto">
+                      <i class="el-icon-lock" />
+                    </div>
+                  </div>
+                  Explore exciting new things coming - Decentralized Exchange,
+                  Lightning network and unique privacy implementation
+                  Coinshuffle++.
+                  <div class="mt-3 mb-4">
+                    <el-tooltip
+                      v-if="!isArticleWhatsNextUnlocked"
+                      effect="dark"
+                      content='Article will unlock after reading "Staking &amp; Governance" article'
+                      placement="top"
+                    >
+                      <span>
+                        <el-button disabled size="medium" type="primary">
+                          <i class="el-icon-lock mr-1"></i> Article locked
+                        </el-button>
+                      </span>
+                    </el-tooltip>
 
-          <el-col :lg="8" :sm="8" :xs="24">
-            <el-card class="card">
-              <div slot="header" class="m--flex">
-                <h3 class="card-title">
-                  <i class="el-icon-magic-stick" />
-                  What's next (future)
-                </h3>
-                <div v-if="!isArticleWhatsNextUnlocked" class="ml-auto">
-                  <i class="el-icon-lock" />
-                </div>
-              </div>
-              Explore exciting new things coming - Decentralized Exchange,
-              Lightning network and unique privacy implementation Coinshuffle++.
-              <div class="mt-3 mb-4">
-                <el-tooltip
-                  v-if="!isArticleWhatsNextUnlocked"
-                  effect="dark"
-                  content='Article will unlock after reading "Staking &amp; Governance" article'
-                  placement="top"
-                >
-                  <span>
-                    <el-button disabled size="medium" type="primary">
-                      <i class="el-icon-lock mr-1"></i> Article locked
-                    </el-button>
-                  </span>
-                </el-tooltip>
-
-                <nuxt-link
-                  v-if="isArticleWhatsNextUnlocked"
-                  to="/a/decred-whats-next"
-                >
-                  <el-button size="medium" type="primary">
-                    Read more <i class="el-icon-right ml-1"></i>
-                  </el-button>
-                </nuxt-link>
-              </div>
-              <div class="card-footer">
-                <i class="el-icon-timer mr-1" /> 7 minutes
-              </div>
-            </el-card>
+                    <nuxt-link
+                      v-if="isArticleWhatsNextUnlocked"
+                      to="/a/decred-whats-next"
+                    >
+                      <el-button size="medium" type="primary">
+                        Read more <i class="el-icon-right ml-1"></i>
+                      </el-button>
+                    </nuxt-link>
+                  </div>
+                  <div class="card-footer">
+                    <i class="el-icon-timer mr-1" /> 7 minutes
+                  </div>
+                </el-card>
+              </el-col>
+            </el-row>
           </el-col>
         </el-row>
       </el-main>
