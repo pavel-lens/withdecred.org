@@ -29,7 +29,10 @@ module.exports = {
         property: 'og:description',
         content: 'withDecred.org - Stakeholder-governed sound money',
       },
-      { property: 'og:image', content: 'https://withDecred.org/social-preview.jpg' },
+      {
+        property: 'og:image',
+        content: 'https://withDecred.org/social-preview.jpg',
+      },
       { property: 'og:url', content: 'https://withDecred.org/' },
       { property: 'og:site_name', content: 'withDecred.org' },
       { property: 'og:type', content: 'website' },
@@ -39,7 +42,10 @@ module.exports = {
         name: 'twitter:description',
         content: 'withDecred.org - Stakeholder-governed sound money',
       },
-      { name: 'twitter:image', content: 'https://withDecred.org/social-preview.jpg' },
+      {
+        name: 'twitter:image',
+        content: 'https://withDecred.org/social-preview.jpg',
+      },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -75,6 +81,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
     '@marcdiethelm/nuxtjs-countly',
   ],
   /*
@@ -94,6 +102,27 @@ module.exports = {
     noScript: true,
     // Log Countly debug info to console, default: false
     debug: process.env.NODE_ENV !== 'production',
+  },
+  /*
+   ** Robots.txt, https://www.npmjs.com/package/@nuxtjs/robots
+   */
+  robots: {
+    Sitemap: 'https://withdecred.org/sitemap.xml',
+    UserAgent: '*',
+    // Allow everything
+    Disallow: '',
+  },
+  /*
+   ** Sitemap.xml, https://www.npmjs.com/package/@nuxtjs/sitemap
+   */
+  sitemap: {
+    hostname: 'https://www.maklando.ch',
+    gzip: true,
+    defaults: {
+      changefreq: 'weekly',
+      priority: 1,
+      lastmod: new Date(),
+    },
   },
   /*
    ** Style resources
@@ -118,7 +147,7 @@ module.exports = {
       // https://vue-svg-loader.js.org/
 
       // Replace all existing rules which include SVG files
-      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'))
+      const svgRule = config.module.rules.find((rule) => rule.test.test('.svg'))
       svgRule.test = /\.(png|jpe?g|gif|webp)$/
 
       // Create new rule for SVG loading
