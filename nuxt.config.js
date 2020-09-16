@@ -116,7 +116,7 @@ module.exports = {
    ** Sitemap.xml, https://www.npmjs.com/package/@nuxtjs/sitemap
    */
   sitemap: {
-    hostname: 'https://www.maklando.ch',
+    hostname: 'https://withdecred.org',
     gzip: true,
     defaults: {
       changefreq: 'weekly',
