@@ -15,7 +15,12 @@
         </el-row>
 
         <el-row :gutter="24">
-          <el-col :lg="{ span: 16, offset: 4 }" :sm="24" :xs="24">
+          <el-col
+            :xl="{ span: 24, offset: 0 }"
+            :lg="{ span: 16, offset: 4 }"
+            :sm="24"
+            :xs="24"
+          >
             <el-card class="card">
               <div slot="header" class="m--flex">
                 <h3 class="card-title">
@@ -99,7 +104,7 @@
         </el-row>
 
         <el-row>
-          <el-col :lg="{ span: 16, offset: 4 }">
+          <el-col :xl="{ span: 24, offset: 0 }" :lg="{ span: 16, offset: 4 }">
             <el-row :gutter="24">
               <el-col :lg="12" :sm="12" :xs="24">
                 <el-card class="card">
