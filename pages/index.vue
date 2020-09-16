@@ -43,20 +43,21 @@
               <!-- <div class="hr my-3" /> -->
               <p>
                 Decred builds on the strengths of Bitcoin, but improves upon its
-                weaknesses. The Decred team (then Conformal Systems) was
-                originally part of the Bitcoin core community and most notably
-                built the 2nd most used Bitcoin node implementation:
-                Btcsuite/btcd. More simply, the Decred team developed Bitcoin
-                software which was and is still
+                weaknesses. Several members of the Decred team (then Conformal
+                Systems, later Company 0; 2013 - 2016) were originally part of
+                the Bitcoin development community and most notably built the 2nd
+                most used Bitcoin node implementation: Btcsuite/btcd. More
+                simply, the Decred team developed Bitcoin software which was and
+                is still
                 <span class="underline"
                   >used to transact $BTC worth hundreds of millions of
                   $USD</span
                 >.
               </p>
               <p>
-                Participating in Bitcoin core development first-hand, the Decred
-                team identified the weaknesses in Bitcoin protocol and built
-                Decred to address and improve upon Bitcoin.
+                Participating in Bitcoin blockchain development first-hand, they
+                identified the weaknesses in Bitcoin protocol and decided to
+                build Decred to address and improve upon Bitcoin.
               </p>
               <p>
                 Much like Bitcoin in 2014, Decred is now 5 years old and is
