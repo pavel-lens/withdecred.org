@@ -68,7 +68,7 @@
               <p>
                 To understand "sound" (not able to be manipulated) money, it is
                 first important to understand the history of money and money as
-                a funtion of its characteristics. For the purpose of brevity we
+                a function of its characteristics. For the purpose of brevity we
                 will not detail money's history and focus more on the
                 characteristics of money and what makes Decred "sound money". For
                 a more in depth overview of the history of money, we recommend
