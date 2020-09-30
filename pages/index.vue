@@ -9,8 +9,11 @@
               alt="Decred logo"
               class="nav-logo mb-0"
             />
-            <div class="title">withDecred<span class="dot">.</span>org</div>
-            <div class="subtitle">Stakeholder-Governed Sound Money</div>
+            <div class="title">Sound Money Evolved</div>
+            <div class="subtitle">
+              withDecred<span class="dot">.</span>org &mdash; a community-driven
+              portal
+            </div>
           </div>
         </el-row>
 
