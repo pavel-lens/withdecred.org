@@ -51,7 +51,7 @@
             40x more secure than Proof of Work blockchain
           </h1>
           <h1 v-if="msgIndex === 3" class="mt-0">
-            $7,470,000 USD in decentralized treasury
+            💰 $7,470,000 in decentralized treasury
           </h1>
           <h1 v-if="msgIndex === 4" class="mt-0">
             Decentralized and inclusive governance

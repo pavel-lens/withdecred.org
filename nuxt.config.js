@@ -67,6 +67,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    '@/plugins/axios',
     '@/plugins/element-ui',
     { src: '@/plugins/sticky-directive.js', mode: 'client' },
   ],
