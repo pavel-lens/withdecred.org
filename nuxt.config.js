@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
-  telemetry: true,
+  telemetry: false,
   /*
    ** Headers of the page
    */
