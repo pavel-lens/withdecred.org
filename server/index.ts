@@ -12,7 +12,6 @@ config.dev = process.env.NODE_ENV !== 'production'
 import { Container } from 'typedi'
 
 // Important to import like this for Service() decorators to be executed
-import './services'
 import routes from './routes'
 
 // Set console as Logger

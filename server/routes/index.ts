@@ -1,7 +1,9 @@
 import { Router } from 'express'
-import UserRoutes from './user.route'
+import blockchainRoutes from './blockchain.route'
+import winRoutes from './win.route'
 
 const router = Router()
-router.use('/users', UserRoutes)
+router.use('/blockchain', blockchainRoutes)
+router.use('/win', winRoutes)
 
 export default router
