@@ -17,10 +17,10 @@ router.get('/', async (req: Request, res: Response, next: NextFunction) => {
     await Promise.all([wait()])
 
     const lastBlockHash = (
-      await axios.get('http://localhost:3000/api/blockchain/last-block')
+      await axios.get(`${process.env.DOMAIN}/api/blockchain/last-block`)
     ).data
 
-    const url = `https://withdecred.org/r/${lastBlockHash}`
+    const url = `${process.env.DOMAIN}/r/${lastBlockHash}`
     // consola.info({ lastBlockHash })
     // consola.info({ url })
 
