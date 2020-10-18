@@ -79,6 +79,7 @@ module.exports = {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     '@nuxtjs/robots',
