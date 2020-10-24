@@ -20,12 +20,15 @@ router.get('/', async (req: Request, res: Response, next: NextFunction) => {
       await axios.get(`${process.env.DOMAIN}/api/blockchain/last-block`)
     ).data
 
-    const url = `${process.env.DOMAIN}/r/${lastBlockHash}`
+    const lastBlockHashTrimmed = lastBlockHash.replace(/^0+(.*)$/, '$1')
+
+    const url = `${process.env.DOMAIN}/r/${lastBlockHashTrimmed}`
     // consola.info({ lastBlockHash })
     // consola.info({ url })
 
     res.send({
-      lastBlockHash,
+      // trim leading zeros
+      lastBlockHash: lastBlockHashTrimmed,
       url,
     })
   } catch (err) {
