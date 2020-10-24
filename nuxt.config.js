@@ -7,19 +7,19 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Stakeholder-governed sound money',
+    title: 'Decred - Money Evolved',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'withDecred.org - Stakeholder-governed sound money',
+        content: 'withDecred.org - Money Evolved',
       },
       {
         hid: 'description',
         name: 'description',
-        content: 'withDecred.org - Stakeholder-governed sound money',
+        content: 'withDecred.org - Money Evolved',
       },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'theme-color', content: '#ffffff' },
@@ -27,7 +27,7 @@ module.exports = {
       { property: 'og:title', content: 'withDecred.org' },
       {
         property: 'og:description',
-        content: 'withDecred.org - Stakeholder-governed sound money',
+        content: 'withDecred.org - Money Evolved',
       },
       {
         property: 'og:image',
@@ -40,7 +40,7 @@ module.exports = {
       { name: 'twitter:title', content: 'withDecred.org' },
       {
         name: 'twitter:description',
-        content: 'withDecred.org - Stakeholder-governed sound money',
+        content: 'withDecred.org - Money Evolved',
       },
       {
         name: 'twitter:image',
