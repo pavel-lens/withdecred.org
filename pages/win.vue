@@ -27,7 +27,7 @@
       </div>
 
       <!-- TODO: STATE: LOADING -->
-      <div v-if="pageState === 'loading'" class="c-win-card">
+      <div v-if="pageState === 'loading'" class="">
         <div class="my-50">
           <div class="text--align-center mt-5">
             <!--  -->
@@ -38,7 +38,7 @@
       </div>
 
       <!-- TODO: STATE: DONE -->
-      <div v-if="pageState === 'done'" class="c-win-card mb-3">
+      <div v-if="pageState === 'done'" class="mt-5 mb-3">
         <div class="text--align-center mt-5">
           <h1 v-if="msgIndex === 0" class="mt-0">
             Sound money, <br />
@@ -284,10 +284,10 @@ export default Vue.extend({
 
   .c-win-card {
     /* border: 1px solid $color-primary-white; */
-    border-top-right-radius: 50px;
+    /* border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    /* padding: 20px 30px 55px; */
-    padding: 40px 0 0;
+    padding: 20px 30px 55px; */
+    /* padding: 20px 0 0; */
   }
 
   .c-qr-code {
