@@ -1,15 +1,19 @@
 <template>
   <div class="p-ref__wrapper">
-    <div class="c-logo__wrapper mt-5">
+    <!-- <div class="c-logo__wrapper mt-5">
       <nuxt-link to="/">
         <img src="@/assets/logo/decred-logo.png" class="c-logo" />
       </nuxt-link>
-    </div>
+    </div> -->
     <div class="p-ref">
       <div v-if="pageState === 'default'">
-        <div class="c-content mt-50">
-          <div class="text--align-center my-50">
-            <h2>Welcome!</h2>
+        <div class="c-content">
+          <div class="text--align-center mb-100">
+            <nuxt-link to="/">
+              <img src="@/assets/logo/decred-logo.png" class="c-logo" />
+            </nuxt-link>
+
+            <h2 class="mt-50">Welcome!</h2>
             <p class="mt-2">
               You are here because your friend invited you to learn about Decred
               &mdash; Money Evolved.
@@ -230,7 +234,7 @@ export default Vue.extend({
 
   .c-logo__wrapper {
     position: absolute;
-    top: 50px;
+    top: 20px;
   }
 
   .c-logo {

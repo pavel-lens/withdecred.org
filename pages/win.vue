@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <p class="text--align-center">Take a screenshot</p>
+          <p class="text--align-center">Take a screenshot 📸</p>
 
           <!-- <p>Take a screenshot of this page.</p> -->
         </div>
@@ -160,7 +160,7 @@ export default Vue.extend({
             width: 200,
             height: 200,
             // data: `https://withdecred.org/r/${data.lastBlockHash}`,
-            data: `${data.url}?message=${this.msgIndex}`,
+            data: `${data.url}?mi=${this.msgIndex}`,
             image: `/logo/decred-vertical-dark.svg`,
             dotsOptions: {
               color: '#091440', // $color-primary-darkblue
