@@ -103,3 +103,9 @@ The Express API implemented in `<root>/server/` directory is compiled by Typescr
 If you look at `start` script in `package.json` file, you will see the following `node server-dist/index.js`.
 
 That means that in production, there is a `node` server running a compiled version of original `server/index.ts`, but now it's compiled to `server-dist/index.js`.
+
+## Notes
+
+### Get latest Decred hash
+
+https://explorer.dcrdata.org/api/block/best/hash
