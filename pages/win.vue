@@ -1,7 +1,7 @@
 <template>
   <div class="p-win__wrapper">
     <!--  -->
-    <div class="c-logo__wrapper">
+    <div v-if="showTopLogo" class="c-logo__wrapper">
       <img src="@/assets/logo/decred-logo.png" class="c-logo" />
     </div>
     <div class="p-win">
@@ -40,29 +40,56 @@
       <!-- TODO: STATE: DONE -->
       <div v-if="pageState === 'done'" class="mt-5 mb-3">
         <div class="text--align-center mt-5">
-          <h1 v-if="msgIndex === 0" class="mt-0">
-            Sound money, <br />
-            evolved.
-          </h1>
-          <h1 v-if="msgIndex === 1" class="mt-0">
-            Secure. Adaptable. Sustainable.
-          </h1>
-          <h1 v-if="msgIndex === 2" class="mt-0">
-            40x more secure than Proof of Work blockchain
-          </h1>
-          <h1 v-if="msgIndex === 3" class="mt-0">
-            💰 $7,470,000 in decentralized treasury
-          </h1>
-          <h1 v-if="msgIndex === 4" class="mt-0">
-            Decentralized and inclusive governance
-          </h1>
-          <h1 v-if="msgIndex === 5" class="mt-0">
-            ⚡ Lightning network &amp; Private transactions
+          <template v-if="msgIndex === 0">
+            <img
+              src="@/assets/logo/decred-logo.png"
+              class="c-logo c-logo--size-small"
+            />
+            <h1 style="margin-top: -10px">Money Evolved</h1>
+          </template>
+          <template v-if="msgIndex === 1" class="mt-0">
+            <h1 class="my-0">Sustainable 👏</h1>
+            <h2 class="mt-1">
+              Decred is continuously funded by mining rewards
+            </h2>
+          </template>
+          <template v-if="msgIndex === 2">
+            <h1 class="mt-0">40x more secure than PoW blockchains</h1>
+            <h2>Cost of Attack $40,000,000 USD</h2>
+            <!-- <i>* Cost of attack for 1 hour</i> -->
+          </template>
+          <template v-if="msgIndex === 3">
+            <h1 class="my-0">Decentralized Treasury</h1>
+            <h1 class="my-0">💰 $8,000,000 USD 💰</h1>
+            <h3 class="mt-2">630,000,- DCR</h3>
+          </template>
+          <template v-if="msgIndex === 4" class="mt-0">
+            <h1 class="mt-0">Decentralized &amp; Inclusive Governance</h1>
+            <h3>Your voice will be heard 📢</h3>
+          </template>
+          <template v-if="msgIndex === 5">
+            <h2 class="mb-2">Has</h2>
+            <h1 class="mt-0">
+              ⚡ Lightning network <br />
+              &amp; Private transactions
+            </h1>
             <!-- 🕵️‍♂️ -->
-          </h1>
+          </template>
           <template v-if="msgIndex === 6">
-            <h1 class="mt-0">Decentralized Exchange (DEX)</h1>
+            <h2 class="mb-2">Implemented own</h2>
+            <h1 class="mt-0">Decentralized Exchange</h1>
             <h3>No KYC, no fees.</h3>
+          </template>
+          <template v-if="msgIndex === 7" class="mt-0">
+            <h1 class="my-0">Extremely Secure</h1>
+            <h2>Cost of Attack $40,000,000 USD</h2>
+            <i>* Cost of attack for 1 hour</i>
+          </template>
+          <template v-if="msgIndex === 8" class="mt-0">
+            <h1 class="my-0">No forks or chain-splits</h1>
+            <h2>
+              Unlike Bitcoin, Decred can upgrade the network without forking 👏
+            </h2>
           </template>
           <hr class="hr-short mt-3 mb-5" />
         </div>
@@ -88,7 +115,7 @@
       </div>
     </div>
 
-    <div class="c-footer__wrapper">
+    <div v-if="pageState !== 'done'" class="c-footer__wrapper">
       <div class="c-footer">https://withDecred.org</div>
     </div>
   </div>
@@ -121,11 +148,26 @@ export default Vue.extend({
   },
 
   data() {
-    const pageState = 'default' as PageState
-
     return {
       msgIndex: 0,
-      pageState,
+      pageState: 'default' as PageState,
+      showTopLogo: true,
+    }
+  },
+
+  mounted() {
+    // console.log({ DOMAIN: process.env.DOMAIN })
+
+    if ((process.env.DOMAIN as string).includes('localhost')) {
+      this.pageState = 'done'
+      this.$nextTick(() => {
+        this.onGenerateRandomMessage(8)
+
+        this.onGenerateQRCode({
+          url: `${process.env.DOMAIN}/r/13213213213212312321321321`,
+          lastBlockHash: '-',
+        })
+      })
     }
   },
 
@@ -133,7 +175,7 @@ export default Vue.extend({
     async onGenerateCode() {
       this.pageState = 'loading'
 
-      this.msgIndex = getRandomNumber(7)
+      this.onGenerateRandomMessage()
 
       let data = {
         lastBlockHash: '',
@@ -153,36 +195,49 @@ export default Vue.extend({
         this.pageState = 'done'
 
         this.$nextTick(() => {
-          // Load dynamically on client side
-          const QRCodeStyling = require('qr-code-styling')
-
-          const qrCode = new QRCodeStyling({
-            width: 200,
-            height: 200,
-            // data: `https://withdecred.org/r/${data.lastBlockHash}`,
-            data: `${data.url}?mi=${this.msgIndex}`,
-            image: `/logo/decred-vertical-dark.svg`,
-            dotsOptions: {
-              color: '#091440', // $color-primary-darkblue
-              type: 'rounded',
-            },
-            backgroundOptions: {
-              // color: 'transparent',
-              color: '#f9fbfc',
-            },
-            imageOptions: {
-              crossOrigin: 'anonymous',
-            },
-          })
-
-          const divWrapper = document.getElementById(
-            'c-qr-code-wrapper'
-          ) as HTMLDivElement
-          if (divWrapper) {
-            qrCode.append(divWrapper)
-          }
+          this.onGenerateQRCode(data)
         })
       }, 2000)
+    },
+    onGenerateRandomMessage(forceMsgIndex: number | undefined = undefined) {
+      if (forceMsgIndex !== undefined) {
+        this.msgIndex = forceMsgIndex
+      } else {
+        this.msgIndex = getRandomNumber(8)
+      }
+
+      if (this.msgIndex === 0) {
+        this.showTopLogo = false
+      }
+    },
+    onGenerateQRCode(data: any) {
+      const QRCodeStyling = require('qr-code-styling')
+
+      const qrCode = new QRCodeStyling({
+        width: 200,
+        height: 200,
+        // data: `https://withdecred.org/r/${data.lastBlockHash}`,
+        data: `${data.url}?mi=${this.msgIndex}`,
+        image: `/logo/decred-vertical-dark.svg`,
+        dotsOptions: {
+          color: '#091440', // $color-primary-darkblue
+          type: 'rounded',
+        },
+        backgroundOptions: {
+          // color: 'transparent',
+          color: '#f9fbfc',
+        },
+        imageOptions: {
+          crossOrigin: 'anonymous',
+        },
+      })
+
+      const divWrapper = document.getElementById(
+        'c-qr-code-wrapper'
+      ) as HTMLDivElement
+      if (divWrapper) {
+        qrCode.append(divWrapper)
+      }
     },
   },
 })
@@ -271,6 +326,10 @@ export default Vue.extend({
     width: 220px;
     height: auto;
     /* margin: 0 auto; */
+
+    &--size-small {
+      width: 180px;
+    }
   }
 
   .c-button {
