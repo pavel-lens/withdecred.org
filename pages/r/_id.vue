@@ -1,94 +1,43 @@
 <template>
-  <div class="p-win__wrapper">
-    <!--  -->
+  <div class="p-ref__wrapper">
     <div class="c-logo__wrapper mt-5">
-      <img src="@/assets/logo/decred-logo.png" class="c-logo" />
+      <nuxt-link to="/">
+        <img src="@/assets/logo/decred-logo.png" class="c-logo" />
+      </nuxt-link>
     </div>
-    <div class="p-win">
-      <!-- TODO: STATE: DEFAULT -->
+    <div class="p-ref">
       <div v-if="pageState === 'default'">
         <div class="c-content mt-50">
           <div class="text--align-center my-50">
-            <p>Click the button below to generate a ticket.</p>
+            <h2>Welcome!</h2>
+            <p class="mt-2">
+              You are here because your friend invited you to learn about Decred
+              &mdash; Money Evolved.
+            </p>
+            <p class="mt-3">Find out why and earn $DCR!</p>
 
             <div class="mt-3 mb-40">
-              <el-button
-                type="success"
-                class="c-button--is-cta"
-                @click="onGenerateCode"
+              <a
+                href="https://twitter.com/withdecred/status/1319337624201515014"
+                target="_blank"
               >
-                Generate code
-              </el-button>
+                <el-button type="success" class="c-button--is-cta">
+                  Discover Money Evolved
+                </el-button>
+              </a>
+
+              <div class="mt-3">
+                <nuxt-link to="/"> Learn more withDecred.org </nuxt-link>
+              </div>
             </div>
           </div>
-
-          <!-- <p>Take a screenshot of this page.</p> -->
         </div>
-      </div>
-
-      <!-- TODO: STATE: LOADING -->
-      <div v-if="pageState === 'loading'" class="c-win-card">
-        <div class="my-50">
-          <div class="text--align-center mt-5">
-            <!--  -->
-          </div>
-
-          <Spinner />
-        </div>
-      </div>
-
-      <!-- TODO: STATE: DONE -->
-      <div v-if="pageState === 'done'" class="c-win-card">
-        <div class="text--align-center mt-5">
-          <h1 v-if="msgIndex === 0" class="mt-0">
-            Sound money, <br />
-            evolved.
-          </h1>
-          <h1 v-if="msgIndex === 1" class="mt-0">
-            Secure. Adaptable. Sustainable.
-          </h1>
-          <h1 v-if="msgIndex === 2" class="mt-0">
-            40x more secure than Proof of Work blockchain
-          </h1>
-          <h1 v-if="msgIndex === 3" class="mt-0">
-            💰 $7,470,000 in decentralized treasury
-          </h1>
-          <h1 v-if="msgIndex === 4" class="mt-0">
-            Decentralized and inclusive governance
-          </h1>
-          <h1 v-if="msgIndex === 5" class="mt-0">
-            ⚡ Lightning network &amp; Private transactions
-            <!-- 🕵️‍♂️ -->
-          </h1>
-          <template v-if="msgIndex === 6">
-            <h1 class="mt-0">Decentralized Exchange (DEX)</h1>
-            <h3>No KYC, no fees.</h3>
-          </template>
-          <hr class="hr-short mt-3 mb-5" />
-        </div>
-
-        <div class="c-content mt-30">
-          <p class="text--align-center">This is your ticket to participate.</p>
-
-          <div class="text--align-center mt-3 mb-40">
-            <div class="c-qr-code" id="c-qr-code-wrapper">
-              <!-- <img src="@/assets/images/qr-sample.png" /> -->
-              <!-- <img src="@/assets/images/qr-sample-white.png" width="180" /> -->
-            </div>
-          </div>
-
-          <!-- <p>Take a screenshot of this page.</p> -->
-        </div>
-
-        <!-- <hr class="hr-short mt-5 mb-3" /> -->
-
-        <!-- <h3>Fair, predictable, scarce money</h3> -->
       </div>
     </div>
 
-    <div class="c-footer__wrapper">
+    <!-- <div class="c-footer__wrapper">
       <div class="c-footer">https://withDecred.org</div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -124,6 +73,18 @@ export default Vue.extend({
     return {
       msgIndex: 0,
       pageState,
+    }
+  },
+
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: `https://withdecred.org/r/`,
+        },
+        //
+      ],
     }
   },
 
@@ -188,24 +149,24 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 /*  */
-.p-win__wrapper {
+.p-ref__wrapper {
   background-color: $color-secondary-black;
   background-position-x: 50%;
   background-position-y: 50%;
 
   /* Background 1 */
-  background-image: url('../assets/images/bg-brand-page.png');
+  background-image: url('../../assets/images/bg-brand-page.png');
   background-size: cover;
   /* Background 2 */
-  /* background-image: url('../assets/images/bg-waves.png');
+  /* background-image: url('../../assets/images/bg-waves.png');
   background-size: 2500px; */
   /* Background 3 */
-  /* background-image: url('../assets/images/bg-dcr.png');
+  /* background-image: url('../../assets/images/bg-dcr.png');
   background-size: 1500px;
   background-position-x: 50%;
   background-position-y: 100%; */
   /* Background 4 */
-  /* background-image: url('../assets/images/bg-squares.png');
+  /* background-image: url('../../assets/images/bg-squares.png');
   background-size: 1500px; */
 
   /*  */
@@ -223,6 +184,7 @@ export default Vue.extend({
   /* font-size: 16px; */
 
   &,
+  a,
   h1,
   h2,
   h3,
@@ -231,6 +193,12 @@ export default Vue.extend({
   h6,
   p {
     color: #fff;
+
+    &:visited,
+    a:hover,
+    a:active {
+      color: #fff;
+    }
   }
 
   h1,
@@ -242,7 +210,7 @@ export default Vue.extend({
     /* letter-spacing: 2px; */
   }
 
-  .p-win {
+  .p-ref {
     position: relative;
     display: flex;
     flex-direction: column;
