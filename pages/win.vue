@@ -1,7 +1,7 @@
 <template>
   <div class="p-win__wrapper">
     <!--  -->
-    <div class="c-logo__wrapper mt-5">
+    <div class="c-logo__wrapper">
       <img src="@/assets/logo/decred-logo.png" class="c-logo" />
     </div>
     <div class="p-win">
@@ -38,7 +38,7 @@
       </div>
 
       <!-- TODO: STATE: DONE -->
-      <div v-if="pageState === 'done'" class="c-win-card">
+      <div v-if="pageState === 'done'" class="c-win-card mb-3">
         <div class="text--align-center mt-5">
           <h1 v-if="msgIndex === 0" class="mt-0">
             Sound money, <br />
@@ -70,12 +70,14 @@
         <div class="c-content mt-30">
           <p class="text--align-center">This is your ticket to participate.</p>
 
-          <div class="text--align-center mt-3 mb-40">
+          <div class="text--align-center mt-3 mb-0">
             <div class="c-qr-code" id="c-qr-code-wrapper">
               <!-- <img src="@/assets/images/qr-sample.png" /> -->
               <!-- <img src="@/assets/images/qr-sample-white.png" width="180" /> -->
             </div>
           </div>
+
+          <p class="text--align-center">Take a screenshot</p>
 
           <!-- <p>Take a screenshot of this page.</p> -->
         </div>
@@ -262,7 +264,7 @@ export default Vue.extend({
 
   .c-logo__wrapper {
     position: absolute;
-    top: 50px;
+    top: 30px;
   }
 
   .c-logo {
@@ -305,7 +307,7 @@ export default Vue.extend({
 
   .c-footer__wrapper {
     position: absolute;
-    bottom: 70px;
+    bottom: 30px;
   }
 
   .c-footer {
